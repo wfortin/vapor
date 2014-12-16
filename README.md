@@ -1,4 +1,4 @@
-[![Dependency Status](https://david-dm.org/wforin/styleguide.svg)](https://david-dm.org/wfortin/StyleGuide)
+[![Dependency Status](https://david-dm.org/wfortin/StyleGuide.svg?style=flat)](https://david-dm.org/wfortin/StyleGuide)
 
 Coveo UI StyleGuide
 ===================
