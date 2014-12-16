@@ -1,3 +1,5 @@
+[![Dependency Status](https://david-dm.org/wforin/styleguide.svg)](https://david-dm.org/wfortin/StyleGuide)
+
 Coveo UI StyleGuide
 ===================
 
