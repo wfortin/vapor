@@ -5,7 +5,7 @@ Coveo StyleGuide is a collection of UI components used in Coveo's Cloud Services
 
 It is widely inspired by [Bootstrap 3.0](https://github.com/twbs/bootstrap) and borrows some of it components.
 
-The project is at it's early stages, some component's can still have _lots_ of breaking changes.
+The project is at it's early stages, some components can still have _lots_ of breaking changes.
 
 # Contributing
 
