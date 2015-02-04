@@ -1,10 +1,54 @@
 // Table form
 //
-// Aligned form. Use as a `table` or as a `form`. Prefer `form`. Table is for legacy purpose only.
+// Aligned form using display table.
 //
 // Markup:
 //<form>
-//    <div class="coveo-form">
+//    <div class="coveo-table-form">
+//        <div class="form-group">
+//            <label for="field1">
+//                Field 1
+//            </label>
+//            <div class="value">
+//                <input type="text" name="field1" placeholder="Field 1" value="Field 1">
+//            </div>
+//        </div>
+//        <div class="form-group">
+//            <label for="field2">
+//                Field 2
+//            </label>
+//            <div class="value validated-input">
+//                <input type="text" name="field2" placeholder="Field 2">
+//                <div class="input-validation-error-details">
+//                    <i class="coveo-sprites-misc-alert"></i>
+//                    <span class="input-validation-error-message">Error message goes here!</span>
+//                </div>
+//            </div>
+//        </div>
+//        <div class="form-group input-validation-error">
+//            <label for="field3">
+//                Field 3
+//            </label>
+//            <div class="value validated-input">
+//                <input type="text" name="field3" placeholder="Field 3">
+//                <div class="input-validation-error-details">
+//                    <i class="coveo-sprites-misc-alert"></i>
+//                    <span class="input-validation-error-message">Error message goes here!</span>
+//                </div>
+//            </div>
+//        </div>
+//    </div>
+//</form>
+//
+// Styleguide 5.6
+
+// Table form (legacy)
+//
+// Aligned form using table tags. Prefer `form`. Table is for legacy purpose only and is not supported anymore.
+//
+// Markup:
+//<form>
+//    <div class="coveo-table-form">
 //        <table>
 //            <tbody>
 //            <tr>
@@ -43,52 +87,16 @@
 //        </table>
 //    </div>
 //</form>
-//<br/>
-//<form>
-//    <div class="coveo-form">
-//        <div class="form-group">
-//            <label for="field1">
-//                Field 1
-//            </label>
-//            <div class="value">
-//                <input type="text" name="field1" placeholder="Field 1" value="Field 1">
-//            </div>
-//        </div>
-//        <div class="form-group">
-//            <label for="field2">
-//                Field 2
-//            </label>
-//            <div class="value validated-input">
-//                <input type="text" name="field2" placeholder="Field 2">
-//                <div class="input-validation-error-details">
-//                    <i class="coveo-sprites-misc-alert"></i>
-//                    <span class="input-validation-error-message">Error message goes here!</span>
-//                </div>
-//            </div>
-//        </div>
-//        <div class="form-group input-validation-error">
-//            <label for="field3">
-//                Field 3
-//            </label>
-//            <div class="value validated-input">
-//                <input type="text" name="field3" placeholder="Field 3">
-//                <div class="input-validation-error-details">
-//                    <i class="coveo-sprites-misc-alert"></i>
-//                    <span class="input-validation-error-message">Error message goes here!</span>
-//                </div>
-//            </div>
-//        </div>
-//    </div>
-//</form>
 //
-// Styleguide 5.6
+// Styleguide 5.7
+
 @import "../common/colors";
 @import "../common/font";
 @import (reference) "../lib/_elements";
 @import (reference) "../lib/_mixins";
 
 form {
-    .coveo-form {
+    .coveo-table-form {
         display: table;
         table-layout: fixed;
         width: 100%;
@@ -254,15 +262,6 @@ form {
 
             &.multiline-input-validation-error .erroneous-input {
                 background-color: @invalid-background-color;
-            }
-        }
-
-        .form-simple-row {
-            display: table-row;
-
-            .simple-input {
-                margin-left: 10px;
-                margin-top: 10px;
             }
         }
     }
