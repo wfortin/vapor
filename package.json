@@ -6,6 +6,7 @@
   "scripts": {
     "test": "",
     "compile": "node ./node_modules/gulp/bin/gulp default",
+	"styleguide": "node ./node_modules/gulp/bin/gulp styleguide",
     "watch": "node ./node_modules/gulp/bin/gulp default"
   },
   "repository": {
