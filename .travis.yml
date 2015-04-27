@@ -4,10 +4,9 @@ notifications:
     on_success: never
     on_failure: never
 node_js:
-  - stable
+  - "0.12"
 script:
   - npm run-script deploy
 env:
   global:
-    - GH_REF: github.com/Coveo/styleguide.git
     - secure: XOJVszQbbDq3Fh1sf1T5XhEs/aL1WKLsTaET3D5Ipjl+M5UkdhDWPNFcrg5uMhDyqVrJDngxTKMVR1ImC/iBQKroQWFNcFVFvy4EfHFusGb+gJBKgbvfxP4woAc0Lck9nxz7k4HwUS8R3pv3AudyHtDH51nIohfW1FOXNZNaQPI=
