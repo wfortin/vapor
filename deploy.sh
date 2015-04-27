@@ -1,6 +1,6 @@
 #!/bin/bash
-rm -rf out || exit 0;
-mkdir out;
+rm -rf styleguide || exit 0;
+npm install
 npm run styleguide
 ( cd styleguide
  git init
