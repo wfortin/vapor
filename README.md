@@ -22,7 +22,8 @@ The compiled styleguide will be available in the `/styleguide` folder.
 
 ### Library
 
-If you simply prefer reference the generated styleguide in one of your project, you can run `npm run compile` and retrieve the files in the `/target/package` folder.
+If you simply prefer reference the generated styleguide in one of your project,
+you can run `npm run compile` and retrieve the files in the `/target/package` folder.
 
 # License
 

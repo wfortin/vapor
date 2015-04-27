@@ -90,7 +90,7 @@ gulp.task('styleguide', 'Build the styleguide using kss-node', ['lib', 'sprites'
 
 gulp.task('default', 'Compile less and dependencies and export to target.', ['less', 'lib', 'sprites'], function () {
     gulp.src('./target/package/images/CoveoStyleGuide.Sprites.png').pipe(gulp.dest('styleguide/images'));
-    copyFonts('target/package/fonts')
+    copyFonts('target/package/fonts');
 }, {
     aliases: ['d', 'D']
 });
