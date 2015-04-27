@@ -13,8 +13,17 @@ The project is at it's early stages, some components can still have _lots_ of br
 # Compiling
 
 Make sure you have Node JS and NPM installed.
-Run `npm install`, then `npm run compile`.
+Run `npm install` to get the required dependencies.
+
+### Styleguide
+
+To compile the whole styleguide, run `npm run styleguide`.
 The compiled styleguide will be available in the `/styleguide` folder.
+
+### Library
+
+If you simply prefer reference the generated styleguide in one of your project,
+you can run `npm run compile` and retrieve the files in the `/target/package` folder.
 
 # License
 
