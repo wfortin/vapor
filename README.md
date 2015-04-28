@@ -1,5 +1,6 @@
-[![Dependency Status](https://david-dm.org/Coveo/styleguide.svg?style=flat-square)](https://david-dm.org/Coveo/styleguide)
-[![devDependency Status](https://david-dm.org/Coveo/styleguide/dev-status.svg?style=flat-square)](https://david-dm.org/Coveo/styleguide#info=devDependencies)
+[![Build Status](https://img.shields.io/travis/Coveo/styleguide.svg?style=flat-square)](https://travis-ci.org/Coveo/styleguide)
+[![dev-dependencies](https://img.shields.io/david/dev/Coveo/styleguide.svg?style=flat-square)](https://github.com/Coveo/styleguide/blob/master/package.json)
+[![license](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/Coveo/styleguide/blob/master/LICENSE)
 
 Coveo UI StyleGuide
 ===================
@@ -12,7 +13,6 @@ The project is at it's early stages, some components can still have _lots_ of br
 
 
 # Compiling
-
 Make sure you have Node JS and NPM installed.
 Run `npm install` to get the required dependencies.
 
