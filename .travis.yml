@@ -4,9 +4,9 @@ notifications:
     on_success: never
     on_failure: never
 node_js:
-  - '0.12'
+- '0.12'
 script:
-  - npm run-script deploy
+- npm run-script deploy
 env:
   global:
-    - secure: i7hlxT6ToVuaPOv9Ikq87FbjpOvkRiagXW43fvva1HjEHd++P2v/kkKsvoXk/LNaA0BFR0Ic+MjEw9klXrLg3l6i9VTQv9eORyOiKLwC7pXk/DmSLnOjkvMpEkZKioiWuh8HQn87nS+bRUR8GIsiyl84LrTQ2l04cHoR1ii3mCs=
+  - secure: WJ3lMQmoZKhHGbMz26gq3ZeLqVCKZuFT/7EkG93PHhrS5fkr3HViOxqf2ld+M33L1yUq/L7jv2mmPKF2jfw76uQDACvcwlaoDFmS/UGVU6BLRAFKyovLCRX2EILQN0p1LJ2YyS2Y9oAak97QV6Eck7aSpjmUsxCWT5kgNikWYko=
