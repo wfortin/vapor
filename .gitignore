@@ -15,6 +15,6 @@ node_modules
 # Webstorm
 .idea
 
-# Styleguide is generated
-styleguide
-target
+# Jekyll docs is generated
+.sass-cache
+_gh_pages

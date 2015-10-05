@@ -1,45 +1,36 @@
 {
-  "name": "coveo-styleguide",
-  "version": "0.0.0",
-  "description": "Collection of UI components used in Coveo's Cloud Services administration console",
+  "name": "coveo-style-guide",
+  "version": "0.0.1",
+  "description": "Collection of UI components used in Coveo's Administration Console",
   "main": "''",
   "scripts": {
     "test": "",
-    "compile": "node ./node_modules/gulp/bin/gulp default",
-    "styleguide": "node ./node_modules/gulp/bin/gulp styleguide",
-    "watch": "node ./node_modules/gulp/bin/gulp default",
+    "clean": "node ./node_modules/gulp/bin/gulp clean",
+    "compile": "node ./node_modules/gulp/bin/gulp docs",
     "deploy": "./deploy.sh"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Coveo/styleguide.git"
-  },
   "keywords": [
-    "style",
-    "guide",
-    "styleguide"
+    "coveo",
+    "styleguide",
+    "jekyll"
   ],
   "author": "Coveo",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Coveo/styleguide/issues"
-  },
   "devDependencies": {
-    "del": "^1.1.1",
-    "gulp": "^3.8.10",
-    "gulp-autoprefixer": "^2.1.0",
-    "gulp-concat": "^2.4.3",
-    "gulp-gzip": "^1.1.0",
-    "gulp-help": "^1.3.4",
-    "gulp-if": "^1.2.5",
-    "gulp-less": "^3.0.2",
-    "gulp-minify-css": "^1.0.0",
-    "gulp-rename": "^1.2.0",
-    "gulp-run": "^1.6.6",
-    "gulp-sourcemaps": "^1.5.1",
-    "gulp-uglify": "^1.1.0",
-    "gulp-util": "^3.0.4",
-    "kss": "^1.3.0",
-    "png-sprite": "https://github.com/apare/png-sprite/tarball/master"
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-gzip": "^1.2.0",
+    "gulp-help": "^1.6.1",
+    "gulp-if": "^2.0.0",
+    "gulp-less": "^3.0.3",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.1",
+    "gulp-util": "^3.0.6",
+    "png-sprite": "^0.1.1",
+    "require-dir": "^0.3.0"
   }
 }

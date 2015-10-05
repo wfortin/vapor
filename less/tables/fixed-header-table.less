@@ -1,0 +1,42 @@
+@import (reference) '../common/colors';
+
+.fixed-header-table-container {
+    border-top: solid 2px @table-borders;
+    padding-top: 27px;
+    position: relative;
+
+    .fixed-header-table {
+        border-bottom: solid 2px @table-borders;
+        border-top: solid 2px @table-borders;
+
+        overflow-y: scroll;
+
+        table thead tr {
+            height: 0;
+
+            th {
+                border: none;
+                font-size: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                position: inherit;
+                white-space: nowrap;
+
+                &.admin-sort .admin-sort-icon {
+                    left: 0;
+                }
+
+                &.selection .fixed-header-container {
+                    padding-top: 4px;
+                }
+
+                div.fixed-header-container {
+                    font-size: 12px;
+                    padding-top: 5px;
+                    position: absolute;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
