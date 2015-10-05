@@ -23,8 +23,8 @@ To build the dist folder and export it into the docs folder, simply run `gulp do
    **Note for Windows users:** Read [this unofficial guide](http://jekyll-windows.juthilo.com/) to get Jekyll up and running without problems.
 2. Install the Ruby-based syntax highlighter, [Rouge](https://github.com/jneen/rouge), with `gem install rouge --version 1.9.0`.
    **Note when installing rouge:** Version 1.9.1 has some issues. Make sure you install version 1.9.0.
-3. From the `/docs` directory, run `jekyll serve` in the command line.
-4. Open `http://localhost:4000` in your browser, and voilà
+3. From the project root directory, run `jekyll serve` in the command line.
+4. Open `http://localhost:4000` in your browser, and voilà!
 
 ### Library
 If you prefer simply referencing the generated styleguide in one of your project,
