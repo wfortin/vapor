@@ -9,6 +9,7 @@ before_install:
 
 install:
   - npm install -g gulp
+  - npm install
 
 cache:
   directories:

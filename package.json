@@ -1,21 +1,24 @@
 {
   "name": "coveo-style-guide",
-  "version": "0.0.1",
-  "description": "Collection of UI components used in Coveo's Administration Console",
-  "main": "''",
+  "version": "1.0.0-alpha",
+  "description": "Yet another CSS framework - But it's awesome & built by coveo",
+  "keywords": [
+    "coveo",
+    "styleguide",
+    "css",
+    "front-end",
+    "web"
+  ],
+  "homepage": "https://coveo.github.io/styleguide",
+  "author": "Coveo",
+  "license": "MIT",
+  "main": "",
   "scripts": {
     "test": "node ./node_modules/gulp/bin/gulp",
     "clean": "node ./node_modules/gulp/bin/gulp clean",
     "compile": "node ./node_modules/gulp/bin/gulp docs",
     "deploy": "./deploy.sh"
   },
-  "keywords": [
-    "coveo",
-    "styleguide",
-    "jekyll"
-  ],
-  "author": "Coveo",
-  "license": "MIT",
   "devDependencies": {
     "del": "^2.0.2",
     "gulp": "^3.9.0",
