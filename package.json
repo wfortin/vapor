@@ -4,7 +4,7 @@
   "description": "Collection of UI components used in Coveo's Administration Console",
   "main": "''",
   "scripts": {
-    "test": "",
+    "test": "node ./node_modules/gulp/bin/gulp",
     "clean": "node ./node_modules/gulp/bin/gulp clean",
     "compile": "node ./node_modules/gulp/bin/gulp docs",
     "deploy": "./deploy.sh"
