@@ -869,39 +869,39 @@ table thead tr th.admin-sort:hover {
 table tbody.table-loading {
   opacity: 0.3;
 }
-table tbody tr {
+table tr {
   font-size: 15px;
   height: 36px;
 }
-table tbody tr td {
+table tr td {
   text-align: left;
   border-bottom: solid 1px #e5eaec;
   margin-left: 15px;
 }
-table tbody tr td.edit.enabled {
+table tr td.edit.enabled {
   color: #325f82;
   cursor: pointer;
 }
-table tbody tr td .btn-icon,
-table tbody tr td .dropdown-toggle {
+table tr td .btn-icon,
+table tr td .dropdown-toggle {
   cursor: default;
   opacity: 0.3;
 }
-table tbody tr td .btn-icon.enabled:active:hover,
-table tbody tr td .dropdown-toggle.enabled:active:hover {
+table tr td .btn-icon.enabled:active:hover,
+table tr td .dropdown-toggle.enabled:active:hover {
   border-radius: 4px;
 }
-table tbody tr td .btn-icon.disabled,
-table tbody tr td .dropdown-toggle.disabled {
+table tr td .btn-icon.disabled,
+table tr td .dropdown-toggle.disabled {
   cursor: default;
   opacity: 0.3;
 }
-table tbody tr td .btn-icon.enabled,
-table tbody tr td .dropdown-toggle.enabled {
+table tr td .btn-icon.enabled,
+table tr td .dropdown-toggle.enabled {
   cursor: pointer;
   opacity: 1;
 }
-table tbody tr td.actions {
+table tr td.actions {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -912,73 +912,83 @@ table tbody tr td.actions {
   overflow: visible;
   background-clip: padding-box;
 }
-table tbody tr td.actions > div {
+table tr td.actions > div {
   display: inline-block;
   font-size: inherit;
 }
-table tbody tr td.actions.group-collapse {
+table tr td.actions.group-collapse {
   cursor: pointer;
 }
-table tbody tr td.actions.group-collapse i {
+table tr td.actions.group-collapse i {
   margin-right: 2px;
   vertical-align: -1px;
 }
-table tbody tr td.actions.group-collapse .group-count {
+table tr td.actions.group-collapse .group-count {
   margin-right: 5px;
 }
-table tbody tr td.actions #actions {
+table tr td.actions #actions {
   min-height: 16px;
 }
-table tbody tr td.actions .btn-group.open .dropdown-toggle.enabled {
+table tr td.actions .btn-group.open .dropdown-toggle.enabled {
   border-radius: 4px 4px 4px 4px;
 }
-table tbody tr td.actions .btn-icon span.delete {
+table tr td.actions .btn-icon span.delete {
   vertical-align: -3px;
 }
-table tbody tr td.actions .btn-icon span.delete svg {
+table tr td.actions .btn-icon span.delete svg {
   fill: #1d1f21;
 }
-table tbody tr td.actions .dropdown-menu {
+table tr td.actions .dropdown-menu {
   left: inherit;
   right: 0;
   text-align: left;
   min-width: 135px;
 }
-table tbody tr td.actions .dropdown-menu .arrow-up {
+table tr td.actions .dropdown-menu .arrow-up {
   right: 1px;
 }
-table tbody tr td.actions .dropdown-menu .dropdown-label {
+table tr td.actions .dropdown-menu .dropdown-label {
   font-size: 12px;
   padding-left: 15px;
 }
-table tbody tr td.actions .dropdown-menu .dropdown-label:hover {
+table tr td.actions .dropdown-menu .dropdown-label:hover {
   background: none;
 }
-table tbody tr td.actions .dropdown-menu .hide {
+table tr td.actions .dropdown-menu .hide {
   display: none;
 }
-table tbody tr td.actions .dropdown-toggle span.menu {
+table tr td.actions .dropdown-toggle span.menu {
   vertical-align: 1px;
 }
-table tbody tr td.actions .dropdown-toggle span.menu svg {
+table tr td.actions .dropdown-toggle span.menu svg {
   fill: #1d1f21;
 }
-table tbody tr:hover > td {
+table tr:first-child {
+  padding-left: 10px;
+}
+table tr:hover > td {
   background-color: #f8f8f8;
 }
-table tbody tr:hover > td .prompt .prompt-danger {
+table tr:hover > td .prompt .prompt-danger {
   background-color: #f8f8f8;
   box-shadow: -15px 0 25px 0 #f8f8f8;
 }
-table tbody tr.empty td {
+table tr.empty td {
   text-align: center;
   padding: 25px;
 }
-table tbody tr.admin-focus td {
+table tr.admin-focus td {
   background-color: #f5f9fd;
 }
-table tbody tr.admin-focus td.admin-focus-cell {
+table tr.admin-focus td.admin-focus-cell {
   background-color: #ebf3fb;
+}
+table tr.selected {
+  background-color: #f6f6f6;
+}
+table tr.selected td:first-child {
+  border-left: 5px solid #fd7e27;
+  padding-left: 15px;
 }
 table.row-selected td,
 table.row-selected:hover td {
@@ -1063,9 +1073,23 @@ table.confirm-delete.row-selected:hover td {
 .coveo-table-actions-container .coveo-table-actions .action + .action {
   padding-left: 10px;
 }
+.coveo-table-actions-container .coveo-table-actions .action-bar {
+  display: table-row;
+}
 .coveo-table-actions-container .coveo-table-actions .coveo-filter-container {
   margin: -webkit-calc(9px) 0;
   margin: calc(9px) 0;
+}
+.coveo-table-actions-container .coveo-table-actions .prompt {
+  display: table-cell;
+  vertical-align: middle;
+}
+.coveo-table-actions-container .coveo-table-actions .prompt .prompt-danger {
+  display: table-row;
+}
+.coveo-table-actions-container .coveo-table-actions .prompt .prompt-danger > span {
+  display: table-cell;
+  vertical-align: middle;
 }
 .coveo-table-actions-container .coveo-table-actions + .coveo-table-actions {
   border-left: 2px solid #e5eaec;

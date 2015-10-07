@@ -39,8 +39,26 @@
             }
         }
 
+        .action-bar {
+            display: table-row;
+        }
+
         .coveo-filter-container {
             margin: calc((@coveo-table-actions-container-height - @coveo-filter-box-height) / 2) 0;
+        }
+
+        .prompt {
+            display: table-cell;
+            vertical-align: middle;
+
+            .prompt-danger {
+                display: table-row;
+
+                & > span {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
         }
     }
 
