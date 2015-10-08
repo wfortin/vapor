@@ -10,5 +10,6 @@ gulp.task('default', 'Build less, libs and sprites to the dist folder', [
     'less',
     'lib',
     'copy:images',
-    'copy:fonts'
+    'copy:fonts',
+    'svg'
 ]);
