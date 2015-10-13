@@ -1076,6 +1076,10 @@ table.confirm-delete.row-selected:hover td {
 .coveo-table-actions-container .coveo-table-actions .action-bar {
   display: table-row;
 }
+.coveo-table-actions-container .coveo-table-actions .action-bar .dropdown-menu {
+  left: initial;
+  right: 0;
+}
 .coveo-table-actions-container .coveo-table-actions .coveo-filter-container {
   margin: -webkit-calc(9px) 0;
   margin: calc(9px) 0;
