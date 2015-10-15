@@ -34,6 +34,8 @@
             display: table-cell;
             vertical-align: middle;
 
+            cursor: pointer;
+
             & + .action {
                 padding-left: 10px;
             }
@@ -41,10 +43,17 @@
 
         .action-bar {
             display: table-row;
+            height: 100%;
 
             .dropdown-menu {
                 left: initial;
+
+                top: 42px;
                 right: 0;
+
+                .dropdown-arrow {
+                    right: 5px;
+                }
             }
         }
 
