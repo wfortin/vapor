@@ -21,6 +21,7 @@ To build the dist folder and export it into the docs folder, simply run `gulp do
 ### Running documentation locally
 1. If necessary, [install Jekyll](http://jekyllrb.com/docs/installation) (requires v2.5.x).
    **Note for Windows users:** Read [this unofficial guide](http://jekyll-windows.juthilo.com/) to get Jekyll up and running without problems.
+   OSX El Capitan users might run into permissions issues on `gem install` run `sudo gem install -n /usr/local/bin` instead.
 2. Install the Ruby-based syntax highlighter, [Rouge](https://github.com/jneen/rouge), with `gem install rouge --version 1.9.0`.
    **Note when installing rouge:** Version 1.9.1 has some issues. Make sure you install version 1.9.0.
 3. From the project root directory, run `jekyll serve` in the command line.
