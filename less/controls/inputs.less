@@ -1,46 +1,33 @@
-// Text Input
-//
-// Below are the text-oriented form elements used on the site.
-//
-// Single-Line Text Boxes, Standard text boxes.
-//
-// :disabled - When disabled, the input's appearance should reflect as such.
-//
-// Markup:
-// <input type="text" class="{$modifiers}" value="Text"/>
-// <input type="text" class="{$modifiers}" placeholder="Placeholder"/>
-//
-// Styleguide 5.1
 @import (reference) '../common/colors';
 @import (reference) '../common/font';
 
 ::-webkit-input-placeholder {
-  color: @placeholder-text;
   // WebKit browsers
+  color: @placeholder-text;
   font-family: @base-font-family;
   font-size: inherit;
   text-transform: none;
 }
 
 :-moz-placeholder {
-  color: @placeholder-text;
   // Mozilla Firefox 4 to 18
+  color: @placeholder-text;
   font-family: @base-font-family;
   font-size: inherit;
   text-transform: none;
 }
 
 ::-moz-placeholder {
-  color: @placeholder-text;
   // Mozilla Firefox 19+
+  color: @placeholder-text;
   font-family: @base-font-family;
   font-size: inherit;
   text-transform: none;
 }
 
 :-ms-input-placeholder {
-  color: @placeholder-text;
   // Internet Explorer 10+
+  color: @placeholder-text;
   font-family: @base-font-family;
   font-size: inherit;
   text-transform: none;
