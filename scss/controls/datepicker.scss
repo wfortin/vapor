@@ -35,53 +35,53 @@
           cursor: pointer;
         }
 
-          .datepickerMonth {
-            width: calc(100% - 74px);
-            margin: 0 37px;
-            &:hover {
-              text-decoration: underline;
+        .datepickerMonth {
+          width: calc(100% - 74px);
+          margin: 0 37px;
+          &:hover {
+            text-decoration: underline;
 
-              background-color: transparent;
-            }
-          }
-
-            .datepickerGoPrev, .datepickerGoNext {
-              position: absolute;
-            }
-
-              .datepickerGoPrev {
-                left: 0;
-              }
-
-                .datepickerGoNext {
-                  right: 0;
-                }
-      }
-        tr {
-          background-color: transparent;
-
-          th {
-            padding: 3px 0;
-
-            text-align: center;
-          }
-
-          &.datepickerDoW {
-            th {
-              padding: 2px 0;
-
-              border-bottom: 1px solid $datepicker-border-color;
-            }
-            span {
-              color: $datepicker-dayofweeks-color;
-              font-size: 9px;
-
-              border-top: none;
-              border-right: none;
-              border-bottom: none;
-            }
+            background-color: transparent;
           }
         }
+
+        .datepickerGoPrev, .datepickerGoNext {
+          position: absolute;
+        }
+
+        .datepickerGoPrev {
+          left: 0;
+        }
+
+        .datepickerGoNext {
+          right: 0;
+        }
+      }
+      tr {
+        background-color: transparent;
+
+        th {
+          padding: 3px 0;
+
+          text-align: center;
+        }
+
+        &.datepickerDoW {
+          th {
+            padding: 2px 0;
+
+            border-bottom: 1px solid $datepicker-border-color;
+          }
+          span {
+            color: $datepicker-dayofweeks-color;
+            font-size: 9px;
+
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+          }
+        }
+      }
     }
 
     tbody {

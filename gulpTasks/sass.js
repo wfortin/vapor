@@ -20,7 +20,7 @@ var useMinifiedSources = gutil.env.min;
 var useGzippedSources = gutil.env.gzip;
 
 gulp.task('sass', 'Compile sass files to dist folder', ['sprites'], function () {
-    return gulp.src('./less/guide.scss')
+    return gulp.src('./scss/guide.scss')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer(autoprefixerOptions))
@@ -36,13 +36,13 @@ gulp.task('sass', 'Compile sass files to dist folder', ['sprites'], function () 
         .pipe(gulpif(useMinifiedSources, gulp.dest('./dist/css')));
 });
 
-gulp.task('less:docs', 'Build less and copy it to /docs/dist', ['less'], function () {
+gulp.task('sass:docs', 'Build less and copy it to /docs/dist', ['sass'], function () {
     gulp.src('./dist/css/*').pipe(gulp.dest('./dist/css')).pipe(gulp.dest('./_gh_pages/dist/css'));
 });
 
 
-gulp.task('less:format', function() {
-    return gulp.src('./less/**/*.less')
+gulp.task('sass:format', function() {
+    return gulp.src('./scss/**/*.scss')
         .pipe(csscomb())
-        .pipe(gulp.dest('./less'));
+        .pipe(gulp.dest('./scss'));
 });
