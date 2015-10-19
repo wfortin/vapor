@@ -44,7 +44,7 @@ gulp.task('less:docs', 'Build less and copy it to /docs/dist', ['less'], functio
 });
 
 
-gulp.task('lint', function() {
+gulp.task('less:format', function() {
     return gulp.src('./less/**/*.less')
         .pipe(csscomb())
         .pipe(gulp.dest('./less'));
