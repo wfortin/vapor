@@ -37,7 +37,7 @@
     "gulp-less": "3.0.3",
     "gulp-minify-css": "1.2.1",
     "gulp-rename": "1.2.2",
-    "gulp-sass": "2.0.4",
+    "gulp-sass": "^2.0.4",
     "gulp-scss-lint": "0.3.4",
     "gulp-sourcemaps": "1.6.0",
     "gulp-svgmin": "1.2.0",
