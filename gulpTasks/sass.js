@@ -36,13 +36,8 @@ gulp.task('sass', 'Compile sass files to dist folder', ['sprites'], function () 
         .pipe(gulpif(useMinifiedSources, gulp.dest('./dist/css')));
 });
 
-gulp.task('sass:docs', 'Build less and copy it to /docs/dist', ['sass'], function () {
-    gulp.src('./dist/css/*').pipe(gulp.dest('./dist/css')).pipe(gulp.dest('./_gh_pages/dist/css'));
-});
-
-
 gulp.task('sass:format', function() {
-    return gulp.src('./scss/**/*.scss')
+    return gulp.src(['./scss/**/*.scss', '!./scss/sprites.scss', '!./scss/common/palette.scss'])
         .pipe(csscomb())
         .pipe(gulp.dest('./scss'));
 });
