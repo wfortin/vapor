@@ -79,6 +79,7 @@ body {
 .bg-blue {
   background-color: #1194f6; }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -170,6 +171,7 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
   height: 6px;
   text-indent: 6px; }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -394,6 +396,7 @@ h6 {
   src: url("../fonts/SourceCodePro-Regular.eot");
   src: url("../fonts/SourceCodePro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceCodePro-Regular.woff") format("woff"), url("../fonts/SourceCodePro-Regular.ttf") format("truetype"); }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -475,6 +478,7 @@ h6 {
   .encryption-status.UNIQUEKEY-label {
     background-color: #59be90; }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -498,6 +502,7 @@ a {
   src: url("../fonts/SourceCodePro-Regular.eot");
   src: url("../fonts/SourceCodePro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceCodePro-Regular.woff") format("woff"), url("../fonts/SourceCodePro-Regular.ttf") format("truetype"); }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -730,6 +735,7 @@ a {
 .input-append {
   margin-bottom: 0; }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -982,6 +988,7 @@ table {
     -webkit-transition: background-color 300ms;
             transition: background-color 300ms; }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -1021,6 +1028,7 @@ table {
           padding-top: 5px;
           font-size: 12px; }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -1033,6 +1041,7 @@ table {
 /* Organizations */
 /* Timeline */
 /* Datepicker */
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -1200,6 +1209,7 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
   .coveo-table-actions-container .coveo-table-actions + .coveo-table-actions {
     border-left: 2px solid #e5eaec; }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -1294,6 +1304,7 @@ input[type='text'].admin-invisible-textbox, textarea.admin-invisible-textbox {
     .admin-numeric-spinner.input-group .add-on div i {
       display: block; }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -1371,6 +1382,7 @@ label.coveo-checkbox-label {
   label.coveo-checkbox-label.disabled span {
     opacity: 0.4; }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -1447,6 +1459,7 @@ label.coveo-slide-toggle-label {
     font-size: 16px;
     vertical-align: text-top; }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -1490,6 +1503,7 @@ label.coveo-slide-toggle-double {
       cursor: default;
       opacity: 0.4; }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -1662,6 +1676,7 @@ input[type=range].coveo-input-slider::-ms-tooltip {
   display: none;
   visibility: hidden; }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -1948,6 +1963,7 @@ div.datepicker th a.datepickerMonth {
     .datepicker table tbody tr .datepickerSpace div {
       width: 5px; }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -2032,6 +2048,7 @@ form .form-group.input-validation-error label, form .form-group.input-validation
 form .form-group.multiline-input-validation-error .erroneous-input {
   background-color: #faeaea; }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
@@ -2202,6 +2219,7 @@ form .coveo-table-form {
   form .coveo-table-form + .coveo-table-form, form .coveo-table-form + .coveo-block-form {
     margin-top: 10px; }
 
+/* */
 /* Common */
 /* Headings */
 /* Buttons */
