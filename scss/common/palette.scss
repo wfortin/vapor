@@ -1,51 +1,51 @@
-$coveo-white: #ffffff;
-$coveo-orange: #f58020;
-$coveo-black: #1d1f21;
-$coveo-light-gray: #f5f6f7;
-$coveo-light-blue: #2b4b72;
-$coveo-dark-blue: #1c2e44;
+$orange: #f58020;
+$white: #ffffff;
+$light-gray: #f5f6f7;
+$light-blue: #2b4b72;
+$dark-blue: #1c2e44;
+$black: #1d1f21;
 
-.coveo-bg-white {
-  background-color: $coveo-white;
+.bg-orange {
+  background-color: $orange;
 }
 
-.coveo-bg-orange {
-  background-color: $coveo-orange;
+.bg-white {
+  background-color: $white;
 }
 
-.coveo-bg-black {
-  background-color: $coveo-red;
+.bg-light-gray {
+  background-color: $light-gray;
 }
 
-.coveo-bg-light-gray {
-  background-color: $coveo-red;
+.bg-light-blue {
+  background-color: $light-blue;
 }
 
-.coveo-bg-light-blue {
-  background-color: $coveo-red;
+.bg-dark-blue {
+  background-color: $dark-blue;
 }
 
-.coveo-bg-dark-blue {
-  background-color: $coveo-red;
+.bg-black {
+  background-color: $black;
 }
 
-$coveo-red: #f44336;
-$coveo-yellow: #ffc200;
-$coveo-green: #4caf50;
-$coveo-blue: #1194f6;
+$red: #f44336;
+$yellow: #ffc200;
+$green: #4caf50;
+$blue: #1194f6;
 
-.coveo-bg-red {
-  background-color: $coveo-red;
+.bg-red {
+  background-color: $red;
 }
 
-.coveo-bg-yellow {
-  background-color: $coveo-yellow;
+.bg-yellow {
+  background-color: $yellow;
 }
 
-.coveo-bg-green {
-  background-color: $coveo-green;
+.bg-green {
+  background-color: $green;
 }
 
-.coveo-bg-blue {
-  background-color: $coveo-blue;
+.bg-blue {
+  background-color: $blue;
 }
