@@ -52,19 +52,6 @@ body {
 .bg-dark-blue {
   background-color: #263e55; }
 
-<<<<<<< HEAD
-.fill-orange {
-  fill: #f58020; }
-
-.bg-white {
-  background-color: #ffffff; }
-
-.fill-white {
-  fill: #ffffff; }
-
-.bg-light-gray {
-  background-color: #f5f6f7; }
-=======
 .fill-dark-blue {
   fill: #263e55; }
 
@@ -79,27 +66,11 @@ body {
 
 .text-medium-blue {
   color: #1d4f76; }
->>>>>>> master
-
-.fill-light-gray {
-  fill: #f5f6f7; }
 
 .bg-light-blue {
   background-color: #296896; }
 
 .fill-light-blue {
-<<<<<<< HEAD
-  fill: #2b4b72; }
-
-.bg-dark-blue {
-  background-color: #1c2e44; }
-
-.fill-dark-blue {
-  fill: #1c2e44; }
-
-.bg-black {
-  background-color: #1d1f21; }
-=======
   fill: #296896; }
 
 .text-light-blue {
@@ -149,10 +120,6 @@ body {
 
 .text-orange {
   color: #f58020; }
->>>>>>> master
-
-.fill-black {
-  fill: #1d1f21; }
 
 .bg-red {
   background-color: #f44336; }
@@ -160,115 +127,35 @@ body {
 .fill-red {
   fill: #f44336; }
 
-<<<<<<< HEAD
-=======
 .text-red {
   color: #f44336; }
 
->>>>>>> master
 .bg-yellow {
   background-color: #ffc200; }
 
 .fill-yellow {
   fill: #ffc200; }
 
-<<<<<<< HEAD
-=======
 .text-yellow {
   color: #ffc200; }
 
->>>>>>> master
 .bg-green {
   background-color: #4caf50; }
 
 .fill-green {
   fill: #4caf50; }
 
-<<<<<<< HEAD
-=======
 .text-green {
   color: #4caf50; }
 
->>>>>>> master
 .bg-blue {
   background-color: #1194f6; }
 
 .fill-blue {
   fill: #1194f6; }
-<<<<<<< HEAD
-=======
 
 .text-blue {
   color: #1194f6; }
-
-/* */
-/* Common */
-/* Headings */
-/* Buttons */
-/* Forms */
-/* Checkboxes */
-/* Table */
-/* Controls */
-/* Alerts */
-/* Users */
-/* Organizations */
-/* Timeline */
-/* Datepicker */
-@font-face {
-  font-family: 'source_code_pro_regular';
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/SourceCodePro-Regular.eot");
-  src: url("../fonts/SourceCodePro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceCodePro-Regular.woff") format("woff"), url("../fonts/SourceCodePro-Regular.ttf") format("truetype"); }
-
-.coveo-sprites-misc-closepopup,
-.coveo-filter-container input.filter-box + span:after,
-.coveo-sprites-misc-filter,
-.coveo-sprites-misc-spinner_arrow_down,
-.coveo-sprites-misc-spinner_arrow_up,
-.coveo-sprites-misc-alert,
-.coveo-sprites-misc-panel-collapsed,
-.collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon,
-.coveo-sprites-tables-sort_asc,
-.coveo-sprites-misc-panel-expended,
-.collapsable-panel-group .panel .panel-heading i.toggle-icon,
-.coveo-sprites-tables-sort_desc {
-  background-image: url("../images/CoveoStyleGuide.Sprites.png");
-  display: inline-block;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  background-size: 83px 16px; }
-
-i.coveo-sprites-misc-closepopup, .coveo-sprites-misc-closepopup, .coveo-filter-container input.filter-box + span:after {
-  background-position: 0px 0px;
-  width: 16px;
-  height: 16px;
-  text-indent: 16px; }
-
-i.coveo-sprites-misc-filter, .coveo-sprites-misc-filter {
-  background-position: -16px 0px;
-  width: 12px;
-  height: 12px;
-  text-indent: 12px; }
-
-i.coveo-sprites-misc-spinner_arrow_down, .coveo-sprites-misc-spinner_arrow_down {
-  background-position: -28px 0px;
-  width: 12px;
-  height: 12px;
-  text-indent: 12px; }
-
-i.coveo-sprites-misc-spinner_arrow_up, .coveo-sprites-misc-spinner_arrow_up {
-  background-position: -40px 0px;
-  width: 12px;
-  height: 12px;
-  text-indent: 12px; }
-
-i.coveo-sprites-misc-alert, .coveo-sprites-misc-alert {
-  background-position: -52px 0px;
-  width: 11px;
-  height: 11px;
-  text-indent: 11px; }
->>>>>>> master
 
 .bg-salesforce-blue {
   background-color: #00a0de; }
@@ -276,11 +163,17 @@ i.coveo-sprites-misc-alert, .coveo-sprites-misc-alert {
 .fill-salesforce-blue {
   fill: #00a0de; }
 
+.text-salesforce-blue {
+  color: #00a0de; }
+
 .bg-google-red {
   background-color: #dd4b39; }
 
 .fill-google-red {
   fill: #dd4b39; }
+
+.text-google-red {
+  color: #dd4b39; }
 
 /* */
 /* Common */
@@ -1781,8 +1674,8 @@ div.datepicker th a.datepickerMonth {
   display: inline-block; }
   .dropdown .dropdown-toggle {
     display: inline-block;
-    background-color: #ffffff;
-    color: #1c2e44;
+    background-color: #f7f8f9;
+    color: #263e55;
     font-size: 11px;
     text-transform: uppercase; }
     .dropdown .dropdown-toggle .dropdown-toggle-arrow {
@@ -1797,10 +1690,10 @@ div.datepicker th a.datepickerMonth {
   .dropdown .dropdown-menu {
     margin: 0;
     min-width: 100%;
-    border: 1px solid #1c2e44;
+    border: 1px solid #263e55;
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.41);
-    color: #1c2e44; }
+    color: #263e55; }
     .dropdown .dropdown-menu li > a, .dropdown .dropdown-menu li > span {
       padding: 5px 10px;
       line-height: 16px;
@@ -1811,8 +1704,8 @@ div.datepicker th a.datepickerMonth {
       display: block; }
       .dropdown .dropdown-menu li > a:hover, .dropdown .dropdown-menu li > a:focus, .dropdown .dropdown-menu li > span:hover, .dropdown .dropdown-menu li > span:focus {
         background: none;
-        background-color: #f5f6f7;
-        color: #1c2e44; }
+        background-color: #e6ecf0;
+        color: #263e55; }
     .dropdown .dropdown-menu li.divider {
       height: 1px;
       background-color: #cdcfd1; }
@@ -2207,8 +2100,7 @@ label.coveo-slide-toggle-double {
       opacity: 0.4; }
 
 .coveo-admin .header {
-  height: 67px;
-  background: #296896 url("http://imgh.us/polyart_1.svg") center; }
+  height: 67px; }
   .coveo-admin .header .header-logo .admin-logo {
     margin-top: 14px;
     margin-left: 55px;
@@ -2225,7 +2117,7 @@ label.coveo-slide-toggle-double {
     .coveo-admin .header .header-menu .dropdown .dropdown-toggle {
       padding: 8px 25px 7px 0;
       background-color: transparent;
-      color: #ffffff;
+      color: #f7f8f9;
       border: none; }
       .coveo-admin .header .header-menu .dropdown .dropdown-toggle .dropdown-toggle-arrow {
         margin-top: 7px;
@@ -2235,7 +2127,7 @@ label.coveo-slide-toggle-double {
   height: 41px;
   width: 41px;
   border-radius: 100%;
-  border: solid 2px #ffffff; }
+  border: solid 2px #f7f8f9; }
 
 .coveo-admin .member .member-info {
   float: right;
