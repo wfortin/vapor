@@ -49,9 +49,10 @@ html {
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif; }
 
-.bg-orange {
-  background-color: #f58020; }
+.bg-dark-blue {
+  background-color: #263e55; }
 
+<<<<<<< HEAD
 .fill-orange {
   fill: #f58020; }
 
@@ -63,14 +64,31 @@ body {
 
 .bg-light-gray {
   background-color: #f5f6f7; }
+=======
+.fill-dark-blue {
+  fill: #263e55; }
+
+.text-dark-blue {
+  color: #263e55; }
+
+.bg-medium-blue {
+  background-color: #1d4f76; }
+
+.fill-medium-blue {
+  fill: #1d4f76; }
+
+.text-medium-blue {
+  color: #1d4f76; }
+>>>>>>> master
 
 .fill-light-gray {
   fill: #f5f6f7; }
 
 .bg-light-blue {
-  background-color: #2b4b72; }
+  background-color: #296896; }
 
 .fill-light-blue {
+<<<<<<< HEAD
   fill: #2b4b72; }
 
 .bg-dark-blue {
@@ -81,6 +99,57 @@ body {
 
 .bg-black {
   background-color: #1d1f21; }
+=======
+  fill: #296896; }
+
+.text-light-blue {
+  color: #296896; }
+
+.bg-dark-grey {
+  background-color: #373737; }
+
+.fill-dark-grey {
+  fill: #373737; }
+
+.text-dark-grey {
+  color: #373737; }
+
+.bg-medium-grey {
+  background-color: #bcc3ca; }
+
+.fill-medium-grey {
+  fill: #bcc3ca; }
+
+.text-medium-grey {
+  color: #bcc3ca; }
+
+.bg-light-grey {
+  background-color: #e6ecf0; }
+
+.fill-light-grey {
+  fill: #e6ecf0; }
+
+.text-light-grey {
+  color: #e6ecf0; }
+
+.bg-white {
+  background-color: #f7f8f9; }
+
+.fill-white {
+  fill: #f7f8f9; }
+
+.text-white {
+  color: #f7f8f9; }
+
+.bg-orange {
+  background-color: #f58020; }
+
+.fill-orange {
+  fill: #f58020; }
+
+.text-orange {
+  color: #f58020; }
+>>>>>>> master
 
 .fill-black {
   fill: #1d1f21; }
@@ -91,23 +160,115 @@ body {
 .fill-red {
   fill: #f44336; }
 
+<<<<<<< HEAD
+=======
+.text-red {
+  color: #f44336; }
+
+>>>>>>> master
 .bg-yellow {
   background-color: #ffc200; }
 
 .fill-yellow {
   fill: #ffc200; }
 
+<<<<<<< HEAD
+=======
+.text-yellow {
+  color: #ffc200; }
+
+>>>>>>> master
 .bg-green {
   background-color: #4caf50; }
 
 .fill-green {
   fill: #4caf50; }
 
+<<<<<<< HEAD
+=======
+.text-green {
+  color: #4caf50; }
+
+>>>>>>> master
 .bg-blue {
   background-color: #1194f6; }
 
 .fill-blue {
   fill: #1194f6; }
+<<<<<<< HEAD
+=======
+
+.text-blue {
+  color: #1194f6; }
+
+/* */
+/* Common */
+/* Headings */
+/* Buttons */
+/* Forms */
+/* Checkboxes */
+/* Table */
+/* Controls */
+/* Alerts */
+/* Users */
+/* Organizations */
+/* Timeline */
+/* Datepicker */
+@font-face {
+  font-family: 'source_code_pro_regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/SourceCodePro-Regular.eot");
+  src: url("../fonts/SourceCodePro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceCodePro-Regular.woff") format("woff"), url("../fonts/SourceCodePro-Regular.ttf") format("truetype"); }
+
+.coveo-sprites-misc-closepopup,
+.coveo-filter-container input.filter-box + span:after,
+.coveo-sprites-misc-filter,
+.coveo-sprites-misc-spinner_arrow_down,
+.coveo-sprites-misc-spinner_arrow_up,
+.coveo-sprites-misc-alert,
+.coveo-sprites-misc-panel-collapsed,
+.collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon,
+.coveo-sprites-tables-sort_asc,
+.coveo-sprites-misc-panel-expended,
+.collapsable-panel-group .panel .panel-heading i.toggle-icon,
+.coveo-sprites-tables-sort_desc {
+  background-image: url("../images/CoveoStyleGuide.Sprites.png");
+  display: inline-block;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: 83px 16px; }
+
+i.coveo-sprites-misc-closepopup, .coveo-sprites-misc-closepopup, .coveo-filter-container input.filter-box + span:after {
+  background-position: 0px 0px;
+  width: 16px;
+  height: 16px;
+  text-indent: 16px; }
+
+i.coveo-sprites-misc-filter, .coveo-sprites-misc-filter {
+  background-position: -16px 0px;
+  width: 12px;
+  height: 12px;
+  text-indent: 12px; }
+
+i.coveo-sprites-misc-spinner_arrow_down, .coveo-sprites-misc-spinner_arrow_down {
+  background-position: -28px 0px;
+  width: 12px;
+  height: 12px;
+  text-indent: 12px; }
+
+i.coveo-sprites-misc-spinner_arrow_up, .coveo-sprites-misc-spinner_arrow_up {
+  background-position: -40px 0px;
+  width: 12px;
+  height: 12px;
+  text-indent: 12px; }
+
+i.coveo-sprites-misc-alert, .coveo-sprites-misc-alert {
+  background-position: -52px 0px;
+  width: 11px;
+  height: 11px;
+  text-indent: 11px; }
+>>>>>>> master
 
 .bg-salesforce-blue {
   background-color: #00a0de; }
@@ -290,9 +451,6 @@ h5 {
 
 h6 {
   font-size: 11.9px; }
-
-.text-white {
-  color: #ffffff; }
 
 @font-face {
   font-family: 'source_code_pro_regular';
@@ -524,6 +682,9 @@ a {
   .btn:focus {
     box-shadow: 0 0 2px 1px #325f82;
     outline: none; }
+
+a.btn {
+  line-height: 14px; }
 
 .btn-slim {
   padding: 0;
