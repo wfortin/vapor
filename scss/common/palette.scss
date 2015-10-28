@@ -12,11 +12,22 @@ $yellow: #ffc200;
 $green: #4caf50;
 $blue: #1194f6;
 
+// Brands
+$salesforce-blue: #00a0de;
+$google-red: #dd4b39;
+
 $palette-primary: orange $orange, white $white, light-gray $light-gray, light-blue $light-blue, dark-blue $dark-blue, black $black;
-$palette-secondary: red $red, yellow $yellow, green $green, blue $blue;
+$palette-secondary: red $red, yellow $yellow, green $green, blue $blue, salesforce-blue $salesforce-blue, google-red $google-red;
 
 @each $color in join($palette-primary, $palette-secondary) {
   .bg-#{nth($color, 1)} {
     background-color: nth($color, 2);
   }
+
+  .fill-#{nth($color, 1)} {
+    fill: nth($color, 2);
+  }
 }
+
+// Other colors
+$border-color: #cdcfd1;
