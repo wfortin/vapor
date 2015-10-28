@@ -249,6 +249,83 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
   height: 6px;
   text-indent: 6px; }
 
+.inline {
+  display: inline; }
+
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.table {
+  display: table; }
+
+.table-cell {
+  display: table-cell; }
+
+.overflow-hidden {
+  overflow: hidden; }
+
+.overflow-scroll {
+  overflow: scroll; }
+
+.overflow-auto {
+  overflow: auto; }
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: ' '; }
+
+.clearfix:after {
+  clear: both; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.fullscreen {
+  min-height: 100vh; }
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.flex-auto {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+     -moz-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0; }
+
+.center-align {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 /* */
 /* Common */
 /* Headings */
@@ -446,22 +523,22 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3 {
   line-height: 40px; }
 
-h1 {
+h1, .h1 {
   font-size: 38.5px; }
 
-h2 {
+h2, .h2 {
   font-size: 31.5px; }
 
-h3 {
+h3, .h3 {
   font-size: 24.5px; }
 
-h4 {
+h4, .h4 {
   font-size: 17.5px; }
 
-h5 {
-  font-size: 14px; }
+h5, .h5 {
+  font-size: 13px; }
 
-h6 {
+h6, .h6 {
   font-size: 11.9px; }
 
 @font-face {
@@ -591,6 +668,7 @@ a {
 /* Timeline */
 /* Datepicker */
 .btn {
+  position: relative;
   display: inline-block;
   height: 25px;
   padding: 5px 10px 5px;
@@ -812,6 +890,31 @@ a.btn {
 
 .input-append {
   margin-bottom: 0; }
+
+.btn-login {
+  display: block;
+  width: 240px;
+  height: 54px;
+  padding-right: 20px;
+  padding-left: 74px;
+  margin: 0 auto 13px;
+  color: #373737;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #f7f8f9;
+  border: 1px solid #bcc3ca; }
+  .btn-login .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 54px;
+    height: 54px -1px;
+    line-height: 54px;
+    border-right: 1px solid #bcc3ca; }
+  .btn-login:hover, .btn-login:focus {
+    color: #373737;
+    background-color: #e6ecf0; }
 
 /* */
 /* Common */
@@ -2334,5 +2437,40 @@ form .coveo-flex-form {
             flex: auto;
     width: 0;
     margin: 10px 0 0 10px; }
+
+.splash-header {
+  position: absolute;
+  width: 100%;
+  height: 55vh;
+  min-height: 230px; }
+
+.bg-polygon {
+  background: #296896 url("../images/polyart.svg");
+  background-size: cover; }
+
+.splash-container {
+  z-index: 1;
+  width: 495px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.splash-logo svg {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 15px auto 60px; }
+
+.splash-box {
+  text-align: center;
+  background: #f7f8f9; }
+  .splash-box .title {
+    padding: 70px 0 40px; }
+  .splash-box .footer {
+    padding: 17px;
+    margin-top: 50px; }
+
+.splash-footer {
+  height: 50px;
+  padding: 17px 247px 17px; }
 
 /*# sourceMappingURL=../css/CoveoStyleGuide.css.map */
