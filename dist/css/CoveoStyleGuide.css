@@ -315,6 +315,12 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
   padding-left: 0;
   list-style: none; }
 
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", Arial, Helvetica, sans-serif; }
   h1.light, h2.light, h3.light, h4.light, h5.light, h6.light {
@@ -1693,7 +1699,8 @@ div.datepicker th a.datepickerMonth {
     border: 1px solid #263e55;
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.41);
-    color: #263e55; }
+    color: #263e55;
+    background-color: #f7f8f9; }
     .dropdown .dropdown-menu li > a, .dropdown .dropdown-menu li > span {
       padding: 5px 10px;
       line-height: 16px;
@@ -2100,8 +2107,10 @@ label.coveo-slide-toggle-double {
       opacity: 0.4; }
 
 .coveo-admin .header {
-  height: 67px; }
-  .coveo-admin .header .header-logo .admin-logo {
+  height: 67px;
+  background-color: #296896;
+  color: #f7f8f9; }
+  .coveo-admin .header .admin-logo {
     margin-top: 14px;
     margin-left: 55px;
     width: 100px;
@@ -2112,16 +2121,6 @@ label.coveo-slide-toggle-double {
     border-left: solid 1px rgba(0, 0, 0, 0.1); }
     .coveo-admin .header .header-section.mod-padded {
       padding: 15px 30px; }
-  .coveo-admin .header .header-menu {
-    margin-left: 30px; }
-    .coveo-admin .header .header-menu .dropdown .dropdown-toggle {
-      padding: 8px 25px 7px 0;
-      background-color: transparent;
-      color: #f7f8f9;
-      border: none; }
-      .coveo-admin .header .header-menu .dropdown .dropdown-toggle .dropdown-toggle-arrow {
-        margin-top: 7px;
-        margin-left: 15px; }
 
 .coveo-admin .member .member-avatar {
   height: 41px;
@@ -2148,7 +2147,9 @@ label.coveo-slide-toggle-double {
 .coveo-admin .dropdown.mod-menu .dropdown-toggle {
   cursor: pointer;
   height: auto;
-  text-transform: none; }
+  text-transform: none;
+  background-color: transparent;
+  border: none; }
 
 .coveo-admin .dropdown.mod-menu .dropdown-menu li > a, .coveo-admin .dropdown.mod-menu .dropdown-menu li > span {
   padding: 8px 38px; }
