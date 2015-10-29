@@ -2110,11 +2110,6 @@ label.coveo-slide-toggle-double {
   height: 67px;
   background-color: #296896;
   color: #f7f8f9; }
-  .coveo-admin .header .admin-logo {
-    margin-top: 14px;
-    margin-left: 55px;
-    width: 100px;
-    height: 37px; }
   .coveo-admin .header .header-section {
     height: -webkit-calc(100% - 9px);
     height: calc(100% - 9px);
