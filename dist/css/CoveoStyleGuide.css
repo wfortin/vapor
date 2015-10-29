@@ -1691,7 +1691,7 @@ div.datepicker th a.datepickerMonth {
   .dropdown button.dropdown-toggle {
     border: solid 1px #cdcfd1;
     border-radius: 2px;
-    height: 31px;
+    height: 32px;
     padding: 0 12px; }
   .dropdown .dropdown-menu {
     margin: 0;
@@ -2106,50 +2106,50 @@ label.coveo-slide-toggle-double {
       cursor: default;
       opacity: 0.4; }
 
-.coveo-admin .header {
+.coveo-styleguide .header {
   height: 67px;
   background-color: #296896;
   color: #f7f8f9; }
-  .coveo-admin .header .header-section {
+  .coveo-styleguide .header .header-section {
     height: -webkit-calc(100% - 9px);
     height: calc(100% - 9px);
     border-left: solid 1px rgba(0, 0, 0, 0.1); }
-    .coveo-admin .header .header-section.mod-padded {
-      padding: 15px 30px; }
+    .coveo-styleguide .header .header-section.mod-padded {
+      padding: 13px 30px; }
 
-.coveo-admin .member .member-avatar {
+.coveo-styleguide .member .member-avatar {
   height: 41px;
   width: 41px;
   border-radius: 100%;
   border: solid 2px #f7f8f9; }
 
-.coveo-admin .member .member-info {
+.coveo-styleguide .member .member-info {
   float: right;
   margin: 3px 0 0 14px; }
-  .coveo-admin .member .member-info .member-info-name {
+  .coveo-styleguide .member .member-info .member-info-name {
     line-height: 16px;
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 700; }
-  .coveo-admin .member .member-info .member-info-provider {
+  .coveo-styleguide .member .member-info .member-info-provider {
     vertical-align: text-bottom; }
-  .coveo-admin .member .member-info .member-info-email {
+  .coveo-styleguide .member .member-info .member-info-email {
     line-height: 15px;
     font-size: 12px;
     font-weight: 300;
     margin-top: 2px; }
 
-.coveo-admin .dropdown.mod-menu .dropdown-toggle {
+.coveo-styleguide .dropdown.mod-menu .dropdown-toggle {
   cursor: pointer;
   height: auto;
   text-transform: none;
   background-color: transparent;
   border: none; }
 
-.coveo-admin .dropdown.mod-menu .dropdown-menu li > a, .coveo-admin .dropdown.mod-menu .dropdown-menu li > span {
+.coveo-styleguide .dropdown.mod-menu .dropdown-menu li > a, .coveo-styleguide .dropdown.mod-menu .dropdown-menu li > span {
   padding: 8px 38px; }
 
-.coveo-admin .dropdown.mod-menu .dropdown-menu li.divider {
+.coveo-styleguide .dropdown.mod-menu .dropdown-menu li.divider {
   margin: 8px 0; }
 
 /* */
