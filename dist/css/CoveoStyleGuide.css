@@ -1096,18 +1096,18 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
   width: 260px; }
   .coveo-filter-container .filter-icon .coveo-sprites-misc-filter {
     position: absolute;
-    top: 7px;
+    top: 10px;
     left: 8px;
     cursor: default; }
   .coveo-filter-container input.filter-box {
     width: 260px;
-    height: 25px;
+    height: 32px;
     padding-right: 25px;
     padding-left: 25px;
     margin: 0; }
     .coveo-filter-container input.filter-box + span {
       position: absolute;
-      top: 8px;
+      top: 11px;
       right: 10px;
       display: inline-block; }
       .coveo-filter-container input.filter-box + span.hide {
@@ -1162,7 +1162,7 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
         .coveo-table-actions-container .coveo-table-actions .action-bar .dropdown-menu .dropdown-arrow {
           right: 5px; }
     .coveo-table-actions-container .coveo-table-actions .coveo-filter-container {
-      margin: 9px 0; }
+      margin: 10px 0; }
     .coveo-table-actions-container .coveo-table-actions .prompt {
       display: table-cell;
       vertical-align: middle; }
@@ -1807,18 +1807,18 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
   width: 260px; }
   .coveo-filter-container .filter-icon .coveo-sprites-misc-filter {
     position: absolute;
-    top: 7px;
+    top: 10px;
     left: 8px;
     cursor: default; }
   .coveo-filter-container input.filter-box {
     width: 260px;
-    height: 25px;
+    height: 32px;
     padding-right: 25px;
     padding-left: 25px;
     margin: 0; }
     .coveo-filter-container input.filter-box + span {
       position: absolute;
-      top: 8px;
+      top: 11px;
       right: 10px;
       display: inline-block; }
       .coveo-filter-container input.filter-box + span.hide {
