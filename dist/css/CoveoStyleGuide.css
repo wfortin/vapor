@@ -287,8 +287,8 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
   float: right; }
 
 .fullscreen {
-  min-height: 100vh;
-  min-width: 100vw; }
+  min-width: 100vw;
+  min-height: 100vh; }
 
 .hidden {
   display: none;
@@ -677,22 +677,16 @@ a {
 
 .color-dot {
   display: inline-block;
+  background-color: #4caf50;
   border-radius: 100%; }
-
-.color-dot.critical, .color-dot.stopped {
-  background-color: #f44336; }
-
-.color-dot.major {
-  background-color: #f58020; }
-
-.color-dot.minor {
-  background-color: #ffc200; }
-
-.color-dot.none, .color-dot.normal {
-  background-color: #4caf50; }
-
-.color-dot.info {
-  background-color: #1194f6; }
+  .color-dot.state-critical {
+    background-color: #f44336; }
+  .color-dot.state-major {
+    background-color: #f58020; }
+  .color-dot.state-minor {
+    background-color: #ffc200; }
+  .color-dot.state-info {
+    background-color: #1194f6; }
 
 .btn {
   display: inline-block;
