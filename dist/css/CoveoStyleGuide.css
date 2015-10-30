@@ -287,7 +287,8 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
   float: right; }
 
 .fullscreen {
-  min-height: 100vh; }
+  min-height: 100vh;
+  min-width: 100vw; }
 
 .hidden {
   display: none;
@@ -659,8 +660,8 @@ a {
     height: 100%; }
 
 .icon-small {
-  width: 16px;
-  height: 16px; }
+  width: 17px;
+  height: 17px; }
 
 .icon-medium {
   width: 24px;
@@ -916,7 +917,7 @@ a.btn {
 .input-append {
   margin-bottom: 0; }
 
-.btn-login {
+.btn-alternate {
   position: relative;
   display: block;
   width: 240px;
@@ -929,7 +930,7 @@ a.btn {
   font-weight: 400;
   background-color: #f7f8f9;
   border: 1px solid #bcc3ca; }
-  .btn-login .icon {
+  .btn-alternate .btn-prepend {
     position: absolute;
     top: 0;
     left: 0;
@@ -939,7 +940,7 @@ a.btn {
     padding: 8px;
     line-height: 54px;
     border-right: 1px solid #bcc3ca; }
-  .btn-login:hover, .btn-login:focus {
+  .btn-alternate:hover, .btn-alternate:focus {
     color: #373737;
     background-color: #e6ecf0; }
 
@@ -2490,9 +2491,11 @@ form .coveo-flex-form {
 .splash-box {
   text-align: center;
   background: #f7f8f9; }
-  .splash-box .title {
+  .splash-box .splash-box-title {
     padding: 70px 0 40px; }
-  .splash-box .footer {
+  .splash-box .splash-box-description {
+    padding-bottom: 50px; }
+  .splash-box .splash-box-footer {
     padding: 17px;
     margin-top: 50px; }
 

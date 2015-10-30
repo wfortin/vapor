@@ -2,7 +2,7 @@ $btn-login-height: 54px;
 $btn-login-padding-left-right: 20px;
 $btn-login-padding-border: 1px solid $medium-grey;
 
-.btn-login {
+.btn-alternate {
   position: relative;
   display: block;
   width: 240px;
@@ -18,7 +18,7 @@ $btn-login-padding-border: 1px solid $medium-grey;
   background-color: $white;
   border: $btn-login-padding-border;
 
-  .icon {
+  .btn-prepend {
     position: absolute;
     top: 0;
     left: 0;
