@@ -2,7 +2,7 @@
   position: absolute;
 
   width: 100%;
-  height: 55vh;
+  height: 30vh;
   min-height: 230px;
 }
 
@@ -35,6 +35,10 @@
 
   .title {
     padding: 70px 0 40px;
+  }
+
+  .description {
+    padding-bottom: 50px;
   }
 
   .footer {

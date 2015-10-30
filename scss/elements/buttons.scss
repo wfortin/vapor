@@ -1,6 +1,3 @@
-@import '../common/font';
-@import '../common/colors';
-
 @mixin btn-colorize($btn-background, $btn-background-hover, $btn-background-disabled) {
   color: $button-text-color;
 
@@ -64,8 +61,6 @@
 }
 
 .btn {
-  position: relative;
-
   display: inline-block;
   height: 25px;
   padding: 5px 10px 5px;

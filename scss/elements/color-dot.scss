@@ -1,0 +1,20 @@
+.color-dot {
+  display: inline-block;
+
+  border-radius: 100%;
+}
+.color-dot.critical, .color-dot.stopped {
+  background-color: $red;
+}
+.color-dot.major {
+  background-color: $orange;
+}
+.color-dot.minor {
+  background-color: $yellow;
+}
+.color-dot.none, .color-dot.normal {
+  background-color: $green;
+}
+.color-dot.info {
+  background-color: $blue;
+}
