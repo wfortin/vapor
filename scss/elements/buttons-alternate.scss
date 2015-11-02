@@ -9,15 +9,20 @@ $btn-login-padding-border: 1px solid $medium-grey;
   width: 240px;
   height: $btn-login-height;
   padding-right: $btn-login-padding-left-right;
-  padding-left: $btn-login-height + $btn-login-padding-left-right;
+  padding-left: $btn-login-padding-left-right;
   margin: 0 auto 13px;
 
   color: $dark-grey;
   font-size: 14px;
   font-weight: 400;
+  line-height: $btn-login-height;
 
   background-color: $white;
   border: $btn-login-padding-border;
+
+  &.mod-prepend {
+    padding-left: $btn-login-height + $btn-login-padding-left-right;
+  }
 
   .btn-prepend {
     position: absolute;
