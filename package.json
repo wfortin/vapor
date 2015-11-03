@@ -55,5 +55,8 @@
     "resources",
     "gulpfile.js",
     "LICENSE"
-  ]
+  ],
+  "dependencies": {
+    "gulp-files-to-json": "^0.1.1"
+  }
 }
