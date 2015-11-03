@@ -6,10 +6,6 @@
 @import 'common/font';
 @import 'sprites';
 
-// Utility
-@import 'utility/layout';
-@import 'utility/flex';
-
 // Typography
 @import 'typography/headings';
 @import 'elements/labels';
@@ -46,6 +42,7 @@
   @import 'components/header';
   @import 'components/member';
   @import 'components/menu';
+  @import 'components/navigation';
 }
 
 // Forms
@@ -53,3 +50,7 @@
 @import 'forms/table-form';
 @import 'forms/block-form';
 @import 'forms/flex-form';
+
+// Utility
+@import 'utility/layout';
+@import 'utility/flex';
