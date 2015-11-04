@@ -8,9 +8,8 @@ $navigation-locked-color: $medium-grey;
 
 .navigation {
   z-index: 50;
-  position: fixed;
-  height: 100vh;
   width: $navigation-width;
+  height: 100vh;
   background-color: $navigation-background-color;
   user-select: none;
 
@@ -22,14 +21,14 @@ $navigation-locked-color: $medium-grey;
     position: relative;
     float: left;
     z-index: 899;
-    height: 100vh;
+    height: calc(100vh - #{$header-height});
     width: $navigation-width;
     background-color: $navigation-background-color;
     color: $white;
 
     .navigation-menu-sections {
       @include slim-scroll(#444444, #D3D3D3);
-      height: calc(100% - #{$header-height});
+      height: 100%;
       overflow: auto;
 
       .navigation-menu-section {

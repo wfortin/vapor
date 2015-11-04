@@ -1,0 +1,6 @@
+// This file contains overrides to the base Styleguide so they will be displayed correctly in the Styleguide documentation.
+.sg-component-display {
+  .navigation, .navigation-menu {
+    max-height: 300px;
+  }
+}

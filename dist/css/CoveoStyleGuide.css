@@ -1725,8 +1725,7 @@ div.datepicker th a.datepickerMonth {
     display: inline-block;
     background-color: #f7f8f9;
     color: #263e55;
-    font-size: 11px;
-    text-transform: uppercase; }
+    font-size: 11px; }
     .dropdown .dropdown-toggle .dropdown-toggle-arrow {
       float: right;
       margin-top: -5px;
@@ -2238,9 +2237,8 @@ label.coveo-slide-toggle-double {
 
 .coveo-styleguide .navigation {
   z-index: 50;
-  position: fixed;
-  height: 100vh;
   width: 245px;
+  height: 100vh;
   background-color: #263e55;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2252,13 +2250,13 @@ label.coveo-slide-toggle-double {
     position: relative;
     float: left;
     z-index: 899;
-    height: 100vh;
+    height: -webkit-calc(100vh - 67px);
+    height: calc(100vh - 67px);
     width: 245px;
     background-color: #263e55;
     color: #f7f8f9; }
     .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections {
-      height: -webkit-calc(100% - 67px);
-      height: calc(100% - 67px);
+      height: 100%;
       overflow: auto; }
       .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections::-webkit-scrollbar, .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections ::-webkit-scrollbar {
         width: 6px;
