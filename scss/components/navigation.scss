@@ -8,9 +8,12 @@ $navigation-locked-color: $medium-grey;
 
 .navigation {
   z-index: 50;
+
   width: $navigation-width;
   height: 100vh;
+
   background-color: $navigation-background-color;
+
   user-select: none;
 
   *, *:before, *:after {
@@ -19,27 +22,34 @@ $navigation-locked-color: $medium-grey;
 
   .navigation-menu {
     position: relative;
-    float: left;
     z-index: 899;
-    height: calc(100vh - #{$header-height});
+
+    float: left;
     width: $navigation-width;
-    background-color: $navigation-background-color;
+    height: calc(100vh - #{$header-height});
+
     color: $white;
 
+    background-color: $navigation-background-color;
+
     .navigation-menu-sections {
-      @include slim-scroll(#444444, #D3D3D3);
       height: 100%;
       overflow: auto;
 
+      @include slim-scroll(#444444, #d3d3d3);
+
       .navigation-menu-section {
         .navigation-menu-section-header {
-          text-transform: uppercase;
-          background-color: $medium-blue;
-          height: 50px;
-          display: flex;
           align-items: center;
+
+          display: flex;
+          height: 50px;
+
           font-size: 13px;
           font-weight: 700;
+          text-transform: uppercase;
+
+          background-color: $medium-blue;
 
           .navigation-menu-section-header-icon {
             margin: 0 $navigation-section-icon-margin;
@@ -49,15 +59,19 @@ $navigation-locked-color: $medium-grey;
         .navigation-menu-section-items {
           .navigation-menu-section-item {
             font-weight: 300;
+
             border-left: $navigation-active-border-width solid transparent;
+
             cursor: pointer;
 
             .navigation-menu-section-item-link {
-              color: $white;
-              height: 30px;
-              display: flex;
               align-items: center;
+
+              display: flex;
+              height: 30px;
               padding-left: 2 * $navigation-section-icon-margin + $navigation-section-icon-size - $navigation-active-border-width;
+
+              color: $white;
 
               .navigation-menu-section-item-link-icon {
                 margin-right: 10px;
@@ -71,6 +85,7 @@ $navigation-locked-color: $medium-grey;
 
               .icon-folder-locked {
                 display: inline-block;
+
                 visibility: visible;
               }
             }
@@ -78,6 +93,7 @@ $navigation-locked-color: $medium-grey;
             &.state-closed {
               .icon-folder-closed {
                 display: inline-block;
+
                 visibility: visible;
               }
             }
@@ -85,6 +101,7 @@ $navigation-locked-color: $medium-grey;
             &.state-opened {
               .icon-folder-opened {
                 display: inline-block;
+
                 visibility: visible;
               }
             }
