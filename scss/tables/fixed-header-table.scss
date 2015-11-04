@@ -1,17 +1,15 @@
-@import '../common/colors';
-
 .fixed-header-table-container {
   position: relative;
 
   padding-top: 27px;
 
-  border-top: solid 2px $table-borders;
+  border-top: solid 1px $medium-grey;
 
   .fixed-header-table {
     overflow-y: scroll;
 
-    border-top: solid 2px $table-borders;
-    border-bottom: solid 2px $table-borders;
+    border-top: solid 1px $medium-grey;
+    border-bottom: solid 1px $medium-grey;
 
     table thead tr {
       height: 0;
