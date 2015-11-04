@@ -3,13 +3,13 @@
 
   padding-top: 27px;
 
-  border-top: solid 1px $medium-grey;
+  border-top: $table-border;
 
   .fixed-header-table {
     overflow-y: scroll;
 
-    border-top: solid 1px $medium-grey;
-    border-bottom: solid 1px $medium-grey;
+    border-top: $table-border;
+    border-bottom: $table-border;
 
     table thead tr {
       height: 0;

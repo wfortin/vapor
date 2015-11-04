@@ -1,5 +1,5 @@
-@import '../common/colors';
-@import '../sprites';
+$table-border-width: 1px;
+$table-border: $table-border-width solid $medium-grey;
 
 table {
   width: 100%;
@@ -43,8 +43,8 @@ table {
       line-height: normal;
       white-space: nowrap;
 
-      border-top: solid 1px $medium-grey;
-      border-bottom: solid 1px $medium-grey;
+      border-top: $table-border;
+      border-bottom: $table-border;
 
       &.admin-sort {
         position: relative;
@@ -135,7 +135,7 @@ table {
 
       text-align: left;
 
-      border-bottom: solid 1px $medium-grey;
+      border-bottom: $table-border;
 
       &.edit.enabled {
         color: $medium-blue;

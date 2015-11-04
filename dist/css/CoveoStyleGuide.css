@@ -839,90 +839,6 @@ a.btn {
     color: #373737;
     background-color: #e6ecf0; }
 
-/* */
-/* Common */
-/* Headings */
-/* Buttons */
-/* Forms */
-/* Checkboxes */
-/* Controls */
-/* Alerts */
-/* Users */
-/* Organizations */
-/* Timeline */
-/* Datepicker */
-.coveo-sprites-misc-closepopup,
-.coveo-filter-container input.filter-box + span:after,
-.coveo-sprites-misc-filter,
-.coveo-sprites-misc-spinner_arrow_down,
-.coveo-sprites-misc-spinner_arrow_up,
-.coveo-sprites-misc-alert,
-.coveo-sprites-misc-panel-collapsed,
-.collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon,
-.coveo-sprites-tables-sort_asc,
-.coveo-sprites-misc-panel-expended,
-.collapsable-panel-group .panel .panel-heading i.toggle-icon,
-.coveo-sprites-tables-sort_desc {
-  background-image: url("../images/CoveoStyleGuide.Sprites.png");
-  display: inline-block;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  background-size: 83px 16px; }
-
-i.coveo-sprites-misc-closepopup, .coveo-sprites-misc-closepopup, .coveo-filter-container input.filter-box + span:after {
-  background-position: 0px 0px;
-  width: 16px;
-  height: 16px;
-  text-indent: 16px; }
-
-i.coveo-sprites-misc-filter, .coveo-sprites-misc-filter {
-  background-position: -16px 0px;
-  width: 12px;
-  height: 12px;
-  text-indent: 12px; }
-
-i.coveo-sprites-misc-spinner_arrow_down, .coveo-sprites-misc-spinner_arrow_down {
-  background-position: -28px 0px;
-  width: 12px;
-  height: 12px;
-  text-indent: 12px; }
-
-i.coveo-sprites-misc-spinner_arrow_up, .coveo-sprites-misc-spinner_arrow_up {
-  background-position: -40px 0px;
-  width: 12px;
-  height: 12px;
-  text-indent: 12px; }
-
-i.coveo-sprites-misc-alert, .coveo-sprites-misc-alert {
-  background-position: -52px 0px;
-  width: 11px;
-  height: 11px;
-  text-indent: 11px; }
-
-i.coveo-sprites-misc-panel-collapsed, .collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon, .coveo-sprites-misc-panel-collapsed, .collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon {
-  background-position: -63px 0px;
-  width: 10px;
-  height: 10px;
-  text-indent: 10px; }
-
-i.coveo-sprites-tables-sort_asc, .coveo-sprites-tables-sort_asc {
-  background-position: -63px -10px;
-  width: 6px;
-  height: 6px;
-  text-indent: 6px; }
-
-i.coveo-sprites-misc-panel-expended, .collapsable-panel-group .panel .panel-heading i.toggle-icon, .coveo-sprites-misc-panel-expended, .collapsable-panel-group .panel .panel-heading i.toggle-icon {
-  background-position: -73px 0px;
-  width: 10px;
-  height: 10px;
-  text-indent: 10px; }
-
-i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
-  background-position: -73px -10px;
-  width: 6px;
-  height: 6px;
-  text-indent: 6px; }
-
 table {
   width: 100%;
   text-align: left;
@@ -949,8 +865,8 @@ table {
     table thead tr th {
       line-height: normal;
       white-space: nowrap;
-      border-top: solid 1px #bcc3ca;
-      border-bottom: solid 1px #bcc3ca; }
+      border-top: 1px solid #bcc3ca;
+      border-bottom: 1px solid #bcc3ca; }
       table thead tr th.admin-sort {
         position: relative;
         cursor: pointer; }
@@ -997,7 +913,7 @@ table {
     table tr td {
       margin-left: 15px;
       text-align: left;
-      border-bottom: solid 1px #bcc3ca; }
+      border-bottom: 1px solid #bcc3ca; }
       table tr td.edit.enabled {
         color: #1d4f76;
         cursor: pointer; }
@@ -1091,11 +1007,11 @@ table {
 .fixed-header-table-container {
   position: relative;
   padding-top: 27px;
-  border-top: solid 1px #bcc3ca; }
+  border-top: 1px solid #bcc3ca; }
   .fixed-header-table-container .fixed-header-table {
     overflow-y: scroll;
-    border-top: solid 1px #bcc3ca;
-    border-bottom: solid 1px #bcc3ca; }
+    border-top: 1px solid #bcc3ca;
+    border-bottom: 1px solid #bcc3ca; }
     .fixed-header-table-container .fixed-header-table table thead tr {
       height: 0; }
       .fixed-header-table-container .fixed-header-table table thead tr th {
@@ -2434,7 +2350,7 @@ form .coveo-table-form {
       display: table-cell;
       vertical-align: middle;
       border-top: 2px solid white;
-      border-bottom: solid 1px #bcc3ca; }
+      border-bottom: 1px solid #bcc3ca; }
     form .coveo-table-form .form-group > label:first-child {
       width: 30%;
       padding: 0 10px;

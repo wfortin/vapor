@@ -32,7 +32,7 @@ form {
         vertical-align: middle;
 
         border-top: 2px solid white;
-        border-bottom: solid 1px $medium-grey;
+        border-bottom: $table-border;
       }
 
       & > label:first-child {
