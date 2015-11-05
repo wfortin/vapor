@@ -16,10 +16,7 @@ gulp.task('svg', 'Concat all svg files into one in a json format and export it t
                 removeComments: true    
             }]
         }))
-        .pipe(cheerio(function ($, file) {
-            // Each file will be run through cheerio and each corresponding `$` will be passed here.
-            // `file` is the gulp file object
-            // Make all h1 tags uppercase
+        .pipe(cheerio(function ($) {
             $('svg').each(function () {
                 var svg = $(this);
                 if (svg) {
