@@ -181,7 +181,6 @@ body {
 /* Buttons */
 /* Forms */
 /* Checkboxes */
-/* Table */
 /* Controls */
 /* Alerts */
 /* Users */
@@ -266,100 +265,6 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
   width: 6px;
   height: 6px;
   text-indent: 6px; }
-
-.inline {
-  display: inline; }
-
-.block {
-  display: block; }
-
-.inline-block {
-  display: inline-block; }
-
-.table {
-  display: table; }
-
-.table-cell {
-  display: table-cell; }
-
-.overflow-hidden {
-  overflow: hidden; }
-
-.overflow-scroll {
-  overflow: scroll; }
-
-.overflow-auto {
-  overflow: auto; }
-
-.clearfix:before, .clearfix:after {
-  display: table;
-  content: ' '; }
-
-.clearfix:after {
-  clear: both; }
-
-.left {
-  float: left; }
-
-.right {
-  float: right; }
-
-.fullscreen {
-  min-width: 100vw;
-  min-height: 100vh; }
-
-.hidden {
-  display: none;
-  visibility: hidden; }
-
-.flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.flex-column {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.flex-auto {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-     -moz-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  min-width: 0;
-  min-height: 0; }
-
-.center-align {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.align-baseline {
-  vertical-align: baseline; }
-
-.align-top {
-  vertical-align: top; }
-
-.align-middle {
-  vertical-align: middle; }
-
-.align-bottom {
-  vertical-align: bottom; }
 
 @font-face {
   font-family: 'source_code_pro_regular';
@@ -458,7 +363,6 @@ h6, .h6 {
 /* Buttons */
 /* Forms */
 /* Checkboxes */
-/* Table */
 /* Controls */
 /* Alerts */
 /* Users */
@@ -540,7 +444,6 @@ h6, .h6 {
 /* Buttons */
 /* Forms */
 /* Checkboxes */
-/* Table */
 /* Controls */
 /* Alerts */
 /* Users */
@@ -551,24 +454,29 @@ a {
   color: #2c5985;
   text-decoration: none; }
 
-[class^='icon-'] {
-  display: inline-block; }
-
-.icon-small {
-  width: 17px;
-  height: 17px; }
-
-.icon-medium {
-  width: 24px;
-  height: 24px; }
-
-.icon-big {
-  width: 36px;
-  height: 36px; }
-
-.icon-fit {
-  width: 100%;
-  height: 100%; }
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  overflow: visible;
+  /* makes the icon 33% larger relative to the icon container */ }
+  .icon.mod-lg {
+    width: 1.33333em;
+    height: 1.33333em;
+    line-height: 1.33333em;
+    vertical-align: -15%; }
+  .icon.mod-2x {
+    width: 2em;
+    height: 2em; }
+  .icon.mod-3x {
+    width: 3em;
+    height: 3em; }
+  .icon.mod-4x {
+    width: 4em;
+    height: 4em; }
+  .icon.mod-5x {
+    width: 5em;
+    height: 5em; }
 
 .color-dot {
   display: inline-block;
@@ -685,7 +593,7 @@ a {
       .btn.btn-danger:disabled:hover, .btn.btn-danger.disabled:hover {
         background-color: #e39292; }
   .btn:focus {
-    box-shadow: 0 0 2px 1px #325f82;
+    box-shadow: 0 0 2px 1px #1d4f76;
     outline: none; }
 
 a.btn {
@@ -702,9 +610,9 @@ a.btn {
   border: none;
   border-radius: 0;
   cursor: pointer;
-  color: #1d1f21; }
+  color: #1d4f76; }
   .btn-slim svg {
-    fill: #1d1f21; }
+    fill: #1d4f76; }
   .btn-slim:hover {
     color: #656577;
     text-decoration: none; }
@@ -722,7 +630,7 @@ a.btn {
     cursor: default; }
   .btn-slim svg {
     vertical-align: sub;
-    fill: #1d1f21; }
+    fill: #1d4f76; }
   .btn-slim.btn-primary {
     color: #f57f03; }
     .btn-slim.btn-primary svg {
@@ -837,91 +745,6 @@ a.btn {
     color: #373737;
     background-color: #e6ecf0; }
 
-/* */
-/* Common */
-/* Headings */
-/* Buttons */
-/* Forms */
-/* Checkboxes */
-/* Table */
-/* Controls */
-/* Alerts */
-/* Users */
-/* Organizations */
-/* Timeline */
-/* Datepicker */
-.coveo-sprites-misc-closepopup,
-.coveo-filter-container input.filter-box + span:after,
-.coveo-sprites-misc-filter,
-.coveo-sprites-misc-spinner_arrow_down,
-.coveo-sprites-misc-spinner_arrow_up,
-.coveo-sprites-misc-alert,
-.coveo-sprites-misc-panel-collapsed,
-.collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon,
-.coveo-sprites-tables-sort_asc,
-.coveo-sprites-misc-panel-expended,
-.collapsable-panel-group .panel .panel-heading i.toggle-icon,
-.coveo-sprites-tables-sort_desc {
-  background-image: url("../images/CoveoStyleGuide.Sprites.png");
-  display: inline-block;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  background-size: 83px 16px; }
-
-i.coveo-sprites-misc-closepopup, .coveo-sprites-misc-closepopup, .coveo-filter-container input.filter-box + span:after {
-  background-position: 0px 0px;
-  width: 16px;
-  height: 16px;
-  text-indent: 16px; }
-
-i.coveo-sprites-misc-filter, .coveo-sprites-misc-filter {
-  background-position: -16px 0px;
-  width: 12px;
-  height: 12px;
-  text-indent: 12px; }
-
-i.coveo-sprites-misc-spinner_arrow_down, .coveo-sprites-misc-spinner_arrow_down {
-  background-position: -28px 0px;
-  width: 12px;
-  height: 12px;
-  text-indent: 12px; }
-
-i.coveo-sprites-misc-spinner_arrow_up, .coveo-sprites-misc-spinner_arrow_up {
-  background-position: -40px 0px;
-  width: 12px;
-  height: 12px;
-  text-indent: 12px; }
-
-i.coveo-sprites-misc-alert, .coveo-sprites-misc-alert {
-  background-position: -52px 0px;
-  width: 11px;
-  height: 11px;
-  text-indent: 11px; }
-
-i.coveo-sprites-misc-panel-collapsed, .collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon, .coveo-sprites-misc-panel-collapsed, .collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon {
-  background-position: -63px 0px;
-  width: 10px;
-  height: 10px;
-  text-indent: 10px; }
-
-i.coveo-sprites-tables-sort_asc, .coveo-sprites-tables-sort_asc {
-  background-position: -63px -10px;
-  width: 6px;
-  height: 6px;
-  text-indent: 6px; }
-
-i.coveo-sprites-misc-panel-expended, .collapsable-panel-group .panel .panel-heading i.toggle-icon, .coveo-sprites-misc-panel-expended, .collapsable-panel-group .panel .panel-heading i.toggle-icon {
-  background-position: -73px 0px;
-  width: 10px;
-  height: 10px;
-  text-indent: 10px; }
-
-i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
-  background-position: -73px -10px;
-  width: 6px;
-  height: 6px;
-  text-indent: 6px; }
-
 table {
   width: 100%;
   text-align: left;
@@ -941,18 +764,15 @@ table {
       padding-right: 20px; }
   table thead tr {
     height: 25px;
-    color: #666666;
+    color: #1d4f76;
     font-size: 12px;
     font-weight: bold;
     background-color: transparent; }
     table thead tr th {
       line-height: normal;
       white-space: nowrap;
-      border-top: solid 2px #e5eaec;
-      border-bottom: solid 2px #e5eaec; }
-      table thead tr th.metric {
-        color: #111111;
-        background-color: #ececec; }
+      border-top: 1px solid #bcc3ca;
+      border-bottom: 1px solid #bcc3ca; }
       table thead tr th.admin-sort {
         position: relative;
         cursor: pointer; }
@@ -978,11 +798,11 @@ table {
           table thead tr th.admin-sort.admin-sort-descending .admin-sort-icon i.coveo-sprites-tables-sort_desc, table thead tr th.admin-sort.sorting_desc .admin-sort-icon i.coveo-sprites-tables-sort_desc {
             opacity: 1; }
       table thead tr th.sorting_asc {
-        background-color: #ececec;
+        background-color: #e6ecf0;
         background-image: none;
         cursor: pointer; }
       table thead tr th.sorting_desc {
-        background-color: #ececec;
+        background-color: #e6ecf0;
         background-image: none;
         cursor: pointer; }
       table thead tr th.sorting {
@@ -990,7 +810,7 @@ table {
       table thead tr th.sorting_disabled {
         cursor: default; }
       table thead tr th.sorting:hover, table thead tr th.sorting_asc:hover, table thead tr th.sorting_desc:hover, table thead tr th.admin-sort:hover {
-        background-color: #ececec; }
+        background-color: #e6ecf0; }
   table tbody.table-loading {
     opacity: 0.3; }
   table tr {
@@ -999,9 +819,9 @@ table {
     table tr td {
       margin-left: 15px;
       text-align: left;
-      border-bottom: solid 1px #e5eaec; }
+      border-bottom: 1px solid #bcc3ca; }
       table tr td.edit.enabled {
-        color: #325f82;
+        color: #1d4f76;
         cursor: pointer; }
       table tr td .btn-icon, table tr td .dropdown-toggle {
         cursor: default;
@@ -1042,7 +862,7 @@ table {
           table tr td.actions .btn-group .dropdown-toggle span.menu {
             vertical-align: 1px; }
             table tr td.actions .btn-group .dropdown-toggle span.menu svg {
-              fill: #1d1f21; }
+              fill: #1d4f76; }
         table tr td.actions .btn-group.open .dropdown-toggle.enabled {
           border-radius: 4px; }
         table tr td.actions .btn-group .dropdown-menu {
@@ -1062,14 +882,14 @@ table {
         table tr td.actions .btn-icon span.delete {
           vertical-align: -3px; }
           table tr td.actions .btn-icon span.delete svg {
-            fill: #1d1f21; }
+            fill: #1d4f76; }
     table tr:first-child {
       padding-left: 10px; }
     table tr:hover > td {
-      background-color: #f8f8f8; }
+      background-color: #e6ecf0; }
       table tr:hover > td .prompt .prompt-danger {
-        background-color: #f8f8f8;
-        box-shadow: -15px 0 25px 0 #f8f8f8; }
+        background-color: #e6ecf0;
+        box-shadow: -15px 0 25px 0 #e6ecf0; }
     table tr.empty td {
       padding: 25px;
       text-align: center; }
@@ -1083,34 +903,21 @@ table {
         padding-left: 15px;
         border-left: 5px solid #fd7e27; }
   table.row-selected td, table.row-selected:hover td {
-    background-color: #f6f6f6; }
+    background-color: #e6ecf0; }
   table.confirm-delete .row-selected td, table.confirm-delete.row-selected:hover td {
     background-color: #faeaea;
     border-color: #cd3233;
     -webkit-transition: background-color 300ms;
             transition: background-color 300ms; }
 
-/* */
-/* Common */
-/* Headings */
-/* Buttons */
-/* Forms */
-/* Checkboxes */
-/* Table */
-/* Controls */
-/* Alerts */
-/* Users */
-/* Organizations */
-/* Timeline */
-/* Datepicker */
 .fixed-header-table-container {
   position: relative;
   padding-top: 27px;
-  border-top: solid 2px #e5eaec; }
+  border-top: 1px solid #bcc3ca; }
   .fixed-header-table-container .fixed-header-table {
     overflow-y: scroll;
-    border-top: solid 2px #e5eaec;
-    border-bottom: solid 2px #e5eaec; }
+    border-top: 1px solid #bcc3ca;
+    border-bottom: 1px solid #bcc3ca; }
     .fixed-header-table-container .fixed-header-table table thead tr {
       height: 0; }
       .fixed-header-table-container .fixed-header-table table thead tr th {
@@ -1136,7 +943,6 @@ table {
 /* Buttons */
 /* Forms */
 /* Checkboxes */
-/* Table */
 /* Controls */
 /* Alerts */
 /* Users */
@@ -1149,7 +955,6 @@ table {
 /* Buttons */
 /* Forms */
 /* Checkboxes */
-/* Table */
 /* Controls */
 /* Alerts */
 /* Users */
@@ -1268,21 +1073,21 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  border-top: 2px solid #e5eaec; }
+  border-top: 1px solid #bcc3ca; }
   .coveo-table-actions-container .coveo-table-actions {
     position: relative;
     display: table;
-    height: 43px;
+    height: 52px;
     padding: 0 10px; }
     .coveo-table-actions-container .coveo-table-actions:before {
       position: absolute;
-      top: -2px;
+      top: -1px;
       left: 0;
       display: block;
       width: 100%;
-      height: 2px;
+      height: 1px;
       content: '';
-      background-color: #e5eaec; }
+      background-color: #bcc3ca; }
     .coveo-table-actions-container .coveo-table-actions .action {
       display: table-cell;
       vertical-align: middle;
@@ -1309,7 +1114,7 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
           display: table-cell;
           vertical-align: middle; }
   .coveo-table-actions-container .coveo-table-actions + .coveo-table-actions {
-    border-left: 2px solid #e5eaec; }
+    border-left: 1px solid #bcc3ca; }
 
 /* */
 /* Common */
@@ -1317,7 +1122,6 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
 /* Buttons */
 /* Forms */
 /* Checkboxes */
-/* Table */
 /* Controls */
 /* Alerts */
 /* Users */
@@ -1340,7 +1144,7 @@ input[type=checkbox].coveo-checkbox {
     cursor: pointer; }
     input[type=checkbox].coveo-checkbox + button:hover, input[type=checkbox].coveo-checkbox + buttonfocus {
       background-color: #ffffff;
-      box-shadow: 0 0 2px #325f82; }
+      box-shadow: 0 0 2px #1d4f76; }
   input[type=checkbox].coveo-checkbox:disabled + button {
     cursor: default;
     opacity: 0.6; }
@@ -1376,7 +1180,7 @@ input[type=checkbox].coveo-checkbox {
       width: 8px;
       height: 0;
       content: '';
-      border-bottom: solid 2px #325f82; }
+      border-bottom: solid 2px #1d4f76; }
 
 label.coveo-checkbox-label {
   display: inline;
@@ -1395,7 +1199,6 @@ label.coveo-checkbox-label {
 /* Buttons */
 /* Forms */
 /* Checkboxes */
-/* Table */
 /* Controls */
 /* Alerts */
 /* Users */
@@ -1501,7 +1304,7 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
           transition-timing-function: ease; }
 
 .collapsable-panel-group .panel {
-  border-bottom: 2px solid #dddddd; }
+  border-bottom: 2px solid #bcc3ca; }
   .collapsable-panel-group .panel + .panel {
     margin-top: 15px; }
   .collapsable-panel-group .panel .panel-heading {
@@ -1510,7 +1313,7 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
       display: block;
       padding: 3px 0 3px 26px;
       margin-bottom: 5px;
-      color: #666666;
+      color: #1d4f76;
       font-family: "Open Sans", Arial, Helvetica, sans-serif;
       font-size: 15px;
       line-height: initial;
@@ -1532,7 +1335,6 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
 /* Buttons */
 /* Forms */
 /* Checkboxes */
-/* Table */
 /* Controls */
 /* Alerts */
 /* Users */
@@ -1790,7 +1592,7 @@ div.datepicker th a.datepickerMonth {
       text-decoration: none;
       cursor: pointer; }
     .datepicker table tbody tr td.datepickerSelected {
-      background-color: #325f82; }
+      background-color: #1d4f76; }
       .datepicker table tbody tr td.datepickerSelected.datepickerNotInMonth {
         background-color: #d2dce6; }
         .datepicker table tbody tr td.datepickerSelected.datepickerNotInMonth a {
@@ -1818,8 +1620,6 @@ div.datepicker th a.datepickerMonth {
   .dropdown .dropdown-toggle {
     display: inline-block;
     color: #263e55;
-    font-size: 11px;
-    text-transform: uppercase;
     background-color: #f7f8f9; }
     .dropdown .dropdown-toggle .dropdown-toggle-arrow {
       float: right;
@@ -1860,7 +1660,6 @@ div.datepicker th a.datepickerMonth {
 /* Buttons */
 /* Forms */
 /* Checkboxes */
-/* Table */
 /* Controls */
 /* Alerts */
 /* Users */
@@ -1971,7 +1770,6 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
 /* Buttons */
 /* Forms */
 /* Checkboxes */
-/* Table */
 /* Controls */
 /* Alerts */
 /* Users */
@@ -2014,7 +1812,7 @@ select, textarea, input[type='text'], input[type='password'], input[type='dateti
   color: #333333;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 16px;
-  border: 1px solid #cccccc;
+  border: 1px solid #bcc3ca;
   border-radius: 2px; }
 
 input[type='text'].admin-invisible-textbox, textarea.admin-invisible-textbox {
@@ -2118,7 +1916,7 @@ input[type=range].coveo-input-slider::-ms-tooltip {
     border-radius: 3px;
     cursor: pointer; }
     .admin-numeric-spinner.input-group .add-on div:hover {
-      background-color: #1d1f21; }
+      background-color: #1d4f76; }
     .admin-numeric-spinner.input-group .add-on div i {
       display: block; }
 
@@ -2128,7 +1926,6 @@ input[type=range].coveo-input-slider::-ms-tooltip {
 /* Buttons */
 /* Forms */
 /* Checkboxes */
-/* Table */
 /* Controls */
 /* Alerts */
 /* Users */
@@ -2153,7 +1950,7 @@ label.coveo-slide-toggle-label {
       cursor: default; }
   label.coveo-slide-toggle-label.boxed {
     padding: 8px 10px;
-    border: solid 1px #dddddd; }
+    border: solid 1px #bcc3ca; }
     label.coveo-slide-toggle-label.boxed .toggle-label {
       margin-right: 20px;
       line-height: 20px; }
@@ -2205,7 +2002,6 @@ label.coveo-slide-toggle-label {
 /* Buttons */
 /* Forms */
 /* Checkboxes */
-/* Table */
 /* Controls */
 /* Alerts */
 /* Users */
@@ -2337,13 +2133,101 @@ label.coveo-slide-toggle-double {
 .coveo-styleguide .dropdown.mod-menu .dropdown-menu li.divider {
   margin: 8px 0; }
 
+.coveo-styleguide .navigation {
+  z-index: 50;
+  width: 245px;
+  height: 100vh;
+  background-color: #263e55;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .coveo-styleguide .navigation *, .coveo-styleguide .navigation *:before, .coveo-styleguide .navigation *:after {
+    -webkit-font-smoothing: subpixel-antialiased; }
+  .coveo-styleguide .navigation .navigation-menu {
+    position: relative;
+    z-index: 51;
+    float: left;
+    width: 245px;
+    height: -webkit-calc(100vh - 67px);
+    height: calc(100vh - 67px);
+    color: #f7f8f9;
+    background-color: #263e55; }
+    .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections {
+      height: 100%;
+      overflow: auto; }
+      .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections::-webkit-scrollbar, .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px; }
+      .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections::-webkit-scrollbar-track, .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections ::-webkit-scrollbar-track {
+        background-color: #444444; }
+      .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections::-webkit-scrollbar-thumb, .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections ::-webkit-scrollbar-thumb {
+        background-color: #d3d3d3;
+        border-radius: 3px; }
+      .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections::-webkit-scrollbar-button, .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections ::-webkit-scrollbar-button {
+        width: 0;
+        height: 0; }
+      .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections .navigation-menu-section .navigation-menu-section-header {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+           -moz-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 50px;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: #1d4f76; }
+        .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections .navigation-menu-section .navigation-menu-section-header .navigation-menu-section-header-icon {
+          margin: 0 15px; }
+      .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections .navigation-menu-section .navigation-menu-section-items .navigation-menu-section-item {
+        font-weight: 300;
+        border-left: 3px solid transparent;
+        cursor: pointer; }
+        .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections .navigation-menu-section .navigation-menu-section-items .navigation-menu-section-item .navigation-menu-section-item-link {
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          height: 30px;
+          padding-left: 43px;
+          color: #f7f8f9; }
+          .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections .navigation-menu-section .navigation-menu-section-items .navigation-menu-section-item .navigation-menu-section-item-link .navigation-menu-section-item-link-icon {
+            margin-right: 10px; }
+        .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections .navigation-menu-section .navigation-menu-section-items .navigation-menu-section-item.state-locked .navigation-menu-section-item-link {
+          color: #bcc3ca; }
+        .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections .navigation-menu-section .navigation-menu-section-items .navigation-menu-section-item.state-locked .icon-folder-locked {
+          display: inline-block;
+          visibility: visible; }
+        .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections .navigation-menu-section .navigation-menu-section-items .navigation-menu-section-item.state-closed .icon-folder-closed {
+          display: inline-block;
+          visibility: visible; }
+        .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections .navigation-menu-section .navigation-menu-section-items .navigation-menu-section-item.state-opened .icon-folder-opened {
+          display: inline-block;
+          visibility: visible; }
+        .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections .navigation-menu-section .navigation-menu-section-items .navigation-menu-section-item.state-active {
+          background-color: #57748a;
+          border-left-color: #f7f8f9; }
+        .coveo-styleguide .navigation .navigation-menu .navigation-menu-sections .navigation-menu-section .navigation-menu-section-items .navigation-menu-section-item:hover {
+          background-color: #57748a; }
+
 /* */
 /* Common */
 /* Headings */
 /* Buttons */
 /* Forms */
 /* Checkboxes */
-/* Table */
 /* Controls */
 /* Alerts */
 /* Users */
@@ -2355,7 +2239,7 @@ form .form-section {
   form .form-section .section-heading {
     margin-bottom: 20px; }
     form .form-section .section-heading .heading-title, form .form-section .section-heading .heading-description {
-      color: #666666; }
+      color: #1d4f76; }
     form .form-section .section-heading .heading-title {
       font-size: 16px;
       font-weight: bold; }
@@ -2367,11 +2251,11 @@ form .form-section {
   form .form-section .form-subsection .subsection-heading {
     margin: 5px 0; }
     form .form-section .form-subsection .subsection-heading .heading-title {
-      color: #666666;
+      color: #1d4f76;
       font-size: 13px;
       text-transform: uppercase; }
       form .form-section .form-subsection .subsection-heading .heading-title svg {
-        fill: #666666; }
+        fill: #1d4f76; }
 
 form .form-section-separator {
   position: relative;
@@ -2390,12 +2274,12 @@ form .form-section-separator {
       border-top: solid 1px; }
     form .form-section-separator span:before {
       left: 0;
-      border-image: -webkit-linear-gradient(right, #dddddd, white) 1;
-      border-image: linear-gradient(to left, #dddddd, white) 1; }
+      border-image: -webkit-linear-gradient(right, #bcc3ca, white) 1;
+      border-image: linear-gradient(to left, #bcc3ca, white) 1; }
     form .form-section-separator span:after {
       left: 265px;
-      border-image: -webkit-linear-gradient(left, #dddddd, white) 1;
-      border-image: linear-gradient(to right, #dddddd, white) 1; }
+      border-image: -webkit-linear-gradient(left, #bcc3ca, white) 1;
+      border-image: linear-gradient(to right, #bcc3ca, white) 1; }
 
 form .form-group .input-validation-error-details {
   display: none; }
@@ -2428,7 +2312,6 @@ form .form-group.multiline-input-validation-error .erroneous-input {
 /* Buttons */
 /* Forms */
 /* Checkboxes */
-/* Table */
 /* Controls */
 /* Alerts */
 /* Users */
@@ -2461,11 +2344,11 @@ form .coveo-table-form {
       display: table-cell;
       vertical-align: middle;
       border-top: 2px solid white;
-      border-bottom: solid 1px #dddddd; }
+      border-bottom: 1px solid #bcc3ca; }
     form .coveo-table-form .form-group > label:first-child {
       width: 30%;
       padding: 0 10px;
-      color: #666666;
+      color: #1d4f76;
       font-family: "Open Sans", Arial, Helvetica, sans-serif;
       font-size: 16px;
       background-color: #ffffff; }
@@ -2501,7 +2384,7 @@ form .coveo-table-form {
       form .coveo-table-form .form-group .value.coveo-slide-toggle-label {
         padding: 0 10px; }
       form .coveo-table-form .form-group .value.admin-editable:hover {
-        background-color: #ebf3fb; }
+        background-color: #e6ecf0; }
       form .coveo-table-form .form-group .value.admin-non-editable {
         padding-left: 9px;
         background-color: #ffffff; }
@@ -2599,7 +2482,6 @@ form .coveo-table-form {
 /* Buttons */
 /* Forms */
 /* Checkboxes */
-/* Table */
 /* Controls */
 /* Alerts */
 /* Users */
@@ -2630,5 +2512,108 @@ form .coveo-flex-form {
             flex: auto;
     width: 0;
     margin: 10px 0 0 10px; }
+
+.align-baseline {
+  vertical-align: baseline; }
+
+.align-top {
+  vertical-align: top; }
+
+.align-middle {
+  vertical-align: middle; }
+
+.align-bottom {
+  vertical-align: bottom; }
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.flex-auto {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+     -moz-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0; }
+
+.center-align {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.inline {
+  display: inline; }
+
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.table {
+  display: table; }
+
+.table-cell {
+  display: table-cell; }
+
+.overflow-hidden {
+  overflow: hidden; }
+
+.overflow-scroll {
+  overflow: scroll; }
+
+.overflow-auto {
+  overflow: auto; }
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: ' '; }
+
+.clearfix:after {
+  clear: both; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.fullscreen {
+  min-width: 100vw;
+  min-height: 100vh; }
+
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.fixed {
+  position: fixed; }
 
 /*# sourceMappingURL=../css/CoveoStyleGuide.css.map */
