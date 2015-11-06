@@ -3,6 +3,7 @@ $header-application-offset-y: 9px;
 
 .header {
   height: $header-height;
+  display: flex;
 
   color: $white;
 

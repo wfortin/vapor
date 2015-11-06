@@ -2089,6 +2089,11 @@ label.coveo-slide-toggle-double {
 
 .coveo-styleguide .header {
   height: 67px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #f7f8f9;
   background-color: #296896; }
   .coveo-styleguide .header .header-section {
@@ -2100,26 +2105,36 @@ label.coveo-slide-toggle-double {
     .coveo-styleguide .header .header-section:first-child {
       border-left: none; }
 
-.coveo-styleguide .member .member-avatar {
-  width: 41px;
-  height: 41px;
-  border: solid 2px #f7f8f9;
-  border-radius: 100%; }
-
-.coveo-styleguide .member .member-info {
-  margin-left: 14px; }
-  .coveo-styleguide .member .member-info .member-info-name {
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 16px;
-    text-transform: uppercase; }
-  .coveo-styleguide .member .member-info .member-info-provider {
-    vertical-align: text-bottom; }
-  .coveo-styleguide .member .member-info .member-info-email {
-    margin-top: 2px;
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 15px; }
+.coveo-styleguide .member {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .coveo-styleguide .member .member-avatar {
+    width: 41px;
+    height: 41px;
+    border: solid 2px #f7f8f9;
+    border-radius: 100%; }
+  .coveo-styleguide .member .member-info {
+    margin-left: 14px; }
+    .coveo-styleguide .member .member-info .member-info-name {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 16px;
+      text-transform: uppercase; }
+    .coveo-styleguide .member .member-info .member-info-provider {
+      vertical-align: text-bottom; }
+    .coveo-styleguide .member .member-info .member-info-email {
+      margin-top: 2px;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 15px; }
 
 .coveo-styleguide .dropdown.mod-menu .dropdown-toggle {
   height: auto;
