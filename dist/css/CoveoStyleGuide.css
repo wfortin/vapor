@@ -1637,7 +1637,7 @@ div.datepicker th a.datepickerMonth {
     background-color: #f7f8f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.41);
     border: 1px solid #263e55;
-    border-radius: 2px; }
+    border-radius: 0 0 2px 2px; }
     .dropdown .dropdown-menu li > a, .dropdown .dropdown-menu li > span {
       display: block;
       padding: 5px 10px;
@@ -2097,6 +2097,8 @@ label.coveo-slide-toggle-double {
     border-left: solid 1px rgba(0, 0, 0, 0.1); }
     .coveo-styleguide .header .header-section.mod-padded {
       padding: 13px 30px; }
+    .coveo-styleguide .header .header-section:first-child {
+      border-left: none; }
 
 .coveo-styleguide .member .member-avatar {
   width: 41px;
@@ -2105,8 +2107,7 @@ label.coveo-slide-toggle-double {
   border-radius: 100%; }
 
 .coveo-styleguide .member .member-info {
-  float: right;
-  margin: 3px 0 0 14px; }
+  margin-left: 14px; }
   .coveo-styleguide .member .member-info .member-info-name {
     font-size: 13px;
     font-weight: 700;
@@ -2136,7 +2137,7 @@ label.coveo-slide-toggle-double {
 .coveo-styleguide .navigation {
   z-index: 50;
   width: 245px;
-  height: 100vh;
+  height: 100%;
   background-color: #263e55;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2540,6 +2541,13 @@ form .coveo-flex-form {
      -moz-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+.flex-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .flex-auto {
   -webkit-box-flex: 1;

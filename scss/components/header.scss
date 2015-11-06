@@ -16,5 +16,9 @@ $header-application-offset-y: 9px;
     &.mod-padded {
       padding: 13px 30px;
     }
+
+    &:first-child {
+      border-left: none;
+    }
   }
 }
