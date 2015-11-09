@@ -2138,9 +2138,9 @@ label.coveo-slide-toggle-double {
       width: 6px;
       height: 6px; }
     .coveo-styleguide .navigation .navigation-menu::-webkit-scrollbar-track, .coveo-styleguide .navigation .navigation-menu ::-webkit-scrollbar-track {
-      background-color: #444444; }
+      background-color: #373737; }
     .coveo-styleguide .navigation .navigation-menu::-webkit-scrollbar-thumb, .coveo-styleguide .navigation .navigation-menu ::-webkit-scrollbar-thumb {
-      background-color: #d3d3d3;
+      background-color: #bcc3ca;
       border-radius: 3px; }
     .coveo-styleguide .navigation .navigation-menu::-webkit-scrollbar-button, .coveo-styleguide .navigation .navigation-menu ::-webkit-scrollbar-button {
       width: 0;
@@ -2453,9 +2453,9 @@ form .coveo-table-form {
             width: 6px;
             height: 6px; }
           form .coveo-table-form .form-group .value .admin-select .dropdown-menu::-webkit-scrollbar-track, form .coveo-table-form .form-group .value .admin-select .dropdown-menu ::-webkit-scrollbar-track {
-            background-color: #d3d3d3; }
+            background-color: #e6ecf0; }
           form .coveo-table-form .form-group .value .admin-select .dropdown-menu::-webkit-scrollbar-thumb, form .coveo-table-form .form-group .value .admin-select .dropdown-menu ::-webkit-scrollbar-thumb {
-            background-color: #606060;
+            background-color: #373737;
             border-radius: 3px; }
           form .coveo-table-form .form-group .value .admin-select .dropdown-menu::-webkit-scrollbar-button, form .coveo-table-form .form-group .value .admin-select .dropdown-menu ::-webkit-scrollbar-button {
             width: 0;
@@ -2475,9 +2475,9 @@ form .coveo-table-form {
           width: 6px;
           height: 6px; }
         form .coveo-table-form .form-group .value textarea::-webkit-scrollbar-track, form .coveo-table-form .form-group .value textarea ::-webkit-scrollbar-track {
-          background-color: #d3d3d3; }
+          background-color: #e6ecf0; }
         form .coveo-table-form .form-group .value textarea::-webkit-scrollbar-thumb, form .coveo-table-form .form-group .value textarea ::-webkit-scrollbar-thumb {
-          background-color: #606060;
+          background-color: #373737;
           border-radius: 3px; }
         form .coveo-table-form .form-group .value textarea::-webkit-scrollbar-button, form .coveo-table-form .form-group .value textarea ::-webkit-scrollbar-button {
           width: 0;
