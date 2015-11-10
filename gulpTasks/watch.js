@@ -5,5 +5,5 @@ gulp.task('watch', function () {
 });
 
 gulp.task('watch:docs', function () {
-    gulp.watch('./scss/**/*', ['sass:docs']);
+    gulp.watch('./scss/**/*', ['docs']);
 });

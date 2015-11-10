@@ -21,7 +21,7 @@
     height: 32px;
     padding: 0 12px;
 
-    border: solid 1px $border-color;
+    border: solid 1px $medium-grey;
     border-radius: 2px;
   }
 
@@ -34,16 +34,16 @@
     display: none;
     float: left;
     min-width: 100%;
+    padding: 5px 0;
     margin: 0;
 
     color: $dark-blue;
+    list-style: none;
 
     background-color: $white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.41);
     border: 1px solid $dark-blue;
     border-radius: 0 0 2px 2px;
-    padding: 5px 0;
-    list-style: none;
 
     li {
       > a, > span {
@@ -68,7 +68,7 @@
       &.divider {
         height: 1px;
 
-        background-color: $border-color;
+        background-color: $medium-grey;
       }
     }
   }
