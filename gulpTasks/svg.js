@@ -8,7 +8,7 @@ gulp.task('svg', 'Concat all svg files into one in a json format and export it t
         .pipe(svgmin({
             plugins: [{
                 removeAttrs: {
-                    attrs: ['xmlns:*', 'xmlns', 'id', 'width', 'height']
+                    attrs: ['xmlns:*', 'xmlns', 'id']
                 }
             },{
                 removeUselessDefs: true
