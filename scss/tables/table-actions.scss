@@ -47,6 +47,10 @@ $coveo-table-actions-container-height: 52px;
       display: table-row;
       height: 100%;
 
+      .unrepeatable{
+        opacity: 0.3;
+      }
+
       .dropdown-menu {
         top: 42px;
         right: 0;
