@@ -34,7 +34,8 @@ $button-large-height: 50px;
   display: inline-block;
   height: $button-height;
   padding: $button-padding-y $button-padding-x;
-  margin: 0;
+  margin-right: 5px;
+  overflow: hidden;
 
   color: $medium-blue;
   font-family: $base-font-family;
@@ -42,11 +43,12 @@ $button-large-height: 50px;
   font-weight: $button-font-weight;
   line-height: $button-line-height;
   text-decoration: none;
+  text-overflow: ellipsis;
   text-transform: uppercase;
   vertical-align: middle;
   white-space: nowrap;
 
-  background-color: transparent;
+  background-color: $white;
   border: $button-border-width solid $medium-grey;
   border-radius: $button-border-radius;
 

@@ -370,17 +370,19 @@ a {
   display: inline-block;
   height: 34px;
   padding: 8.5px 16px;
-  margin: 0;
+  margin-right: 5px;
+  overflow: hidden;
   color: #1d4f76;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 15px;
   text-decoration: none;
+  text-overflow: ellipsis;
   text-transform: uppercase;
   vertical-align: middle;
   white-space: nowrap;
-  background-color: transparent;
+  background-color: #f7f8f9;
   border: 1px solid #bcc3ca;
   border-radius: 2px;
   cursor: pointer; }
@@ -444,9 +446,9 @@ a {
   .btn.mod-prepend.mod-large {
     padding-left: 66px; }
     .btn.mod-prepend.mod-large .btn-prepend {
-      line-height: 50px;
       width: 50px;
-      height: 49px; }
+      height: 49px;
+      line-height: 50px; }
 
 table {
   width: 100%;
@@ -1322,18 +1324,11 @@ div.datepicker th a.datepickerMonth {
   position: relative;
   display: inline-block; }
   .dropdown .dropdown-toggle {
-    display: inline-block;
-    color: #263e55;
-    background-color: #f7f8f9; }
+    display: inline-block; }
     .dropdown .dropdown-toggle .dropdown-toggle-arrow {
       float: right;
       margin-top: -5px;
       margin-left: 10px; }
-  .dropdown button.dropdown-toggle {
-    height: 32px;
-    padding: 0 12px;
-    border: solid 1px #bcc3ca;
-    border-radius: 2px; }
   .dropdown .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -1357,6 +1352,7 @@ div.datepicker th a.datepickerMonth {
       line-height: 16px;
       text-overflow: ellipsis;
       white-space: nowrap;
+      color: #373737;
       cursor: pointer; }
       .dropdown .dropdown-menu li > a:hover, .dropdown .dropdown-menu li > a:focus, .dropdown .dropdown-menu li > span:hover, .dropdown .dropdown-menu li > span:focus {
         color: #263e55;
@@ -1790,6 +1786,10 @@ label.coveo-slide-toggle-double {
     padding-left: 20px; }
   .splash-box .splash-box-description {
     padding: 0 30px 50px; }
+  .splash-box .btn {
+    display: block;
+    width: 250px;
+    margin: auto auto 1em; }
   .splash-box .splash-box-footer {
     padding: 17px;
     margin-top: 50px; }
@@ -1800,6 +1800,8 @@ label.coveo-slide-toggle-double {
   padding: 17px 20px 17px; }
   .splash-footer span {
     line-height: 25px; }
+    .splash-footer span a {
+      margin-right: 10px; }
 
 .coveo-styleguide .header {
   display: -webkit-box;

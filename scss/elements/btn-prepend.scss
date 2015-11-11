@@ -24,9 +24,10 @@
       padding-left: $button-large-height + $button-padding-x;
 
       .btn-prepend {
-        line-height: $button-large-height;
         width: $button-large-height;
         height: ($button-large-height - 1);
+
+        line-height: $button-large-height;
       }
     }
   }
