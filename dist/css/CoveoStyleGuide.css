@@ -366,7 +366,6 @@ a {
     background-color: #1194f6; }
 
 .btn {
-  position: relative;
   display: inline-block;
   height: 34px;
   padding: 8.5px 16px;
@@ -407,17 +406,6 @@ a {
       background-color: #f9b882;
       border: 1px solid #f9b882;
       cursor: default; }
-  .btn.mod-secondary {
-    color: #f7f8f9;
-    background-color: #263e55;
-    border: 1px solid #263e55; }
-    .btn.mod-secondary:hover, .btn.mod-secondary:focus {
-      background-color: #2e4b67;
-      border: 1px solid #2e4b67; }
-    .btn.mod-secondary:disabled, .btn.mod-secondary.state-disabled {
-      background-color: #46719b;
-      border: 1px solid #46719b;
-      cursor: default; }
   .btn.mod-danger {
     color: #f7f8f9;
     background-color: #f44336;
@@ -434,11 +422,11 @@ a {
   padding: 0 16px 0 0;
   line-height: 34px; }
   .btn.mod-prepend .btn-prepend {
-    float: left;
-    margin-right: 16px;
     display: inline-block;
+    float: left;
     width: 34px;
     height: 33px;
+    margin-right: 16px;
     line-height: 34px;
     border-right: 1px solid #bcc3ca; }
     .btn.mod-prepend .btn-prepend.mod-icon {
@@ -1324,7 +1312,8 @@ div.datepicker th a.datepickerMonth {
   position: relative;
   display: inline-block; }
   .dropdown .dropdown-toggle {
-    display: inline-block; }
+    display: inline-block;
+    text-transform: initial; }
     .dropdown .dropdown-toggle .dropdown-toggle-arrow {
       float: right;
       margin-top: -5px;
@@ -1349,10 +1338,10 @@ div.datepicker th a.datepickerMonth {
       display: block;
       padding: 5px 10px;
       overflow: hidden;
+      color: #373737;
       line-height: 16px;
       text-overflow: ellipsis;
       white-space: nowrap;
-      color: #373737;
       cursor: pointer; }
       .dropdown .dropdown-menu li > a:hover, .dropdown .dropdown-menu li > a:focus, .dropdown .dropdown-menu li > span:hover, .dropdown .dropdown-menu li > span:focus {
         color: #263e55;

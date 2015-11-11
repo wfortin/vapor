@@ -29,8 +29,6 @@ $button-large-height: 50px;
 
 
 .btn {
-  position: relative;
-
   display: inline-block;
   height: $button-height;
   padding: $button-padding-y $button-padding-x;
@@ -75,10 +73,6 @@ $button-large-height: 50px;
 
   &.mod-primary {
     @include button-variant($white, $orange);
-  }
-
-  &.mod-secondary {
-    @include button-variant($white, $dark-blue);
   }
 
   &.mod-danger {
