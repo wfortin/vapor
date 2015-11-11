@@ -1,11 +1,11 @@
 .btn {
   &.mod-prepend {
-    padding-left: $button-height + $button-padding-x;
+    padding: 0 $button-padding-x 0 0;
+    line-height: $button-height;
 
     .btn-prepend {
-      position: absolute;
-      top: 0;
-      left: 0;
+      float: left;
+      margin-right: $button-padding-x;
 
       display: inline-block;
       width: $button-height;
@@ -21,7 +21,7 @@
     }
 
     &.mod-large {
-      padding-left: $button-large-height + $button-padding-x;
+      line-height: $button-large-height;
 
       .btn-prepend {
         width: $button-large-height;

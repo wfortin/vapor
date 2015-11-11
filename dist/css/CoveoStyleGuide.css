@@ -431,11 +431,11 @@ a {
       cursor: default; }
 
 .btn.mod-prepend {
-  padding-left: 50px; }
+  padding: 0 16px 0 0;
+  line-height: 34px; }
   .btn.mod-prepend .btn-prepend {
-    position: absolute;
-    top: 0;
-    left: 0;
+    float: left;
+    margin-right: 16px;
     display: inline-block;
     width: 34px;
     height: 33px;
@@ -444,7 +444,7 @@ a {
     .btn.mod-prepend .btn-prepend.mod-icon {
       padding: 8px; }
   .btn.mod-prepend.mod-large {
-    padding-left: 66px; }
+    line-height: 50px; }
     .btn.mod-prepend.mod-large .btn-prepend {
       width: 50px;
       height: 49px;
