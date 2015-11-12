@@ -13,8 +13,8 @@ $spacing: 0.5rem;
   }
 
   .px#{$i} {
-    padding-left: $i * $spacing;
     padding-right: $i * $spacing;
+    padding-left: $i * $spacing;
   }
 
   .py#{$i} {
