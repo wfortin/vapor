@@ -1278,6 +1278,8 @@ div.datepicker th a.datepickerMonth {
         color: #263e55;
         background: none;
         background-color: #e6ecf0; }
+      .dropdown .dropdown-menu li > a.state-selected, .dropdown .dropdown-menu li > span.state-selected {
+        font-weight: bold; }
     .dropdown .dropdown-menu li.divider {
       height: 1px;
       background-color: #bcc3ca; }
