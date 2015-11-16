@@ -1,37 +1,6 @@
 @import '../common/colors';
-@import '../common/font';
 
-::-webkit-input-placeholder {
-  // WebKit browsers
-  color: $placeholder-text;
-  font-family: $base-font-family;
-  font-size: inherit;
-  text-transform: none;
-}
-
-:-moz-placeholder {
-  // Mozilla Firefox 4 to 18
-  color: $placeholder-text;
-  font-family: $base-font-family;
-  font-size: inherit;
-  text-transform: none;
-}
-
-::-moz-placeholder {
-  // Mozilla Firefox 19+
-  color: $placeholder-text;
-  font-family: $base-font-family;
-  font-size: inherit;
-  text-transform: none;
-}
-
-:-ms-input-placeholder {
-  // Internet Explorer 10+
-  color: $placeholder-text;
-  font-family: $base-font-family;
-  font-size: inherit;
-  text-transform: none;
-}
+@include placeholder();
 
 select, textarea, input[type='text'], input[type='password'], input[type='datetime'], input[type='datetime-local'], input[type='date'], input[type='month'], input[type='time'], input[type='week'], input[type='number'], input[type='email'], input[type='url'], input[type='search'], input[type='tel'], input[type='color'] {
   padding: 3px 6px;
@@ -71,5 +40,46 @@ input[type='text'], textarea {
     background-color: $button-background;
     border: 1px solid darken($button-background, 10%);
     border-radius: 0 2px 2px 0;
+  }
+}
+
+.textbox {
+  $label-top: 15px;
+
+  position: relative;
+  font-size: 15px;
+  margin-top: $label-top * 2;
+
+  .textbox-input {
+    border: 0;
+    border-bottom: solid 1px $medium-grey;
+    outline: 0;
+    width: 100%;
+    height: 34px;
+    font-size: 15px;
+    color: $dark-grey;
+    border-radius: 0;
+
+    @include placeholder(transparent);
+
+    &:focus, &:valid {
+      border-bottom-color: $medium-blue;
+
+      @include placeholder();
+
+      & + .textbox-label {
+        top: -1 * $label-top;
+        font-size: 13px;
+        color: $medium-blue;
+        font-weight: bold;
+      }
+    }
+  }
+  .textbox-label {
+    position: absolute;
+    top: 10px;
+    pointer-events: none;
+    left: 6px;
+    transition: 0.2s ease all;
   }
 }
