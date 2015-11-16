@@ -20,32 +20,8 @@
 }
 
 @mixin placeholder($text-color: $medium-grey, $font-family: $base-font-family) {
-  &::-webkit-input-placeholder {
+  &::placeholder {
     // WebKit browsers
-    color: $text-color;
-    font-family: $font-family;
-    font-size: inherit;
-    text-transform: none;
-  }
-
-  &:-moz-placeholder {
-    // Mozilla Firefox 4 to 18
-    color: $text-color;
-    font-family: $font-family;
-    font-size: inherit;
-    text-transform: none;
-  }
-
-  &::-moz-placeholder {
-    // Mozilla Firefox 19+
-    color: $text-color;
-    font-family: $font-family;
-    font-size: inherit;
-    text-transform: none;
-  }
-
-  &:-ms-input-placeholder {
-    // Internet Explorer 10+
     color: $text-color;
     font-family: $font-family;
     font-size: inherit;

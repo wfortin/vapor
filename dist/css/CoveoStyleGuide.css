@@ -74,8 +74,10 @@ body {
 .coveo-sprites-misc-spinner_arrow_up,
 .coveo-sprites-misc-alert,
 .coveo-sprites-misc-panel-collapsed,
+.collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon,
 .coveo-sprites-tables-sort_asc,
 .coveo-sprites-misc-panel-expended,
+.collapsable-panel-group .panel .panel-heading i.toggle-icon,
 .coveo-sprites-tables-sort_desc {
   background-image: url("../images/CoveoStyleGuide.Sprites.png");
   display: inline-block;
@@ -113,7 +115,7 @@ i.coveo-sprites-misc-alert, .coveo-sprites-misc-alert {
   height: 11px;
   text-indent: 11px; }
 
-i.coveo-sprites-misc-panel-collapsed, .coveo-sprites-misc-panel-collapsed {
+i.coveo-sprites-misc-panel-collapsed, .collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon, .coveo-sprites-misc-panel-collapsed, .collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon {
   background-position: -63px 0px;
   width: 10px;
   height: 10px;
@@ -125,7 +127,7 @@ i.coveo-sprites-tables-sort_asc, .coveo-sprites-tables-sort_asc {
   height: 6px;
   text-indent: 6px; }
 
-i.coveo-sprites-misc-panel-expended, .coveo-sprites-misc-panel-expended {
+i.coveo-sprites-misc-panel-expended, .collapsable-panel-group .panel .panel-heading i.toggle-icon, .coveo-sprites-misc-panel-expended, .collapsable-panel-group .panel .panel-heading i.toggle-icon {
   background-position: -73px 0px;
   width: 10px;
   height: 10px;
@@ -601,8 +603,10 @@ table {
 .coveo-sprites-misc-spinner_arrow_up,
 .coveo-sprites-misc-alert,
 .coveo-sprites-misc-panel-collapsed,
+.collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon,
 .coveo-sprites-tables-sort_asc,
 .coveo-sprites-misc-panel-expended,
+.collapsable-panel-group .panel .panel-heading i.toggle-icon,
 .coveo-sprites-tables-sort_desc {
   background-image: url("../images/CoveoStyleGuide.Sprites.png");
   display: inline-block;
@@ -640,7 +644,7 @@ i.coveo-sprites-misc-alert, .coveo-sprites-misc-alert {
   height: 11px;
   text-indent: 11px; }
 
-i.coveo-sprites-misc-panel-collapsed, .coveo-sprites-misc-panel-collapsed {
+i.coveo-sprites-misc-panel-collapsed, .collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon, .coveo-sprites-misc-panel-collapsed, .collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon {
   background-position: -63px 0px;
   width: 10px;
   height: 10px;
@@ -652,7 +656,7 @@ i.coveo-sprites-tables-sort_asc, .coveo-sprites-tables-sort_asc {
   height: 6px;
   text-indent: 6px; }
 
-i.coveo-sprites-misc-panel-expended, .coveo-sprites-misc-panel-expended {
+i.coveo-sprites-misc-panel-expended, .collapsable-panel-group .panel .panel-heading i.toggle-icon, .coveo-sprites-misc-panel-expended, .collapsable-panel-group .panel .panel-heading i.toggle-icon {
   background-position: -73px 0px;
   width: 10px;
   height: 10px;
@@ -815,6 +819,141 @@ label.coveo-checkbox-label {
     margin-top: 0; }
   label.coveo-checkbox-label.disabled span {
     opacity: 0.4; }
+
+/* Common */
+/* Headings */
+/* Buttons */
+/* Forms */
+/* Checkboxes */
+/* Controls */
+/* Alerts */
+/* Users */
+/* Organizations */
+/* Timeline */
+/* Datepicker */
+@font-face {
+  font-family: 'source_code_pro_regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/SourceCodePro-Regular.eot");
+  src: url("../fonts/SourceCodePro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceCodePro-Regular.woff") format("woff"), url("../fonts/SourceCodePro-Regular.ttf") format("truetype"); }
+
+.coveo-sprites-misc-closepopup,
+.coveo-filter-container input.filter-box + span:after,
+.coveo-sprites-misc-filter,
+.coveo-sprites-misc-spinner_arrow_down,
+.coveo-sprites-misc-spinner_arrow_up,
+.coveo-sprites-misc-alert,
+.coveo-sprites-misc-panel-collapsed,
+.collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon,
+.coveo-sprites-tables-sort_asc,
+.coveo-sprites-misc-panel-expended,
+.collapsable-panel-group .panel .panel-heading i.toggle-icon,
+.coveo-sprites-tables-sort_desc {
+  background-image: url("../images/CoveoStyleGuide.Sprites.png");
+  display: inline-block;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: 83px 16px; }
+
+i.coveo-sprites-misc-closepopup, .coveo-sprites-misc-closepopup, .coveo-filter-container input.filter-box + span:after {
+  background-position: 0px 0px;
+  width: 16px;
+  height: 16px;
+  text-indent: 16px; }
+
+i.coveo-sprites-misc-filter, .coveo-sprites-misc-filter {
+  background-position: -16px 0px;
+  width: 12px;
+  height: 12px;
+  text-indent: 12px; }
+
+i.coveo-sprites-misc-spinner_arrow_down, .coveo-sprites-misc-spinner_arrow_down {
+  background-position: -28px 0px;
+  width: 12px;
+  height: 12px;
+  text-indent: 12px; }
+
+i.coveo-sprites-misc-spinner_arrow_up, .coveo-sprites-misc-spinner_arrow_up {
+  background-position: -40px 0px;
+  width: 12px;
+  height: 12px;
+  text-indent: 12px; }
+
+i.coveo-sprites-misc-alert, .coveo-sprites-misc-alert {
+  background-position: -52px 0px;
+  width: 11px;
+  height: 11px;
+  text-indent: 11px; }
+
+i.coveo-sprites-misc-panel-collapsed, .collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon, .coveo-sprites-misc-panel-collapsed, .collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon {
+  background-position: -63px 0px;
+  width: 10px;
+  height: 10px;
+  text-indent: 10px; }
+
+i.coveo-sprites-tables-sort_asc, .coveo-sprites-tables-sort_asc {
+  background-position: -63px -10px;
+  width: 6px;
+  height: 6px;
+  text-indent: 6px; }
+
+i.coveo-sprites-misc-panel-expended, .collapsable-panel-group .panel .panel-heading i.toggle-icon, .coveo-sprites-misc-panel-expended, .collapsable-panel-group .panel .panel-heading i.toggle-icon {
+  background-position: -73px 0px;
+  width: 10px;
+  height: 10px;
+  text-indent: 10px; }
+
+i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
+  background-position: -73px -10px;
+  width: 6px;
+  height: 6px;
+  text-indent: 6px; }
+
+.collapsable-panel-group .collapse {
+  display: none;
+  visibility: hidden; }
+  .collapsable-panel-group .collapse.in {
+    display: table;
+    width: 100%;
+    visibility: visible; }
+
+.collapsable-panel-group .collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-duration: 0.35s;
+          transition-duration: 0.35s;
+  -webkit-transition-property: height, visibility;
+          transition-property: height, visibility;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease; }
+
+.collapsable-panel-group .panel {
+  border-bottom: 2px solid #bcc3ca; }
+  .collapsable-panel-group .panel + .panel {
+    margin-top: 15px; }
+  .collapsable-panel-group .panel .panel-heading {
+    position: relative; }
+    .collapsable-panel-group .panel .panel-heading a {
+      display: block;
+      padding: 3px 0 3px 26px;
+      margin-bottom: 5px;
+      color: #1d4f76;
+      font-family: "Open Sans", Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: initial;
+      text-decoration: none;
+      text-transform: uppercase; }
+    .collapsable-panel-group .panel .panel-heading i.toggle-icon {
+      position: absolute;
+      top: 8px;
+      left: 10px;
+      z-index: -1;
+      display: inline-block;
+      content: '\00a0'; }
+  .collapsable-panel-group .panel.panel-default .panel-body {
+    padding: 0 10px 10px 10px; }
 
 /* Common */
 /* Headings */
@@ -1166,8 +1305,10 @@ div.datepicker th a.datepickerMonth {
 .coveo-sprites-misc-spinner_arrow_up,
 .coveo-sprites-misc-alert,
 .coveo-sprites-misc-panel-collapsed,
+.collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon,
 .coveo-sprites-tables-sort_asc,
 .coveo-sprites-misc-panel-expended,
+.collapsable-panel-group .panel .panel-heading i.toggle-icon,
 .coveo-sprites-tables-sort_desc {
   background-image: url("../images/CoveoStyleGuide.Sprites.png");
   display: inline-block;
@@ -1205,7 +1346,7 @@ i.coveo-sprites-misc-alert, .coveo-sprites-misc-alert {
   height: 11px;
   text-indent: 11px; }
 
-i.coveo-sprites-misc-panel-collapsed, .coveo-sprites-misc-panel-collapsed {
+i.coveo-sprites-misc-panel-collapsed, .collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon, .coveo-sprites-misc-panel-collapsed, .collapsable-panel-group .panel .panel-heading a.collapsed + i.toggle-icon {
   background-position: -63px 0px;
   width: 10px;
   height: 10px;
@@ -1217,7 +1358,7 @@ i.coveo-sprites-tables-sort_asc, .coveo-sprites-tables-sort_asc {
   height: 6px;
   text-indent: 6px; }
 
-i.coveo-sprites-misc-panel-expended, .coveo-sprites-misc-panel-expended {
+i.coveo-sprites-misc-panel-expended, .collapsable-panel-group .panel .panel-heading i.toggle-icon, .coveo-sprites-misc-panel-expended, .collapsable-panel-group .panel .panel-heading i.toggle-icon {
   background-position: -73px 0px;
   width: 10px;
   height: 10px;
@@ -1271,20 +1412,17 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: inherit;
   text-transform: none; }
-
-:-moz-placeholder {
-  color: #bcc3ca;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: inherit;
-  text-transform: none; }
-
 ::-moz-placeholder {
   color: #bcc3ca;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: inherit;
   text-transform: none; }
-
 :-ms-input-placeholder {
+  color: #bcc3ca;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: inherit;
+  text-transform: none; }
+::placeholder {
   color: #bcc3ca;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: inherit;
@@ -1320,23 +1458,18 @@ input[type='text'].admin-invisible-textbox, textarea.admin-invisible-textbox {
 
 .textbox {
   position: relative;
-  font-size: 15px;
-  margin-top: 30px; }
+  margin-top: 30px;
+  font-size: 15px; }
   .textbox .textbox-input {
-    border: 0;
-    border-bottom: solid 1px #bcc3ca;
-    outline: 0;
     width: 100%;
     height: 34px;
-    font-size: 15px;
     color: #373737;
-    border-radius: 0; }
+    font-size: 15px;
+    border: 0;
+    border-bottom: solid 1px #bcc3ca;
+    border-radius: 0;
+    outline: 0; }
     .textbox .textbox-input::-webkit-input-placeholder {
-      color: transparent;
-      font-family: "Open Sans", Arial, Helvetica, sans-serif;
-      font-size: inherit;
-      text-transform: none; }
-    .textbox .textbox-input:-moz-placeholder {
       color: transparent;
       font-family: "Open Sans", Arial, Helvetica, sans-serif;
       font-size: inherit;
@@ -1351,14 +1484,14 @@ input[type='text'].admin-invisible-textbox, textarea.admin-invisible-textbox {
       font-family: "Open Sans", Arial, Helvetica, sans-serif;
       font-size: inherit;
       text-transform: none; }
+    .textbox .textbox-input::placeholder {
+      color: transparent;
+      font-family: "Open Sans", Arial, Helvetica, sans-serif;
+      font-size: inherit;
+      text-transform: none; }
     .textbox .textbox-input:focus, .textbox .textbox-input:valid {
       border-bottom-color: #1d4f76; }
       .textbox .textbox-input:focus::-webkit-input-placeholder, .textbox .textbox-input:valid::-webkit-input-placeholder {
-        color: #bcc3ca;
-        font-family: "Open Sans", Arial, Helvetica, sans-serif;
-        font-size: inherit;
-        text-transform: none; }
-      .textbox .textbox-input:focus:-moz-placeholder, .textbox .textbox-input:valid:-moz-placeholder {
         color: #bcc3ca;
         font-family: "Open Sans", Arial, Helvetica, sans-serif;
         font-size: inherit;
@@ -1373,18 +1506,23 @@ input[type='text'].admin-invisible-textbox, textarea.admin-invisible-textbox {
         font-family: "Open Sans", Arial, Helvetica, sans-serif;
         font-size: inherit;
         text-transform: none; }
+      .textbox .textbox-input:focus::placeholder, .textbox .textbox-input:valid::placeholder {
+        color: #bcc3ca;
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-size: inherit;
+        text-transform: none; }
       .textbox .textbox-input:focus + .textbox-label, .textbox .textbox-input:valid + .textbox-label {
         top: -15px;
-        font-size: 13px;
         color: #1d4f76;
+        font-size: 13px;
         font-weight: bold; }
   .textbox .textbox-label {
     position: absolute;
     top: 10px;
-    pointer-events: none;
     left: 6px;
     -webkit-transition: 0.2s ease all;
-            transition: 0.2s ease all; }
+            transition: 0.2s ease all;
+    pointer-events: none; }
 
 input[type=range].coveo-input-slider {
   width: 100%;

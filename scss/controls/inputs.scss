@@ -43,14 +43,14 @@ input[type='text'], textarea {
   }
 }
 
+$label-top: 15px;
+
 .textbox {
   position: relative;
 
   margin-top: $label-top * 2;
 
   font-size: 15px;
-
-  $label-top: 15px;
 
   .textbox-input {
     width: 100%;
@@ -80,6 +80,7 @@ input[type='text'], textarea {
       }
     }
   }
+
   .textbox-label {
     position: absolute;
     top: 10px;
