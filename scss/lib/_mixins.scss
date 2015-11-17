@@ -21,7 +21,6 @@
 
 @mixin placeholder($text-color: $medium-grey, $font-family: $base-font-family) {
   &::placeholder {
-    // WebKit browsers
     color: $text-color;
     font-family: $font-family;
     font-size: inherit;
