@@ -995,6 +995,8 @@ label.coveo-slide-toggle-double {
       padding-right: 20px; }
   .coveo-styleguide table.mod-align-header th:first-child, .coveo-styleguide table.mod-align-header td:first-child {
     padding-left: 40px; }
+  .coveo-styleguide table.mod-align-header tbody tr.selected td:first-child {
+    padding-left: 35px; }
   .coveo-styleguide table thead tr {
     height: 25px;
     color: #1d4f76;

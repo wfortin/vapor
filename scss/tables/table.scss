@@ -33,6 +33,10 @@ table {
         padding-left: $header-padding;
       }
     }
+
+    tbody tr.selected td:first-child {
+      padding-left: 35px;
+    }
   }
 
   thead tr {
