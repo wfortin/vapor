@@ -1,6 +1,3 @@
-$table-border-width: 1px;
-$table-border: $table-border-width solid $medium-grey;
-
 table {
   width: 100%;
 
@@ -27,6 +24,14 @@ table {
 
     &:last-child {
       padding-right: 20px;
+    }
+  }
+
+  &.mod-align-header {
+    th, td {
+      &:first-child {
+        padding-left: $header-padding;
+      }
     }
   }
 
