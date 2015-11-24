@@ -1221,6 +1221,8 @@ label.coveo-slide-toggle-double {
           vertical-align: middle; }
   .coveo-styleguide .coveo-table-actions-container .coveo-table-actions + .coveo-table-actions {
     border-left: 1px solid #bcc3ca; }
+  .coveo-styleguide .coveo-table-actions-container.mod-border-top {
+    border-top: 1px solid #bcc3ca; }
 
 .coveo-styleguide .header {
   display: -webkit-box;

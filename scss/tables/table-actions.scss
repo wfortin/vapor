@@ -68,4 +68,8 @@
   .coveo-table-actions + .coveo-table-actions {
     border-left: $table-border;
   }
+
+  &.mod-border-top {
+    border-top: $table-border;
+  }
 }
