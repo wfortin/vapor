@@ -35,7 +35,7 @@ table {
     }
 
     tbody tr.selected td:first-child {
-      padding-left: 35px;
+      padding-left: $header-padding - $table-selected-border-width;
     }
   }
 
@@ -297,7 +297,7 @@ table {
       td:first-child {
         padding-left: 15px;
 
-        border-left: 5px solid $coveo-orange;
+        border-left: $table-selected-border-width solid $coveo-orange;
       }
     }
   }
