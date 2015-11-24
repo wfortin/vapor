@@ -31,6 +31,64 @@ table {
   border-collapse: inherit;
   border-spacing: 0; }
 
+input[type=range].coveo-input-slider {
+  width: 100%;
+  -webkit-appearance: none; }
+
+input[type=range].coveo-input-slider:focus {
+  outline: none; }
+
+input[type=range].coveo-input-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 7px;
+  background: #dddddd;
+  border: none; }
+
+input[type=range].coveo-input-slider::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  margin-top: -6px;
+  -webkit-appearance: none;
+  background: #f5f5f5;
+  background: -webkit-linear-gradient(bottom left, #f5f5f5 50%, #ffffff 50%);
+  background: linear-gradient(to top right, #f5f5f5 50%, #ffffff 50%);
+  border: 1px solid #e4e4e4;
+  border-radius: 50%; }
+
+input[type=range].coveo-input-slider::-moz-range-track {
+  width: 100%;
+  height: 7px;
+  background: #dddddd;
+  border: none; }
+
+input[type=range].coveo-input-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #f5f5f5;
+  background: linear-gradient(to top right, #f5f5f5 50%, #ffffff 50%);
+  border: 1px solid #e4e4e4;
+  border-radius: 50%; }
+
+input[type=range].coveo-input-slider::-ms-track {
+  width: 100%;
+  height: 7px;
+  color: transparent;
+  background: transparent;
+  border-color: transparent;
+  border-width: 8px 0; }
+
+input[type=range].coveo-input-slider::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  background: #f5f5f5;
+  background: linear-gradient(to top right, #f5f5f5 50%, #ffffff 50%);
+  border: 1px solid #e4e4e4;
+  border-radius: 50%; }
+
+input[type=range].coveo-input-slider::-ms-tooltip {
+  display: none;
+  visibility: hidden; }
+
 @font-face {
   font-family: 'source_code_pro_regular';
   font-style: normal;
@@ -67,8 +125,7 @@ body {
   src: url("../fonts/SourceCodePro-Regular.eot");
   src: url("../fonts/SourceCodePro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceCodePro-Regular.woff") format("woff"), url("../fonts/SourceCodePro-Regular.ttf") format("truetype"); }
 
-.coveo-sprites-misc-closepopup,
-.coveo-filter-container input.filter-box + span:after,
+.coveo-sprites-misc-closepopup, .coveo-filter-container input.filter-box + span:after,
 .coveo-sprites-misc-filter,
 .coveo-sprites-misc-spinner_arrow_down,
 .coveo-sprites-misc-spinner_arrow_up,
@@ -545,7 +602,7 @@ table {
     background-color: #faeaea;
     border-color: #cd3233;
     -webkit-transition: background-color 300ms;
-            transition: background-color 300ms; }
+    transition: background-color 300ms; }
 
 .fixed-header-table-container {
   position: relative;
@@ -596,8 +653,7 @@ table {
 /* Organizations */
 /* Timeline */
 /* Datepicker */
-.coveo-sprites-misc-closepopup,
-.coveo-filter-container input.filter-box + span:after,
+.coveo-sprites-misc-closepopup, .coveo-filter-container input.filter-box + span:after,
 .coveo-sprites-misc-filter,
 .coveo-sprites-misc-spinner_arrow_down,
 .coveo-sprites-misc-spinner_arrow_up,
@@ -769,7 +825,7 @@ input[type=checkbox].coveo-checkbox {
     border-radius: 2px;
     outline: none;
     -webkit-transition: all 200ms;
-            transition: all 200ms;
+    transition: all 200ms;
     cursor: pointer; }
     input[type=checkbox].coveo-checkbox + button:hover, input[type=checkbox].coveo-checkbox + buttonfocus {
       background-color: #ffffff;
@@ -840,8 +896,7 @@ label.coveo-checkbox-label {
   src: url("../fonts/SourceCodePro-Regular.eot");
   src: url("../fonts/SourceCodePro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceCodePro-Regular.woff") format("woff"), url("../fonts/SourceCodePro-Regular.ttf") format("truetype"); }
 
-.coveo-sprites-misc-closepopup,
-.coveo-filter-container input.filter-box + span:after,
+.coveo-sprites-misc-closepopup, .coveo-filter-container input.filter-box + span:after,
 .coveo-sprites-misc-filter,
 .coveo-sprites-misc-spinner_arrow_down,
 .coveo-sprites-misc-spinner_arrow_up,
@@ -927,7 +982,7 @@ i.coveo-sprites-tables-sort_desc, .coveo-sprites-tables-sort_desc {
   -webkit-transition-duration: 0.35s;
           transition-duration: 0.35s;
   -webkit-transition-property: height, visibility;
-          transition-property: height, visibility;
+  transition-property: height, visibility;
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease; }
 
@@ -1300,8 +1355,7 @@ div.datepicker th a.datepickerMonth {
 /* Organizations */
 /* Timeline */
 /* Datepicker */
-.coveo-sprites-misc-closepopup,
-.coveo-filter-container input.filter-box + span:after,
+.coveo-sprites-misc-closepopup, .coveo-filter-container input.filter-box + span:after,
 .coveo-sprites-misc-filter,
 .coveo-sprites-misc-spinner_arrow_down,
 .coveo-sprites-misc-spinner_arrow_up,
@@ -1523,70 +1577,8 @@ input[type='text'].admin-invisible-textbox, textarea.admin-invisible-textbox {
     top: 10px;
     left: 6px;
     -webkit-transition: 0.2s ease all;
-            transition: 0.2s ease all;
+    transition: 0.2s ease all;
     pointer-events: none; }
-
-input[type=range].coveo-input-slider {
-  width: 100%;
-  max-width: 500px;
-  -webkit-appearance: none; }
-
-input[type=range].coveo-input-slider:focus {
-  outline: none; }
-
-input[type=range].coveo-input-slider::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 7px;
-  max-width: 500px;
-  background: #dddddd;
-  border: none; }
-
-input[type=range].coveo-input-slider::-webkit-slider-thumb {
-  width: 20px;
-  height: 20px;
-  margin-top: -6px;
-  -webkit-appearance: none;
-  background: #f5f5f5;
-  background: -webkit-linear-gradient(bottom left, #f5f5f5 50%, #ffffff 50%);
-  background: linear-gradient(to top right, #f5f5f5 50%, #ffffff 50%);
-  border: 1px solid #e4e4e4;
-  border-radius: 50%; }
-
-input[type=range].coveo-input-slider::-moz-range-track {
-  width: 100%;
-  height: 7px;
-  max-width: 500px;
-  background: #dddddd;
-  border: none; }
-
-input[type=range].coveo-input-slider::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  background: #f5f5f5;
-  background: linear-gradient(to top right, #f5f5f5 50%, #ffffff 50%);
-  border: 1px solid #e4e4e4;
-  border-radius: 50%; }
-
-input[type=range].coveo-input-slider::-ms-track {
-  width: 100%;
-  height: 7px;
-  max-width: 500px;
-  color: transparent;
-  background: transparent;
-  border-color: transparent;
-  border-width: 8px 0; }
-
-input[type=range].coveo-input-slider::-ms-thumb {
-  width: 20px;
-  height: 20px;
-  background: #f5f5f5;
-  background: linear-gradient(to top right, #f5f5f5 50%, #ffffff 50%);
-  border: 1px solid #e4e4e4;
-  border-radius: 50%; }
-
-input[type=range].coveo-input-slider::-ms-tooltip {
-  display: none;
-  visibility: hidden; }
 
 .admin-numeric-spinner.input-group *, .admin-numeric-spinner.input-group *:before, .admin-numeric-spinner.input-group *:after {
   -moz-box-sizing: border-box;
@@ -1626,7 +1618,7 @@ label.coveo-slide-toggle-label {
   display: inline-block;
   line-height: 20px;
   -webkit-transition: opacity 0.35s ease;
-          transition: opacity 0.35s ease;
+  transition: opacity 0.35s ease;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1674,7 +1666,7 @@ label.coveo-slide-toggle-label {
       content: ' ';
       background-color: #bbbbbb;
       -webkit-transition: all 0.35s ease;
-              transition: all 0.35s ease; }
+      transition: all 0.35s ease; }
     label.coveo-slide-toggle-label button:after {
       top: 2px;
       bottom: 2px;
@@ -1720,7 +1712,7 @@ label.coveo-slide-toggle-double {
       border: 3px solid #bbbbbb;
       border-radius: 3px;
       -webkit-transition: background-position 0.35s ease;
-              transition: background-position 0.35s ease;
+      transition: background-position 0.35s ease;
       cursor: pointer; }
     input[type=checkbox] label.coveo-slide-toggle-double:checked + span {
       background-position: -15px; }
@@ -2046,7 +2038,7 @@ label.coveo-slide-toggle-double {
     text-align: left;
     table-layout: fixed;
     -webkit-transition: opacity 0.35s ease;
-            transition: opacity 0.35s ease; }
+    transition: opacity 0.35s ease; }
     .coveo-styleguide form .coveo-table-form .form-group {
       display: table-row;
       height: 36px;
