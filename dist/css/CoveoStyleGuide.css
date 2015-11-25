@@ -294,8 +294,7 @@ a {
     fill: #1d4f76; }
   .btn:hover, .btn:focus {
     text-decoration: none;
-    background-color: #e6ecf0;
-    outline: none; }
+    background-color: #e6ecf0; }
   .btn:disabled, .btn.state-disabled {
     color: #bcc3ca; }
     .btn:disabled:hover, .btn:disabled:focus, .btn.state-disabled:hover, .btn.state-disabled:focus {
