@@ -9,12 +9,19 @@ Coveo Styleguide is a collection of UI components used in Coveo's Administration
 Available on npm:
 
 	npm install coveo-styleguide
+	
+Also available on our cdn :
+
+	static.cloud.coveo.com/styleguide/v1.x.y/css/CoveoStyleGuide.css
 
 > The project is at its early stages, some components can still have _lots_ of breaking changes.
 
 # Contributing
 Make sure you have Node JS and NPM installed.
 Run `npm install` to get the required dependencies.
+
+###Dependencies
+Coveo Styleguide uses [jQuery](https://jquery.com/) and [Underscore](http://underscorejs.org/) for the more complex components. Tested with jQuery 2.1.4 and Underscore 1.8.3
 
 ### Building
 To build the dist folder and export it into the docs folder, simply run `gulp docs`.
