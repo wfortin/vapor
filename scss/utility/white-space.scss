@@ -12,8 +12,8 @@ $spacing: 0.5rem;
 }
 
 .mx-auto {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 @for $i from 1 through 2 {
