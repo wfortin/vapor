@@ -5,6 +5,7 @@
 @import 'common/colors';
 @import 'common/font';
 @import 'sprites';
+@import 'variables';
 
 // Typography
 @import 'typography/headings';
@@ -19,10 +20,6 @@
 @import 'elements/btn';
 @import 'elements/btn-prepend';
 
-// Tables
-@import 'tables/table';
-@import 'tables/fixed-header-table';
-@import 'tables/table-actions';
 
 // Controls
 @import 'controls/checkboxes';
@@ -38,6 +35,10 @@
 @import 'controls/splash';
 
 .coveo-styleguide {
+  // Tables
+  @import 'tables/table';
+  @import 'tables/fixed-header-table';
+  @import 'tables/table-actions';
   // Components
   @import 'components/header';
   @import 'components/navigation';
