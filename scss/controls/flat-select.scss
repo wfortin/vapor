@@ -1,0 +1,58 @@
+.flat-select {
+  background-color: $body-background-color;
+  border-radius: 2px;
+
+  .flat-select-option {
+    padding: 3px 5px;
+    margin-right: 10px;
+
+    color: $body-background-color;
+    font-size: 13px;
+    line-height: 16px;
+
+    background-color: $medium-blue;
+    border: 1px solid $medium-blue;
+    border-radius: 2px;
+
+    cursor: default;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.selectable {
+      color: $medium-grey;
+
+      background-color: $body-background-color;
+      border: 1px solid $medium-grey;
+
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:empty {
+      display: none;
+    }
+  }
+}
+
+.prepended-flat-select {
+  align-items: center;
+
+  display: flex;
+
+  .flat-select-prepend {
+    margin-right: 10px;
+
+    color: $medium-blue;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
