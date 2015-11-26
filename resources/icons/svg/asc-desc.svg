@@ -1,8 +1,5 @@
 <svg width="512" height="512" x="0px" y="0px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
- <g>
-  <title>Layer 1</title>
   <g class="asc-arrow">
-   <g display="none" opacity="0.3" id="svg_1">
     <line fill="none" stroke="#B35047" x1="48" y1="0" x2="48" y2="512" id="svg_2"/>
     <line fill="none" stroke="#B35047" x1="80" y1="0" x2="80" y2="512" id="svg_3"/>
     <line fill="none" stroke="#B35047" x1="112" y1="0" x2="112" y2="512" id="svg_4"/>
@@ -35,8 +32,6 @@
     <line fill="none" stroke="#B35047" x1="0" y1="496" x2="512" y2="496" id="svg_31"/>
     <line fill="none" stroke="#B35047" x1="0" y1="16" x2="512" y2="16" id="svg_32"/>
     <line fill="none" stroke="#B35047" x1="16" y1="0" x2="16" y2="512" id="svg_33"/>
-   </g>
-   <g display="none" id="svg_34">
     <line fill="none" stroke="#B35047" x1="32" y1="0" x2="32" y2="512" id="svg_35"/>
     <line fill="none" stroke="#B35047" x1="64" y1="0" x2="64" y2="512" id="svg_36"/>
     <line fill="none" stroke="#B35047" x1="96" y1="0" x2="96" y2="512" id="svg_37"/>
@@ -68,13 +63,9 @@
     <line fill="none" stroke="#B35047" x1="0" y1="448" x2="512" y2="448" id="svg_63"/>
     <line fill="none" stroke="#B35047" x1="0" y1="480" x2="512" y2="480" id="svg_64"/>
     <rect fill="none" stroke="#B35047" width="512" height="512" id="svg_65"/>
-   </g>
-   <g id="svg_66">
-    <polygon points="384,192 256,64 128,192  " id="svg_67"/>
-   </g>
+    <polygon points="384,192 256,64 128,192"/>
   </g>
   <g class="desc-arrow">
-   <g display="none" opacity="0.3" id="svg_68">
     <line fill="none" stroke="#B35047" x1="48" y1="0" x2="48" y2="512" id="svg_69"/>
     <line fill="none" stroke="#B35047" x1="80" y1="0" x2="80" y2="512" id="svg_70"/>
     <line fill="none" stroke="#B35047" x1="112" y1="0" x2="112" y2="512" id="svg_71"/>
@@ -107,8 +98,6 @@
     <line fill="none" stroke="#B35047" x1="0" y1="496" x2="512" y2="496" id="svg_98"/>
     <line fill="none" stroke="#B35047" x1="0" y1="16" x2="512" y2="16" id="svg_99"/>
     <line fill="none" stroke="#B35047" x1="16" y1="0" x2="16" y2="512" id="svg_100"/>
-   </g>
-   <g display="none" id="svg_101">
     <line fill="none" stroke="#B35047" x1="32" y1="0" x2="32" y2="512" id="svg_102"/>
     <line fill="none" stroke="#B35047" x1="64" y1="0" x2="64" y2="512" id="svg_103"/>
     <line fill="none" stroke="#B35047" x1="96" y1="0" x2="96" y2="512" id="svg_104"/>
@@ -140,10 +129,6 @@
     <line fill="none" stroke="#B35047" x1="0" y1="448" x2="512" y2="448" id="svg_130"/>
     <line fill="none" stroke="#B35047" x1="0" y1="480" x2="512" y2="480" id="svg_131"/>
     <rect fill="none" stroke="#B35047" width="512" height="512" id="svg_132"/>
-   </g>
-   <g id="svg_133">
-    <polygon points="128,320 256,448 384,320  " id="svg_134"/>
-   </g>
+    <polygon points="128,320 256,448 384,320"/>
   </g>
- </g>
 </svg>
