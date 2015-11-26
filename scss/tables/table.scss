@@ -61,41 +61,41 @@ table {
         cursor: pointer;
 
         .admin-sort-icon {
-          position: absolute;
-          top: 8px;
+          display: inline-flex;
 
-          i {
-            position: relative;
-            top: 3px;
-            left: -11px;
+          .coveo-tables-sort {
+            position: absolute;
+            top: 25%;
 
-            display: block;
+            width: 23px;
+            height: 16px;
 
-            opacity: 0.3;
-
-            &:hover {
-              opacity: 0.6;
+            .asc-arrow, .desc-arrow {
+              cursor: pointer;
+              opacity: 0.3;
             }
 
-            + i {
-              margin-top: 2px;
+            .asc-arrow, .desc-arrow {
+              &:hover {
+                opacity: 0.6;
+              }
             }
           }
         }
 
-        &.admin-sort-ascending, &.sorting_asc {
-          cursor: pointer;
-
-          .admin-sort-icon i.coveo-sprites-tables-sort_asc {
-            opacity: 1;
+        &.admin-sort-descending {
+          .admin-sort-icon {
+            .desc-arrow {
+              opacity: 1;
+            }
           }
         }
 
-        &.admin-sort-descending, &.sorting_desc {
-          cursor: pointer;
-
-          .admin-sort-icon i.coveo-sprites-tables-sort_desc {
-            opacity: 1;
+        &.admin-sort-ascending {
+          .admin-sort-icon {
+            .asc-arrow {
+              opacity: 1;
+            }
           }
         }
       }
