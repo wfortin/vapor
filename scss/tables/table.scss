@@ -135,7 +135,10 @@ table {
       text-align: left;
 
       border-bottom: $table-border;
-      border-left: $table-selected-border-width solid transparent;
+
+      &:first-child {
+        border-left: $table-selected-border-width solid transparent;
+      }
 
       &.edit.enabled {
         color: $medium-blue;
