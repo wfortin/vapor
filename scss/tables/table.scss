@@ -63,7 +63,7 @@ table {
         .admin-sort-icon {
           display: inline-flex;
 
-          .coveo-tables-sort {
+          .tables-sort {
             position: absolute;
             top: 25%;
 
@@ -73,9 +73,7 @@ table {
             .asc-arrow, .desc-arrow {
               cursor: pointer;
               opacity: 0.3;
-            }
 
-            .asc-arrow, .desc-arrow {
               &:hover {
                 opacity: 0.6;
               }
