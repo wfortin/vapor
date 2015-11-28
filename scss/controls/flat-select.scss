@@ -2,13 +2,19 @@
   background-color: $body-background-color;
   border-radius: 2px;
 
+  $flat-select-option-size: 26px;
+
   .flat-select-option {
-    padding: 3px 5px;
+    display: inline-block;
+    height: $flat-select-option-size;
+    min-width: $flat-select-option-size;
+    padding: 0 4px;
     margin-right: 10px;
 
     color: $body-background-color;
     font-size: 13px;
-    line-height: 16px;
+    line-height: $flat-select-option-size - 2px;
+    text-align: center;
 
     background-color: $medium-blue;
     border: 1px solid $medium-blue;
@@ -40,6 +46,28 @@
     &:empty {
       display: none;
     }
+
+    &.mod-link, &.selectable.mod-link {
+      padding: 0;
+
+      color: $medium-blue;
+      font-size: 15px;
+
+      background-color: $body-background-color;
+      border: none;
+
+      .icon {
+        fill: $medium-blue;
+      }
+
+      &.disabled {
+        color: $medium-grey;
+
+        .icon {
+          fill: $medium-grey;
+        }
+      }
+    }
   }
 }
 
@@ -51,7 +79,7 @@
   .flat-select-prepend {
     margin-right: 10px;
 
-    color: $medium-blue;
+    color: $medium-grey;
     font-size: 15px;
     line-height: 18px;
   }
