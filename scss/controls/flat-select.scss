@@ -1,8 +1,6 @@
 .flat-select {
-  background-color: $body-background-color;
+  background-color: $pure-white;
   border-radius: 2px;
-
-  $flat-select-option-size: 26px;
 
   .flat-select-option {
     display: inline-block;
@@ -11,7 +9,7 @@
     padding: 0 4px;
     margin-right: 10px;
 
-    color: $body-background-color;
+    color: $pure-white;
     font-size: 13px;
     line-height: $flat-select-option-size - 2px;
     text-align: center;
@@ -33,7 +31,7 @@
     &.selectable {
       color: $medium-grey;
 
-      background-color: $body-background-color;
+      background-color: $pure-white;
       border: 1px solid $medium-grey;
 
       cursor: pointer;
@@ -53,7 +51,7 @@
       color: $medium-blue;
       font-size: 15px;
 
-      background-color: $body-background-color;
+      background-color: $pure-white;
       border: none;
 
       .icon {

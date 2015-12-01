@@ -58,20 +58,4 @@ $spacing: 0.5rem;
   .ml#{$i} {
     margin-left: $i * $spacing;
   }
-
-  .bottom#{$i} {
-    bottom: $i * $spacing;
-  }
-
-  .left#{$i} {
-    left: $i * $spacing;
-  }
-
-  .right#{$i} {
-    right: $i * $spacing;
-  }
-
-  .top#{$i} {
-    top: $i * $spacing;
-  }
 }
