@@ -26,9 +26,16 @@
       & + .action {
         padding-left: 30px;
       }
+
+      .action-label {
+        color: $medium-blue;
+        font-size: 12px;
+        font-weight: bold;
+        vertical-align: 9px;
+      }
     }
 
-    .action-bar {
+    .actions-row {
       display: table-row;
       height: 100%;
 
