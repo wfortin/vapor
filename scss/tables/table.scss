@@ -36,7 +36,7 @@ table {
   }
 
   thead tr {
-    height: 32px;
+    height: $table-header-height;
 
     color: $medium-blue;
     font-size: 15px;
