@@ -5,17 +5,23 @@
   display: flex;
 
   .coveo-table-actions {
-    position: relative;
-
-    display: table;
-    height: $table-actions-container-height;
     padding: 0 10px;
 
+    .actions-row {
+      line-height: $table-actions-container-height;
+
+      .dropdown-menu {
+        top: 42px;
+        right: 0;
+        left: initial;
+
+        .dropdown-arrow {
+          right: 5px;
+        }
+      }
+    }
+
     .action {
-      display: table-cell;
-
-      vertical-align: middle;
-
       cursor: pointer;
 
       .state-disabled {
@@ -31,53 +37,26 @@
         color: $medium-blue;
         font-size: 12px;
         font-weight: bold;
-        vertical-align: 9px;
+        vertical-align: top;
       }
     }
 
-    .actions-row {
-      display: table-row;
-      height: 100%;
+    .prompt .prompt-danger {
+      & > span {
+        &.prompt-icon {
+          padding-right: 5px;
+        }
 
-      .dropdown-menu {
-        top: 42px;
-        right: 0;
-        left: initial;
+        &.prompt-action {
+          padding-left: 5px;
 
-        .dropdown-arrow {
-          right: 5px;
+          cursor: pointer;
         }
       }
     }
 
     .coveo-filter-container {
       margin: 10px 0;
-    }
-
-    .prompt {
-      display: table-cell;
-
-      vertical-align: middle;
-
-      .prompt-danger {
-        display: table-row;
-
-        & > span {
-          display: table-cell;
-
-          vertical-align: middle;
-
-          &.prompt-icon {
-            padding-right: 5px;
-          }
-
-          &.prompt-action {
-            padding-left: 5px;
-
-            cursor: pointer;
-          }
-        }
-      }
     }
   }
 
