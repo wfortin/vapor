@@ -62,6 +62,8 @@ table {
           .tables-sort {
             vertical-align: middle;
 
+            fill: $medium-blue;
+
             .asc-arrow, .desc-arrow {
               cursor: pointer;
               opacity: 0.3;

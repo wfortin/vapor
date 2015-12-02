@@ -38,23 +38,27 @@
 <nav class="navigation fixed">
     <div class="navigation-menu">
         <ul class="navigation-menu-sections">
+            {% assign currentPageUrl = page.url %}
             <li class="block navigation-menu-section">
-                <header class="navigation-menu-section-header">
+                {% for pageInformation in site.pages %}
+                {% if pageInformation.title %}
+                <a href="{{ pageInformation.url | prepend: site.baseurl }}" class="navigation-menu-section-header text-white">
                     <span class="navigation-menu-section-header-icon"></span>
-                    Basic
-                </header>
-                {% assign currentPageUrl = page.url %}
+                    {{ pageInformation.title }}
+                </a>
                 <ul class="navigation-menu-section-items">
-                    {% for pageInformation in site.pages %}
-                    {% if pageInformation.title %}
+                    {% for subMenu in site.components %}
+                    {% if subMenu.type == pageInformation.type %}
                     <li class="navigation-menu-section-item {% if currentPageUrl == pageInformation.url %}state-active{% endif %}">
-                        <a href="{{ pageInformation.url | prepend: site.baseurl }}" class="block navigation-menu-section-item-link">
-                            {{ pageInformation.title }}
+                        <a href="{{ pageInformation.url | prepend: site.baseurl }}#{{subMenu.url}}" class="block navigation-menu-section-item-link">
+                            {{ subMenu.title }}
                         </a>
                     </li>
                     {% endif %}
                     {% endfor %}
                 </ul>
+                {% endif %}
+                {% endfor %}
             </li>
         </ul>
     </div>
