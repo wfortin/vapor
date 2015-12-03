@@ -6,5 +6,14 @@
             inline: true,
             date: new Date()
         });
+
+        var previousTab;
+        $('.navigation-menu-section-item').click(function() {
+            if (previousTab) {
+                previousTab.removeClass('state-active');
+            }
+            $(this).addClass('state-active');
+            previousTab = $(this);
+        });
     });
 </script>
