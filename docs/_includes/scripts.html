@@ -9,10 +9,12 @@
 
         var selectedTab;
         window.onload = function() {
-            var urlSplit = window.location.href.split('#');
-            if (urlSplit.length > 1) {
-                var selectedTabChild = $('.navigation-menu-section-item-link[href*="' + urlSplit[1] + '"]');
-                 selectedTab = selectedTabChild.parent().addClass('state-active');
+            if (window.location.hash) {
+                var selectedTabChild = $('.navigation-menu-section-item-link[href="' + window.location.pathname + window.location.hash + '"]');
+                selectedTab = selectedTabChild.parent().addClass('state-active');
+            } else {
+                var selectedTabParend = $('.navigation-menu-section-item-link[href*="' + window.location.pathname + '"]');
+                selectedTab = $(selectedTabParend[0]).parent().addClass('state-active');
             }
         };
 
