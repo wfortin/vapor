@@ -7,13 +7,21 @@
             date: new Date()
         });
 
-        var previousTab;
+        var selectedTab;
+        window.onload = function() {
+            var urlSplit = window.location.href.split('#');
+            if (urlSplit.length > 1) {
+                var selectedTabChild = $('.navigation-menu-section-item-link[href*="' + urlSplit[1] + '"]');
+                 selectedTab = selectedTabChild.parent().addClass('state-active');
+            }
+        };
+
         $('.navigation-menu-section-item').click(function() {
-            if (previousTab) {
-                previousTab.removeClass('state-active');
+            if (selectedTab) {
+                selectedTab.removeClass('state-active');
             }
             $(this).addClass('state-active');
-            previousTab = $(this);
+            selectedTab = $(this);
         });
     });
 </script>
