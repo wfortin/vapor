@@ -5,7 +5,7 @@ type: typography
 permalink: /typography
 ---
 
-{% assign entries = site.components | where:"type","typography" %}
+{% assign entries = site.components | where:"type", page.type %}
 {% for entry in entries %}
 {% include component.html %}
 {% endfor %}

@@ -49,7 +49,7 @@
                     {% for subMenu in site.components %}
                     {% if subMenu.type == pageInformation.type %}
                     <li class="navigation-menu-section-item  ">
-                        <a href="{{ pageInformation.url | prepend: site.baseurl }}#{{subMenu.url}}" class="block navigation-menu-section-item-link">
+                        <a href="{{ pageInformation.url | prepend: site.baseurl }}#{{subMenu.title | slugify: 'pretty' }}" class="block navigation-menu-section-item-link">
                             {{ subMenu.title }}
                         </a>
                     </li>
