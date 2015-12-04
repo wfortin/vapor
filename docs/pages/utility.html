@@ -5,7 +5,7 @@ type: utility
 permalink: /utility
 ---
 
-{% assign entries = site.components | where:"type", page.type %}
+{% assign entries = site.components | where:"type", "utility" %}
 {% for entry in entries %}
 {% include component.html %}
 {% endfor %}
