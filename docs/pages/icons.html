@@ -5,7 +5,7 @@ type: icons
 permalink: /icons
 ---
 
-{% assign entries = site.components | where:"type", "icons" %}
+{% assign entries = site.components | where:"type", page.type %}
 {% for entry in entries %}
 {% include component_icons.html %}
 {% endfor %}
