@@ -5,7 +5,7 @@ type: palette
 permalink: /colors
 ---
 
-{% assign entries = site.components | where:"type", page.type %}
+{% assign entries = site.components | where:"type", "palette" %}
 {% for entry in entries %}
 {% include component.html %}
 {% endfor %}

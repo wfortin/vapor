@@ -5,7 +5,7 @@ type: forms
 permalink: /forms
 ---
 
-{% assign entries = site.components | where:"type", page.type %}
+{% assign entries = site.components | where:"type", "forms" %}
 {% for entry in entries %}
 {% include component.html %}
 {% endfor %}
