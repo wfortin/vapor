@@ -60,9 +60,10 @@ table {
           display: inline-flex;
 
           .tables-sort {
-            vertical-align: middle;
             width: 15px;
             height: 15px;
+
+            vertical-align: middle;
 
             fill: $medium-blue;
 
