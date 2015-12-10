@@ -1,0 +1,16 @@
+---
+type: component
+title: Tooltip
+usage: Use to display additional information.
+stylesheet: '/scss/components/tooltip.scss'
+---
+<!-- Note that positioning is automatically done by Bootstrap library.
+     There's no need to put a tooltip in a relative positioned element, nor
+     to put inline style on the tooltip. -->
+<div class="relative">
+    <button class="btn mod-primary">Do something!</button>
+    <div class="tooltip fade right in" style="top: 4px; left: 130px">
+        <div class="tooltip-arrow"></div>
+        <div class="tooltip-inner">Some helpful information!</div>
+    </div>
+</div>
