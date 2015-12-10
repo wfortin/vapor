@@ -60,6 +60,11 @@
         &.state-selected {
           font-weight: bold;
         }
+
+        &.disabled {
+          cursor: default;
+          color: $medium-grey;
+        }
       }
 
       &.divider {
