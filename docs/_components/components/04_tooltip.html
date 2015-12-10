@@ -1,16 +1,14 @@
 ---
 type: component
 title: Tooltip
-usage: Use to display additional information.
+usage: Use to display a tooltip on any element. We use Bootstrap Tooltip plugin.
 stylesheet: '/scss/components/tooltip.scss'
 ---
-<!-- Note that positioning is automatically done by Bootstrap library.
-     There's no need to put a tooltip in a relative positioned element, nor
-     to put inline style on the tooltip. -->
-<div class="relative">
-    <button class="btn mod-primary">Do something!</button>
-    <div class="tooltip fade right in" style="top: 4px; left: 130px">
-        <div class="tooltip-arrow"></div>
-        <div class="tooltip-inner">Some helpful information!</div>
+<button class="btn mod-primary" title="Some helpful information!" data-placement="right">Hover me</button>
+<div class="m2">
+    <div class="inline-block" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+         data-placement="bottom" data-trigger="click">Another sample, click me!
     </div>
+
 </div>
