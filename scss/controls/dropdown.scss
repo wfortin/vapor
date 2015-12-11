@@ -62,8 +62,9 @@
         }
 
         &.disabled {
-          cursor: default;
           color: $medium-grey;
+
+          cursor: default;
         }
       }
 
