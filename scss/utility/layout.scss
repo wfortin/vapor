@@ -44,9 +44,9 @@
 }
 
 .fullscreen {
+  height: 100px; // IE fix.
   min-width: 100vw;
   min-height: 100vh;
-  height: 100px; // IE fix.
 }
 
 .hidden {
