@@ -6,8 +6,8 @@
   .dropdown-toggle {
     display: inline-block;
 
-    text-transform: initial;
-
+    text-transform: none;
+    white-space: normal;
     .dropdown-toggle-arrow {
       float: right;
       margin-top: -5px;
@@ -59,6 +59,12 @@
 
         &.state-selected {
           font-weight: bold;
+        }
+
+        &.disabled {
+          color: $medium-grey;
+
+          cursor: default;
         }
       }
 
