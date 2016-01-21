@@ -110,12 +110,8 @@ label.coveo-checkbox-label {
     margin-top: 5px;
   }
 
-  &.admin-text-inline {
-    input[type=checkbox].coveo-checkbox {
-      & + button {
-        margin-top: 0;
-      }
-    }
+  & span {
+    margin-left: 5px;
   }
 
   &.disabled span {
