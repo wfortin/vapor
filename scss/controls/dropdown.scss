@@ -40,7 +40,7 @@
     li {
       > a, > span {
         display: block;
-        padding: 5px 10px;
+        padding: 7.5px 20px;
         overflow: hidden;
 
         color: $dark-grey;
@@ -70,8 +70,11 @@
 
       &.divider {
         height: 1px;
+        margin: 7.5px 0;
 
         background-color: $medium-grey;
+
+        cursor: default;
       }
     }
   }
