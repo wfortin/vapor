@@ -13,12 +13,13 @@
     }
 
     .action {
-      cursor: pointer;
       padding: 3px;
+      margin-left: 5px;
 
       border: 1px solid transparent;
       border-radius: 2px;
-      margin-left: 5px;
+
+      cursor: pointer;
 
       .state-disabled {
         cursor: default;
