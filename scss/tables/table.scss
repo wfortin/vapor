@@ -134,6 +134,10 @@ table {
 
     font-size: 15px;
 
+    > div.disabled {
+      opacity: 0.5;
+    }
+
     td {
       margin-left: 15px;
 
