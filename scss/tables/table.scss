@@ -134,8 +134,10 @@ table {
 
     font-size: 15px;
 
-    > div.disabled {
-      opacity: 0.5;
+    &.disabled {
+      div.wrapper {
+        opacity: 0.5;
+      }
     }
 
     td {
