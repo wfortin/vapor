@@ -95,6 +95,9 @@ input[type=checkbox].coveo-checkbox {
   }
 
   &:disabled + button {
+    background-color: $dark-grey;
+    border: none;
+
     cursor: default;
     opacity: 0.2;
   }

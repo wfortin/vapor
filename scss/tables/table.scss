@@ -136,7 +136,7 @@ table {
 
     &.disabled {
       div.wrapper {
-        opacity: 0.5;
+        opacity: 0.4;
       }
     }
 
@@ -167,7 +167,7 @@ table {
 
         &.disabled {
           cursor: default;
-          opacity: 0.3;
+          opacity: 0.2;
         }
 
         &.enabled {
