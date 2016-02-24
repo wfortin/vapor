@@ -56,7 +56,7 @@ $base-modal-z-index: 1050;
   display: flex;
 
   visibility: hidden;
-  pointer-events: none;
+  pointer-events: none; // Required to allow clicking through the modal-container on the modal-backdrop. Known issue: wont work on IE 10.
 
   @include generate-layers(10, $base-modal-z-index);
 
@@ -73,7 +73,7 @@ $base-modal-z-index: 1050;
 
     border-radius: 2px;
 
-    pointer-events: auto;
+    pointer-events: auto; // Required to reverse "pointer-events: none" effects on modal-content. Known issue: wont work on IE 10.
 
     .content-header {
       justify-content: space-between;
