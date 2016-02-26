@@ -75,7 +75,7 @@ $base-modal-z-index: 1050;
 
     pointer-events: auto; // Required to reverse "pointer-events: none" effects on modal-content. Known issue: wont work on IE 10.
 
-    .content-header {
+    .modal-header {
       align-items: center;
 
       display: flex;
@@ -109,7 +109,7 @@ $base-modal-z-index: 1050;
       }
     }
 
-    .content-body {
+    .modal-body {
       flex: 1;
 
       overflow: auto;
@@ -117,7 +117,7 @@ $base-modal-z-index: 1050;
       background-color: $pure-white;
     }
 
-    .content-footer {
+    .modal-footer {
       justify-content: flex-end;
 
       display: flex;
