@@ -14,7 +14,7 @@
       height: 100% !important;
     }
   }
-    .datepicker {
+  .datepicker {
     background-color: $body-background-color;
 
     .datepickerBlock {
@@ -22,7 +22,6 @@
     }
 
     table {
-
       thead {
         tr {
           background-color: transparent;
@@ -91,6 +90,7 @@
 
           td {
             padding: 0;
+
             color: $datepicker-day-color;
             font-size: 11px;
             text-align: center;
