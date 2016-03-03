@@ -142,7 +142,6 @@
   overflow-y: auto;
 
   $text-color: #000000;
-
   -webkit-overflow-scrolling: touch;
 
   li {
@@ -178,9 +177,9 @@
     &.no-results {
       display: list-item;
 
-      $text-color: #000000;
-
       background: $pure-white;
+
+      $text-color: #000000;
     }
 
     &.result-selected {
@@ -189,9 +188,10 @@
     }
 
     em {
-      $text-color: #000000;
       font-style: normal;
       font-weight: bold;
+
+      $text-color: #000000;
     }
   }
 }
