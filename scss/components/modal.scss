@@ -62,9 +62,14 @@ $base-modal-z-index: 1050;
 
   &.opening, &.opened {
     visibility: visible;
+
+    .modal-content {
+      opacity: 1;
+    }
   }
 
   .modal-content {
+    position: relative;
     flex-direction: column;
 
     display: flex;
@@ -73,6 +78,7 @@ $base-modal-z-index: 1050;
 
     border-radius: 2px;
 
+    opacity: 0;
     pointer-events: auto; // Required to reverse "pointer-events: none" effects on modal-content. Known issue: wont work on IE 10.
 
     .modal-header {
@@ -162,27 +168,19 @@ $base-modal-z-index: 1050;
     transform: scale(0.7);
 
     transition: all 0.3s;
-
-    opacity: 0;
   }
 
   &.opened.mod-fade-in-scale .modal-content {
     transform: scale(1);
-
-    opacity: 1;
   }
 
   &.mod-slide-in-bottom .modal-content {
     transform: translate3d(0, 20%, 0);
 
     transition: all 0.3s;
-
-    opacity: 0;
   }
 
   &.opened.mod-slide-in-bottom .modal-content {
     transform: translate3d(0, 0, 0);
-
-    opacity: 1;
   }
 }
