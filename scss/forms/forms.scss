@@ -1,5 +1,4 @@
 form {
-
   .form-section, .section-heading {
     &.mod-align-header {
       padding-left: $header-padding;
@@ -131,6 +130,6 @@ form {
 }
 
 form.mod-align-header {
-  padding-left: $header-padding;
   padding-right: $header-padding;
+  padding-left: $header-padding;
 }
