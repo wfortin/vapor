@@ -7,8 +7,9 @@ table {
   border-spacing: 0;
 
   th, td {
-    padding: 5px 15px;
     position: relative;
+
+    padding: 5px 15px;
 
     text-align: left;
     vertical-align: middle;
@@ -402,6 +403,7 @@ table {
             break-inside: avoid-column; /* IE 11 */
           }
         }
+      }
     }
   }
 }
