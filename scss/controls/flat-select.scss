@@ -1,6 +1,6 @@
 .flat-select {
   background-color: $pure-white;
-  border-radius: 2px;
+  border-radius: $border-radius;
 
   .flat-select-option {
     display: inline-block;
@@ -16,9 +16,15 @@
 
     background-color: $medium-blue;
     border: 1px solid $medium-blue;
-    border-radius: 2px;
+    border-radius: $border-radius;
 
     cursor: default;
+
+    .icon-container .icon {
+      vertical-align: -0.2em;
+
+      fill: $pure-white;
+    }
 
     & + .flat-select-option {
       margin-left: 10px;
@@ -39,6 +45,10 @@
       border: 1px solid $medium-grey;
 
       cursor: pointer;
+
+      .icon {
+        fill: $medium-blue;
+      }
     }
 
     &:empty {
@@ -73,24 +83,22 @@
     padding: $button-padding-y $button-padding-x;
 
     font-size: $button-font-size;
+    font-weight: 700;
     line-height: $button-line-height;
+    text-transform: uppercase;
 
     border-radius: 0;
 
     &:first-child {
-      border-radius: 2px 0 0 2px;
+      border-radius: $border-radius 0 0 $border-radius;
     }
 
     &:last-child {
-      border-radius: 0 2px 2px 0;
+      border-radius: 0 $border-radius $border-radius 0;
     }
 
     & + .flat-select-option {
       margin-left: 0;
-    }
-
-    &.selectable + .selectable {
-      border-left: 0;
     }
   }
 }
