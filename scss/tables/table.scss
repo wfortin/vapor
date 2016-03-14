@@ -307,4 +307,12 @@ table {
       transition: background-color 300ms;
     }
   }
+
+  &.mod-admin-table-view-delete {
+    tbody {
+      tr.selected {
+        background-color: rgba(244, 67, 54, 0.1);
+      }
+    }
+  }
 }
