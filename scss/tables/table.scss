@@ -308,10 +308,10 @@ table {
     }
   }
 
-  &.mod-admin-table-view-delete {
+  &.mod-deleting {
     tbody {
       tr.selected {
-        background-color: rgba(244, 67, 54, 0.1);
+        background-color: rgba($red, 0.1);
       }
     }
   }
