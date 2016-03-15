@@ -1,10 +1,10 @@
 .flat-select {
+  display: flex;
+
   background-color: $pure-white;
   border-radius: $border-radius;
 
   .flat-select-option {
-    display: inline-block;
-    float: left; // Prevent unwanted spacing between anchor-tag elements
     height: $flat-select-option-size;
     min-width: $flat-select-option-size;
     padding: 0 4px;
@@ -20,10 +20,19 @@
 
     cursor: default;
 
-    .icon-container .icon {
-      vertical-align: -0.2em;
+    .icon-container {
+      margin-right: 5px;
 
-      fill: $pure-white;
+      vertical-align: -3px;
+
+      &, .icon {
+        width: 13px;
+        height: 13px;
+      }
+
+      .icon {
+        fill: $pure-white;
+      }
     }
 
     & + .flat-select-option {
