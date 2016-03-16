@@ -15,7 +15,7 @@ form {
 .coveo-form {
   .form-control-label {
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: $form-control-label-margin;
 
     color: $medium-blue;
     font-size: 13px;
@@ -26,10 +26,10 @@ form {
     display: block;
 
     & + .form-group {
-      margin-top: 40px;
+      margin-top: $form-group-margin;
 
       &.textbox {
-        margin-top: 40px + $textbox-margin-top;
+        margin-top: $form-group-margin + $textbox-margin-top;
       }
     }
   }
