@@ -122,8 +122,8 @@ $base-modal-z-index: 1050;
       background-color: $pure-white;
 
       &.mod-align-header {
-        padding-left: $header-padding;
         padding-right: $header-padding;
+        padding-left: $header-padding;
 
         // Use mod-full-width to cancel the header-padding for tables inside a modal
         table.mod-full-width, .coveo-table-actions-container.mod-full-width {
