@@ -110,6 +110,7 @@ input[type=checkbox].coveo-checkbox {
   display: inline-flex;
 
   line-height: 16px;
+  vertical-align: middle; // Required to properly position checkboxes into tables.
 
   &.disabled .label {
     opacity: 0.4;
@@ -120,6 +121,6 @@ input[type=checkbox].coveo-checkbox {
   }
 }
 
-label.coveo-checkbox-label {
+label[for].coveo-checkbox-label {
   cursor: pointer;
 }

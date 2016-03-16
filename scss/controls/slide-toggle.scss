@@ -100,6 +100,6 @@ input[type=checkbox].coveo-slide-toggle {
   }
 }
 
-label.coveo-slide-toggle-label {
+label[for].coveo-slide-toggle-label {
   cursor: pointer;
 }
