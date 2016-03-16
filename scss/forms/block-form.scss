@@ -27,6 +27,10 @@ form {
 
     & + .form-group {
       margin-top: 40px;
+
+      &.textbox {
+        margin-top: 40px + $textbox-margin-top;
+      }
     }
   }
 }

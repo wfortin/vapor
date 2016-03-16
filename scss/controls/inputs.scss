@@ -41,12 +41,10 @@ input[type='text'], textarea {
   }
 }
 
-$label-top: 15px;
-
 .textbox {
   position: relative;
 
-  margin-top: $label-top;
+  margin-top: $textbox-margin-top;
 
   font-size: 15px;
 
@@ -72,7 +70,7 @@ $label-top: 15px;
       @include placeholder();
 
       & + .textbox-label {
-        top: -1 * $label-top;
+        top: -1 * $textbox-margin-top;
 
         color: $medium-blue;
         font-size: 13px;
