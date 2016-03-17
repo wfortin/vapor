@@ -6,16 +6,18 @@
   min-height: $table-actions-container-height;
 
   .coveo-table-actions {
-    padding: 10px 19px 10px 30px;
+    align-items: center;
+
+    display: flex;
+    padding: 0 30px;
 
     .actions-row {
+      align-items: center;
+
       display: flex;
     }
 
     .action {
-      padding: 3px 10px;
-      margin-left: 10px;
-
       border: 1px solid transparent;
       border-radius: 2px;
 
@@ -27,7 +29,15 @@
         opacity: 0.3;
       }
 
+      & + .action {
+        margin-left: 30px;
+      }
+
       &.dropdown {
+        padding: 3px 10px;
+        margin-right: -10px;
+        margin-left: 20px;
+
         &.open {
           background-color: $light-grey;
           border-color: $medium-grey;
@@ -51,5 +61,9 @@
 
   &.mod-border-top {
     border-top: $table-border;
+  }
+
+  &.mod-align-header .coveo-table-actions:last-child {
+    padding-right: 40px;
   }
 }
