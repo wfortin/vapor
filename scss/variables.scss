@@ -9,6 +9,10 @@ $button-padding-y: 8.5px;
 $button-border-width: 1px;
 $button-height: 34px;
 $button-large-height: 50px;
+// Checkboxes and radios
+$checkbox-label-margin: 24px;
+// Text box
+$textbox-margin-top: 15px;
 // Filter Box
 $filter-box-height: 34px;
 // Flat select
@@ -19,7 +23,7 @@ $header-padding: 40px;
 // Modal
 $modal-header-height: 100px;
 // Application
-$application-container-min-height: 600px;
+$application-container-min-height: 400px;
 // Navigation
 $navigation-width: 245px;
 $navigation-background-color: $dark-blue;
@@ -31,12 +35,17 @@ $navigation-locked-color: $medium-grey;
 // Table
 $table-first-column-padding-left: 35px;
 $table-header-height: 32px;
-$table-actions-container-height: 52px;
 $table-border-width: 1px;
 $table-border: $table-border-width solid $medium-grey;
 $table-border-button: $table-border-width solid transparent;
 $table-selected-border-width: 5px;
+// Table actions
+$table-actions-container-height: 52px;
+$table-actions-margin: 30px;
+$table-actions-dropdown-padding-x: 10px;
 // Table collapsible rows
 $table-collapsible-row-height: 45px;
 // Form elements
 $form-elements-margin: 10px;
+$form-group-margin: 30px;
+$form-control-label-margin: 10px;
