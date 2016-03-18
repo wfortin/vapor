@@ -1,45 +1,51 @@
 
-  .modal-container {
-    &.prompt {
-      .modal-content {
-        width: 30%;
-        height: 40%;
+.modal-container {
+  &.prompt {
+    .modal-content {
+      width: 375px;
+      min-height: 215px;
+      max-height: 300px;
 
-        header.modal-header {
-          height: 80px;
-          font-weight: bold;
-          padding: 20px 40px;
-        }
+      header.modal-header {
+        height: 80px;
+        padding: 20px 40px;
 
-        .modal-body {
-          padding: 0px 40px;
+        font-weight: bold;
+      }
 
-          .pompt-message {
-            padding: 30px 0;
-          }
-        }
+      .modal-body {
+        max-height: 100px;
+        min-height: 80px;
+        padding: 0 40px;
 
-        footer {
-          padding: 0 40px 24px 40px;
-          background-color: $pure-white;
-          border-top: 0;
+        .pompt-message {
+          padding: $modal-prompt-text-padding-y 0;
         }
       }
-    }
 
-    &.prompt-confirmation {
-      .modal-content {
-        header.modal-header {
-          background-color: $yellow;
-        }
-      }
-    }
+      footer.modal-footer {
+        height: calc(24px +  #{$button-height} + 2 * #{$button-border-width});
+        padding: 0 40px 24px 40px;
 
-    &.prompt-warning {
-      .modal-content {
-        header.modal-header {
-          background-color: $red;
-        }
+        background-color: $pure-white;
+        border-top: 0;
       }
     }
   }
+
+  &.prompt-confirmation {
+    .modal-content {
+      header.modal-header {
+        background-color: $yellow;
+      }
+    }
+  }
+
+  &.prompt-warning {
+    .modal-content {
+      header.modal-header {
+        background-color: $red;
+      }
+    }
+  }
+}
