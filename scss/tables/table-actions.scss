@@ -9,7 +9,7 @@
     align-items: center;
 
     display: flex;
-    padding: 0 30px;
+    padding: 0 $table-actions-margin;
 
     .actions-row {
       align-items: center;
@@ -30,13 +30,13 @@
       }
 
       & + .action {
-        margin-left: 30px;
+        margin-left: $table-actions-margin;
       }
 
       &.dropdown {
-        padding: 3px 10px;
-        margin-right: -10px;
-        margin-left: 20px;
+        padding: 3px $table-actions-dropdown-padding-x;
+        margin-right: -$table-actions-dropdown-padding-x;
+        margin-left: calc(#{$table-actions-margin} - #{$table-actions-dropdown-padding-x});
 
         &.open {
           background-color: $light-grey;
@@ -64,6 +64,6 @@
   }
 
   &.mod-align-header .coveo-table-actions:last-child {
-    padding-right: 40px;
+    padding-right: $header-padding;
   }
 }
