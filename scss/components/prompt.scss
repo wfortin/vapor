@@ -1,26 +1,45 @@
-.prompt .prompt-danger {
-  .label-confirmation {
-    margin-right: 20px;
 
-    .prompt-icon {
-      padding-right: 5px;
+  .modal-container {
+    &.prompt {
+      .modal-content {
+        width: 30%;
+        height: 40%;
+
+        header.modal-header {
+          height: 80px;
+          font-weight: bold;
+          padding: 20px 40px;
+        }
+
+        .modal-body {
+          padding: 0px 40px;
+
+          .pompt-message {
+            padding: 30px 0;
+          }
+        }
+
+        footer {
+          padding: 0 40px 24px 40px;
+          background-color: $pure-white;
+          border-top: 0;
+        }
+      }
+    }
+
+    &.prompt-confirmation {
+      .modal-content {
+        header.modal-header {
+          background-color: $yellow;
+        }
+      }
+    }
+
+    &.prompt-warning {
+      .modal-content {
+        header.modal-header {
+          background-color: $red;
+        }
+      }
     }
   }
-
-  & > span {
-    &.prompt-icon {
-      padding-right: 5px;
-    }
-
-    &.description {
-      color: $medium-blue;
-      font-weight: bold;
-    }
-
-    &.prompt-action {
-      padding-left: 5px;
-
-      cursor: pointer;
-    }
-  }
-}
