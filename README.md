@@ -4,13 +4,13 @@
 [![dev-dependencies](https://img.shields.io/david/dev/coveo/styleguide.svg?style=flat-square)](https://github.com/coveo/styleguide/blob/master/package.json)
 [![license](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/coveo/styleguide/blob/master/LICENSE)
 
-# Coveo UI Styleguide
+# Vapor CSS
 
-Coveo Styleguide is a collection of UI components used in Coveo's Administration Console. All components and their documentation is [available here](http://coveo.github.io/styleguide/)
+Vapor CSS is Coveo's collection of UI components used in Coveo's Administration Console. All components and their documentation is [available here](http://coveo.github.io/styleguide/)
 
 Available on npm:
 
-	npm install coveo-styleguide
+	npm install vaporcss
 	
 Also available on our cdn :
 
@@ -22,8 +22,8 @@ Also available on our cdn :
 Make sure you have Node JS and NPM installed.
 Run `npm install` to get the required dependencies.
 
-###Dependencies
-Coveo Styleguide uses [jQuery](https://jquery.com/) and [Underscore](http://underscorejs.org/) for the more complex components. Tested with jQuery 2.1.4 and Underscore 1.8.3
+### Dependencies
+Vapor uses [jQuery](https://jquery.com/) and [Underscore](http://underscorejs.org/) for the more complex components. Tested with jQuery 2.1.4 and Underscore 1.8.3
 
 ### Building
 To build the dist folder and export it into the docs folder, simply run `gulp docs`.
