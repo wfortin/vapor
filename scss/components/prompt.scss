@@ -1,4 +1,3 @@
-
 .modal-container {
   &.mod-prompt {
     .modal-content {
@@ -9,8 +8,6 @@
       .modal-header {
         height: modal-prompt-header-height;
         padding: 20px $header-padding;
-
-        font-weight: bold;
       }
 
       .modal-body {
