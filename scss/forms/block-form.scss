@@ -28,8 +28,8 @@ form {
     & + .form-group {
       margin-top: $form-group-margin;
 
-      &.textbox {
-        margin-top: $form-group-margin + $textbox-margin-top;
+      &.input-field {
+        margin-top: $form-group-margin + $input-field-margin-top;
       }
     }
 

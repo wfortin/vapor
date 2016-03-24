@@ -1,12 +1,12 @@
-.textbox {
+.input-field {
   position: relative;
 
-  max-width: $textbox-max-width;
-  margin-top: $textbox-margin-top;
+  max-width: $input-field-max-width;
+  margin-top: $input-field-margin-top;
 
   font-size: 15px;
 
-  .textbox-input {
+  input {
     width: 100%;
     height: 34px;
     padding: 3px 0;
@@ -32,8 +32,8 @@
 
       @include placeholder();
 
-      & + .textbox-label {
-        top: -1 * $textbox-margin-top;
+      & + label {
+        top: -1 * $input-field-margin-top;
 
         color: $medium-blue;
         font-size: 13px;
@@ -46,13 +46,13 @@
 
       border-bottom-color: $medium-grey;
 
-      & + .textbox-label {
+      & + label {
         color: $medium-grey;
       }
     }
   }
 
-  .textbox-label {
+  label {
     position: absolute;
     top: 10px;
     left: 0;
@@ -63,7 +63,7 @@
   }
 
   // Validation feedback
-  &.validate .textbox-input {
+  &.validate input {
     transition: 0.2s margin-bottom ease, 0.2s color ease;
 
     &.valid, &.invalid {
@@ -73,7 +73,7 @@
     &.valid {
       border-bottom-color: $green;
 
-      & + .textbox-label:after {
+      & + label:after {
         color: $green;
         content: attr(data-valid-message);
 
@@ -84,7 +84,7 @@
     &.invalid {
       border-bottom-color: $red;
 
-      & + .textbox-label:after {
+      & + label:after {
         color: $red;
         content: attr(data-invalid-message);
 
@@ -92,7 +92,7 @@
       }
     }
 
-    & + .textbox-label {
+    & + label {
       width: 100%;
 
       &:after {
@@ -112,7 +112,7 @@
     }
 
     &:valid, &:focus {
-      & + .textbox-label:after {
+      & + label:after {
         top: 55px;
       }
     }
