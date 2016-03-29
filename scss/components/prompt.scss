@@ -1,7 +1,8 @@
 .modal-container {
   &.mod-prompt {
     .modal-content {
-      width: $modal-prompt-width;
+      min-width: $modal-prompt-min-width;
+      max-width: $modal-prompt-max-width;
       max-height: $modal-prompt-max-height;
       min-height: $modal-prompt-min-height;
 
@@ -15,14 +16,14 @@
         min-height: $modal-prompt-body-min-height;
 
         .pompt-message {
-          padding: $modal-prompt-text-padding-y 0;
+          padding-top: $modal-prompt-text-padding-y;
+          line-height: 20px;
         }
       }
 
       .modal-footer {
         // calculate the button height + 2 border top and bottom and the space below the button for the max height
-        height: calc(24px +  #{$button-height} + 2 * #{$button-border-width});
-        padding: 0 $header-padding 24px $header-padding;
+        height: calc(2 * 24px +  #{$button-height} + 2 * #{$button-border-width});
 
         background-color: $pure-white;
         border-top: 0;

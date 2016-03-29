@@ -99,6 +99,10 @@ $base-modal-z-index: 1050;
         background-color: $red;
       }
 
+      &.mod-info {
+        background-color: $medium-blue;
+      }
+
       h1 {
         flex-grow: 1;
 
