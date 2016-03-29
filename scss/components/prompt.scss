@@ -1,14 +1,14 @@
 .modal-container {
   &.mod-prompt {
     .modal-content {
-      min-width: $modal-prompt-min-width;
       max-width: $modal-prompt-max-width;
       max-height: $modal-prompt-max-height;
+      min-width: $modal-prompt-min-width;
       min-height: $modal-prompt-min-height;
 
       .modal-header {
         height: modal-prompt-header-height;
-        padding: 20px $header-padding;
+        padding: $header-height-padding $header-padding;
       }
 
       .modal-body {
@@ -17,6 +17,7 @@
 
         .pompt-message {
           padding-top: $modal-prompt-text-padding-y;
+
           line-height: 20px;
         }
       }
