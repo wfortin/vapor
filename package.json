@@ -1,6 +1,6 @@
 {
   "name": "coveo-styleguide",
-  "version": "1.2.1",
+  "version": "1.2.5",
   "description": "Yet another CSS framework - but it's awesome & built by Coveo.",
   "keywords": [
     "coveo",
@@ -51,6 +51,7 @@
     "gulp-svgstore": "5.0.5",
     "gulp-uglify": "1.4.1",
     "gulp-util": "3.0.6",
+    "guppy-pre-commit": "0.3.0",
     "png-sprite": "0.1.1",
     "require-dir": "0.3.0"
   },
