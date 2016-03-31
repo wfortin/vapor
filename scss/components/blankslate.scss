@@ -1,5 +1,5 @@
 .blankslate {
-  padding: $blackslate-padding;
+  padding: $blankslate-padding;
 
   color: $medium-blue;
   text-align: center;
@@ -9,11 +9,11 @@
   border-radius: $border-radius;
 
   h1, h2, h3, h4, h5, h6 {
-    margin: blackslate-margin 0 blackslate-margin 0;
+    margin: blankslate-margin 0 blankslate-margin 0;
   }
 
   p {
-    margin-bottom: blackslate-margin;
+    margin-bottom: blankslate-margin;
 
     color: $medium-blue;
   }
