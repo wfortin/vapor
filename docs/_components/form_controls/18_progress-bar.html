@@ -14,3 +14,17 @@ stylesheet: '/scss/elements/progress-bar.scss'
 </div>
 
 <button class="btn mod-primary js-exemple-progress mt2">Test progression</button>
+
+<script>
+  $('.js-exemple-progress').click(function(event){
+    var parentEl = $(event.currentTarget).parent();
+    if (parentEl) {
+      var elementProgress = parentEl.find(".progress");
+      if (elementProgress.hasClass("progress-40")) {
+        elementProgress.removeClass("progress-40").addClass("progress-90");
+      } else {
+        elementProgress.removeClass("progress-90").addClass("progress-40");
+      }
+    }
+  });
+</script>
