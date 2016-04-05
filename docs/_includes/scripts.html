@@ -124,5 +124,17 @@
             flatSelectEl.find('.flat-select-option:not(.selectable)').addClass('selectable');
             optionEl.removeClass('selectable');
         });
+
+        $('.js-exemple-progress').click(function(event){
+          var parentEl = $(event.currentTarget).parent();
+          if (parentEl) {
+            var elementProgress = parentEl.find(".progress");
+            if (elementProgress.hasClass("progress-40")) {
+              elementProgress.removeClass("progress-40").addClass("progress-90");
+            } else {
+              elementProgress.removeClass("progress-90").addClass("progress-40");
+            }
+          }
+        });
     });
 </script>

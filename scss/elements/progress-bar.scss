@@ -1,0 +1,32 @@
+.progress-bar {
+  text-align: center;
+  width: 100%;
+}
+.progress {
+  background-color: $white;
+  height: 20px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+@for $i from 0 through 100 {
+  .progress-#{$i} .status {
+    width: percentage($i / 100);
+  }
+}
+
+.progress, .status {
+  border-radius: 12px;
+}
+
+.status {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: $green;
+  z-index: 2;
+  transition: all 1s linear;
+}
