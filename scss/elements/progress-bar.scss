@@ -15,16 +15,16 @@
 }
 
 @for $i from 0 through 100 {
-  .progress-#{$i} .status {
+  .progress-#{$i} .progress-bar-completed {
     width: percentage($i / 100);
   }
 }
 
-.progress, .status {
+.progress, .progress-bar-completed {
   border-radius: 12px;
 }
 
-.status {
+.progress-bar-completed {
   position: absolute;
   top: 0;
   bottom: 0;
