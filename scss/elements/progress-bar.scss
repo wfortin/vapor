@@ -7,7 +7,7 @@
   position: relative;
   z-index: 1;
 
-  height: 20px;
+  height: $progress-bar-default-height;
   margin: 0 auto;
   overflow: hidden;
 
@@ -21,7 +21,7 @@
 }
 
 .progress, .progress-bar-completed {
-  border-radius: 12px;
+  border-radius: $progress-bar-border-radius;
 }
 
 .progress-bar-completed {

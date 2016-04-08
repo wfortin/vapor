@@ -1,11 +1,11 @@
 ---
 type: formControls
 title: Progress bar
-usage: Show a progression between 0 to 100%.
+usage: Show a progression between 0 and 100%.
 stylesheet: '/scss/elements/progress-bar.scss'
 ---
 
-<div class="bg-medium-blue progress-bar-exmple-container">
+<div class="bg-medium-blue progress-bar-example-container">
   <div class="progress-bar" style="width: 400px;">
     <div class='progress progress-40'>
       <span class='progress-bar-completed'></span>
@@ -13,10 +13,10 @@ stylesheet: '/scss/elements/progress-bar.scss'
   </div>
 </div>
 
-<button class="btn mod-primary js-exemple-progress mt2">Test progression</button>
+<button class="btn mod-primary js-example-progress mt2">Test progression</button>
 
 <script>
-  $('.js-exemple-progress').click(function(event){
+  $('.js-example-progress').click(function(event){
     var parentEl = $(event.currentTarget).parent();
     if (parentEl) {
       var elementProgress = parentEl.find(".progress");
