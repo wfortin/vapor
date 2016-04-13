@@ -56,5 +56,9 @@ form {
       width: 1.2em;
       height: 1.2em;
     }
+
+    .inline-help-icon > svg {
+      fill: $medium-grey;
+    }
   }
 }
