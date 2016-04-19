@@ -8,34 +8,35 @@
 @import 'variables';
 @import 'animations';
 
+//Progress bar
+@import 'elements/progress-bar';
+// Buttons
+@import 'elements/btn';
+@import 'elements/btn-prepend';
+// Typography
+@import 'typography/headings';
+@import 'elements/labels';
+@import 'elements/links';
+// Icons
+@import 'elements/icons';
+@import 'elements/color-dot';
+// Controls
+@import 'controls/checkboxes';
+@import 'controls/collapsable';
+@import 'controls/datepicker';
+@import 'controls/dropdown';
+@import 'controls/filter-box';
+@import 'controls/flat-select';
+@import 'controls/inputs';
+@import 'controls/numeric-spinner';
+@import 'controls/radios.scss';
+@import 'controls/slide-toggle';
+@import 'controls/slide-toggle-double';
+@import 'controls/splash';
+@import 'controls/chosen';
+@import 'controls/input-field';
+
 .coveo-styleguide {
-  //Progress bar
-  @import 'elements/progress-bar';
-  // Buttons
-  @import 'elements/btn';
-  @import 'elements/btn-prepend';
-  // Typography
-  @import 'typography/headings';
-  @import 'elements/labels';
-  @import 'elements/links';
-  // Icons
-  @import 'elements/icons';
-  @import 'elements/color-dot';
-  // Controls
-  @import 'controls/checkboxes';
-  @import 'controls/collapsable';
-  @import 'controls/datepicker';
-  @import 'controls/dropdown';
-  @import 'controls/filter-box';
-  @import 'controls/flat-select';
-  @import 'controls/inputs';
-  @import 'controls/numeric-spinner';
-  @import 'controls/radios.scss';
-  @import 'controls/slide-toggle';
-  @import 'controls/slide-toggle-double';
-  @import 'controls/splash';
-  @import 'controls/chosen';
-  @import 'controls/input-field';
   // Tables
   @import 'tables/table';
   @import 'tables/fixed-header-table';
