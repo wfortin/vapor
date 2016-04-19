@@ -92,12 +92,13 @@
   }
 
   &.mod-confirm-success, &.mod-confirm-error {
-    transition: background-color 0.2s ease;
     position: relative;
 
     color: transparent;
 
     outline: 0;
+
+    transition: background-color 0.2s ease;
 
     user-select: none;
 
@@ -125,8 +126,8 @@
 
     .confirm-icon-error, .confirm-icon-success {
       position: absolute;
-      top: calc(50% - #{$button-confirm-icon-width/2});
-      right: calc(50% - #{$button-confirm-icon-width/2});
+      top: calc(50% - #{$button-confirm-icon-width}/2);
+      right: calc(50% - #{$button-confirm-icon-width}/2);
 
       display: inline-block;
 
@@ -152,7 +153,6 @@
     .confirm-icon-error {
       display: none;
     }
-
   }
 
   &.mod-confirm-error {
