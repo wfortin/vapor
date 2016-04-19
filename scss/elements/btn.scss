@@ -145,6 +145,10 @@
     background-color: $green;
     border: $button-border-width solid $green;
 
+    &:focus, &:hover{
+      background-color: $green;
+    }
+
     &:before {
       color: $green;
       content: attr(data-confirm-success);
@@ -158,6 +162,10 @@
   &.mod-confirm-error {
     background-color: $red;
     border: $button-border-width solid $red;
+
+    &:focus, &:hover {
+      background-color: $red;
+    }
 
     &:before {
       color: $red;
