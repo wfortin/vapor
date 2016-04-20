@@ -5,7 +5,7 @@ $child-padding-x: 25px;
   padding: 0 $child-padding-x $child-padding-y;
 
   background-color: $light-grey;
-  border-radius: 3px;
+  border-radius: $border-radius;
 
   &:before {
     display: block;
