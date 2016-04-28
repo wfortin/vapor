@@ -1,0 +1,24 @@
+.lightbox-search {
+  @extend .modal-backdrop;
+  opacity: 1;
+  background: rgba($medium-blue, 0.9);
+  display: none;
+}
+
+.lightbox-search__box {
+  width: 90%;
+  max-width: 600px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.lightbox-search__input {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 2rem;
+  outline: none;
+  color: $block-text-color;
+}
