@@ -1,6 +1,5 @@
 .lightbox-search {
   //display: none;
-
   background: rgba($medium-blue, 0.9);
 
   opacity: 1;
@@ -27,31 +26,38 @@
   color: $block-text-color;
   font-size: 2rem;
 
-  outline: none;
   border: none;
+  outline: none;
 }
 
 .admin-popover {
   display: block !important;
-  visibility: visible !important;
   width: 100%;
-  background: #fff;
   margin-top: 5px;
-  border-radius: 5px;
   overflow: hidden;
+
+  background: #ffffff;
+  border-radius: 5px;
+
+  visibility: visible !important;
+
+  li {
+    cursor: pointer;
+
+    &:hover, &.admin-active {
+      color: $medium-blue;
+
+      background-color: $table-editable-cell-color;
+    }
+  }
 }
 
 .autocomplete-value {
-  padding: 10px 20px;
-  border-top: 1px solid #eee;
-  font-size: 1.8rem;
-  color: $block-text-color;
   display: block;
-  cursor: pointer;
+  padding: 10px 20px;
 
-  &:hover,
-  .admin-active & {
-    background-color: $table-editable-cell-color;
-    color: $medium-blue;
-  }
+  color: $block-text-color;
+  font-size: 1.8rem;
+
+  border-top: 1px solid #eeeeee;
 }
