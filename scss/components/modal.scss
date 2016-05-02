@@ -160,6 +160,10 @@ $base-modal-z-index: 1050;
     }
   }
 
+  &.mod-small > .modal-content {
+    width: 520px;
+  }
+
   &.mod-medium > .modal-content {
     width: 65%;
     height: 70%;
