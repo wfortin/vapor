@@ -144,6 +144,11 @@ $base-modal-z-index: 1050;
           margin-left: -$header-padding;
         }
       }
+
+      &.mod-align-form {
+        padding-top: $modal-content-padding-form;
+        padding-bottom: $modal-content-padding-form;
+      }
     }
 
     .modal-footer {
