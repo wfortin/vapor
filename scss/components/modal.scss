@@ -165,8 +165,8 @@ $base-modal-z-index: 1050;
     }
   }
 
-  &.mod-small > .modal-content {
-    width: 520px;
+  &.mod-width-small > .modal-content {
+    width: $input-field-max-width + 2 * $header-padding;
   }
 
   &.mod-medium > .modal-content {
