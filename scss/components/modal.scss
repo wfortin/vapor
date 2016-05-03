@@ -166,7 +166,7 @@ $base-modal-z-index: 1050;
   }
 
   &.mod-width-small > .modal-content {
-    width: $input-field-max-width + 2 * $header-padding;
+    width: $modal-form-width-small + 2 * $header-padding;
   }
 
   &.mod-medium > .modal-content {
