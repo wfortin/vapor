@@ -34,7 +34,7 @@ $collapsible-height: 50px;
   .collapsible-body {
     box-sizing: border-box;
     display: none;
-    padding: 24px $header-padding;
+    padding: $form-top-padding $header-padding;
 
     border-bottom: 1px solid $medium-grey;
   }
