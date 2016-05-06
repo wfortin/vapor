@@ -60,6 +60,7 @@ Vapor cherry picks from these awesome UI Libraries
 * [Bootstrap](https://github.com/twbs/bootstrap)
 * [BassCss](https://github.com/basscss/basscss)
 * [ResetCss](http://meyerweb.com/eric/tools/css/reset/)
+* [Materialize](https://github.com/Dogfalo/materialize)
 
 # License
 Vapor is distributed under [MIT license](https://github.com/Coveo/vapor/blob/master/LICENSE).
