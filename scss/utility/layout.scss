@@ -64,14 +64,13 @@
 }
 
 .splitted-layout {
-  flex-grow: 1;
-
-  display: flex;
+  @extend .flex;
+  @extend .flex-auto;
 
   .column {
-    flex: 1;
-
     max-width: 50%;
+
+    @extend .flex-auto;
   }
 
   .column + .column {

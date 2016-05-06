@@ -1,5 +1,3 @@
-$collapsible-height: 50px;
-
 .collapsible {
   .collapsible-header {
     display: block;
@@ -7,7 +5,7 @@ $collapsible-height: 50px;
     min-height: $collapsible-height;
     padding: 0 $header-padding;
 
-    font-size: 13px;
+    font-size: $collapsible-header-font-size;
     line-height: $collapsible-height;
     text-align: left;
 
@@ -15,9 +13,9 @@ $collapsible-height: 50px;
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMi42IDcuMiI+ICA8cGF0aCB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgLTEgMTIuMzY2IDcuMDg2KSIgICAgICAgIGQ9Im0xMS40MjEgNy4wNGMtLjMgMC0uNS0uMS0uNy0uM2wtNC42LTQuNi00LjYgNC42Yy0uNC40LTEgLjQtMS40IDBzLS40LTEgMC0xLjRsNS4yLTUuMmMuNC0uNCAxLjItLjQgMS42IDBsNS4yIDUuMmMuNC40LjQgMSAwIDEuNC0uMi4yLS40LjMtLjcuMyIvPjwvc3ZnPg==');
     background-repeat: no-repeat;
     background-position: right $header-padding center;
-    background-size: 10px 10px;
+    background-size: $collapsible-header-icon-size $collapsible-header-icon-size;
     border: none;
-    border-bottom: 1px solid $medium-grey;
+    border-bottom: $collapsible-border-width solid $medium-grey;
     outline: none;
 
     cursor: pointer;
@@ -36,7 +34,7 @@ $collapsible-height: 50px;
     display: none;
     padding: $form-top-padding $header-padding;
 
-    border-bottom: 1px solid $medium-grey;
+    border-bottom: $collapsible-border-width solid $medium-grey;
   }
 
   li:last-child .collapsible-body {
