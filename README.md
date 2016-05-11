@@ -1,16 +1,16 @@
-![logo](https://raw.githubusercontent.com/wfortin/vapor/master/vapor.png)
+![logo](vapor.gif)
 
-[![Build Status](https://img.shields.io/travis/coveo/styleguide.svg?style=flat-square)](https://travis-ci.org/coveo/styleguide)
-[![dev-dependencies](https://img.shields.io/david/dev/coveo/styleguide.svg?style=flat-square)](https://github.com/coveo/styleguide/blob/master/package.json)
-[![license](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/coveo/styleguide/blob/master/LICENSE)
+[![Build Status](https://img.shields.io/travis/coveo/vapor.svg?style=flat-square)](https://travis-ci.org/coveo/vapor)
+[![dev-dependencies](https://img.shields.io/david/dev/coveo/vapor.svg?style=flat-square)](https://github.com/coveo/vapor/blob/master/package.json)
+[![license](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 
 # Vapor CSS
 
-Vapor CSS is Coveo's collection of UI components used in Coveo's Administration Console. All components and their documentation is [available here](http://coveo.github.io/styleguide/)
+Vapor CSS is Coveo's collection of UI components used in Coveo's Administration Console. All components and their documentation is [available here](http://coveo.github.io/vapor/)
 
 ## Install
 
-```
+```sh
 npm install vaporcss
 ```
 
@@ -39,7 +39,7 @@ bundle install
 bundle exec jekyll server
 
 # Open http://localhost:4000/styleguide/ in your favorite browser and voila!
-open http://localhost:4000/styleguide/
+open http://localhost:4000/vapor/
 ```
 
 ### Test locally without publishing
@@ -59,11 +59,12 @@ All you need is to bump the version and re-[publish the package on npm](https://
 
 # Thanks
 
-Coveo Styleguide cherry picks from these awesome UI Libraries
+Vapor cherry picks from these awesome UI Libraries
 
 * [Bootstrap](https://github.com/twbs/bootstrap)
 * [BassCss](https://github.com/basscss/basscss)
 * [ResetCss](http://meyerweb.com/eric/tools/css/reset/)
+* [Materialize](https://github.com/Dogfalo/materialize)
 
 # Contributing
 
@@ -72,3 +73,6 @@ Coveo Styleguide cherry picks from these awesome UI Libraries
 3. Code Code Code
 4. Submit a pull request
 5. Wait for some nice guy to review and merge
+
+# License
+Vapor is distributed under [MIT license](LICENSE).

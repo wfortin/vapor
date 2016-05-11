@@ -6,6 +6,13 @@
 @import 'common/font';
 @import 'sprites';
 @import 'variables';
+@import 'animations';
+
+//Progress bar
+@import 'elements/progress-bar';
+// Buttons
+@import 'elements/btn';
+@import 'elements/btn-prepend';
 // Typography
 @import 'typography/headings';
 @import 'elements/labels';
@@ -13,9 +20,6 @@
 // Icons
 @import 'elements/icons';
 @import 'elements/color-dot';
-// Buttons
-@import 'elements/btn';
-@import 'elements/btn-prepend';
 // Controls
 @import 'controls/checkboxes';
 @import 'controls/collapsable';
@@ -25,10 +29,12 @@
 @import 'controls/flat-select';
 @import 'controls/inputs';
 @import 'controls/numeric-spinner';
+@import 'controls/radios.scss';
 @import 'controls/slide-toggle';
 @import 'controls/slide-toggle-double';
 @import 'controls/splash';
 @import 'controls/chosen';
+@import 'controls/input-field';
 
 .coveo-styleguide {
   // Tables
@@ -48,15 +54,19 @@
   @import 'components/modal';
   @import 'components/blankslate';
   @import 'components/banner';
+  @import 'components/collapsible';
+  @import 'components/panel-header';
   // Forms
   @import 'forms/form-validation';
   @import 'forms/form-sections';
+  @import 'forms/form-child';
   @import 'forms/table-form';
   @import 'forms/block-form';
   @import 'forms/flex-form';
   // Utility
   @import 'typography/utility';
   @import 'utility/align';
+  @import 'utility/border';
   @import 'utility/flex';
   @import 'utility/layout';
   @import 'utility/position';
