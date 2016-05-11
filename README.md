@@ -22,6 +22,11 @@ static.cloud.coveo.com/styleguide/v1.x.y/css/CoveoStyleGuide.css
 
 > The project is at its early stages, some components can still have _lots_ of breaking changes between versions.
 
+### Dependencies
+
+- [jQuery](https://jquery.com/) (tested with 2.1.4)
+- [Underscore](http://underscorejs.org/)  (tested with 1.8.3)
+
 ### Building
 Make sure you have Node JS and NPM installed.
 Run `npm install` to get the required dependencies.
