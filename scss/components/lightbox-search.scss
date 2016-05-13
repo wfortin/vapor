@@ -1,15 +1,4 @@
-.lightbox-search__box {
-  position: absolute;
-  left: 50%;
-
-  width: 90%;
-  max-width: 600px;
-
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.lightbox-search__input {
+.lightbox-search-input {
   width: 100%;
   padding: 10px 20px;
 
@@ -20,13 +9,13 @@
   outline: none;
 }
 
-&.admin #admin .admin-autocomplete .admin-popover-container .admin-popover {
+.lightbox-search .popover-container .lightbox-search-popover {
   width: 100%;
   padding: 0;
   margin-top: 5px;
   overflow: hidden;
 
-  background: #ffffff;
+  background: $pure-white;
   border: none;
   border-radius: 0;
   border-radius: 3px;
