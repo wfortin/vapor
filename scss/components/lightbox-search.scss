@@ -23,7 +23,7 @@
     height: auto;
     padding: 0;
 
-    color: $block-text-color;
+    color: $dark-grey;
     line-height: inherit;
 
     cursor: pointer;
@@ -31,7 +31,7 @@
     &:hover, &.admin-active {
       color: $medium-blue;
 
-      background-color: $table-editable-cell-color;
+      background-color: $white;
     }
   }
 }
@@ -42,5 +42,5 @@
 
   font-size: 1.8rem;
 
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid $light-grey;
 }
