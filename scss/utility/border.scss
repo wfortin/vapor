@@ -1,34 +1,14 @@
+$borders: border-top border-bottom border-left border-right;
 $default-border: 1px solid $medium-grey;
 
-// TODO generate those classes with a loop when this https://github.com/tonyganch/gonzales-pe/issues/171 will be fixed!
-.mod-border-top {
-  border-top: $default-border;
+@each $border in $borders {
+  .mod-#{$border} {
+    #{$border}: $default-border;
+  }
 }
 
-.mod-border-bottom {
-  border-bottom: $default-border;
-}
-
-.mod-border-left {
-  border-left: $default-border;
-}
-
-.mod-border-right {
-  border-right: $default-border;
-}
-
-.mod-no-border-top {
-  border-top: none;
-}
-
-.mod-no-border-bottom {
-  border-bottom: none;
-}
-
-.mod-no-border-left {
-  border-left: none;
-}
-
-.mod-no-border-right {
-  border-right: none;
+@each $border in $borders {
+  .mod-no-#{$border} {
+    #{$border}: none;
+  }
 }
