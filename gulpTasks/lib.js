@@ -1,7 +1,6 @@
 var config = require('./configuration');
 
 var gulp = require('gulp-help')(require('gulp'));
-var _ = require('underscore');
 var fs = require('fs');
 var gulpif = require('gulp-if');
 var gutil = require('gulp-util');
