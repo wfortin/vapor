@@ -1,6 +1,7 @@
 var config = require('./configuration');
 
 var gulp = require('gulp-help')(require('gulp'));
+var _ = require('underscore');
 var fs = require('fs');
 var gulpif = require('gulp-if');
 var gutil = require('gulp-util');
@@ -22,10 +23,10 @@ gulp.task('lib', 'Concat and export libs to dist folder', function() {
         './node_modules/materialize-css/js/collapsible.js',
         './lib/js/*'
     ];
-    dependencies.forEach(function (path) {
-        fs.exists(path, function (exists) {
+    dependencies.forEach(function(path) {
+        fs.exists(path, function(exists) {
             if (!exists) {
-                if (!path.includes('*')) {
+                if (path.indexOf('*') == -1) {
                     gutil.log(gutil.colors.red('File not found: ', path));
                     process.exit(1);
                 }
