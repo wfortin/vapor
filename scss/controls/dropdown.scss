@@ -75,6 +75,13 @@
         }
       }
 
+      &.active {
+        color: $dark-blue;
+
+        background: none;
+        background-color: $light-grey;
+      }
+
       &.divider {
         height: 1px;
         margin: 8px 0;
