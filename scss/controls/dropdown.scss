@@ -59,9 +59,7 @@
 
         &:hover, &:focus {
           color: $dark-blue;
-
-          background: none;
-          background-color: $light-grey;
+          background: $light-grey;
         }
 
         &.state-selected {
@@ -77,8 +75,6 @@
 
       &.active {
         color: $dark-blue;
-
-        background: none;
         background-color: $light-grey;
       }
 
