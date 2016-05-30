@@ -59,6 +59,7 @@
 
         &:hover, &:focus {
           color: $dark-blue;
+
           background: $light-grey;
         }
 
@@ -75,6 +76,7 @@
 
       &.active {
         color: $dark-blue;
+
         background-color: $medium-grey;
       }
 
