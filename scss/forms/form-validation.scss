@@ -24,8 +24,8 @@
 
       .input-validation-error-icon {
         &, svg.icon {
-          height: 12px;
           width: 12px;
+          height: 12px;
         }
 
         svg {
@@ -39,7 +39,7 @@
     }
 
     label {
-      color: $red
+      color: $red;
     }
   }
 
