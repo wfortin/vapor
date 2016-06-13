@@ -7,7 +7,6 @@
 @import 'sprites';
 @import 'variables';
 @import 'animations';
-
 //Progress bar
 @import 'elements/progress-bar';
 // Buttons
@@ -35,6 +34,7 @@
 @import 'controls/splash';
 @import 'controls/chosen';
 @import 'controls/input-field';
+@import 'controls/multiline-field';
 
 .coveo-styleguide {
   // Tables
@@ -52,18 +52,22 @@
   @import 'components/menu';
   @import 'components/tooltip';
   @import 'components/modal';
+  @import 'components/lightbox-search';
   @import 'components/blankslate';
   @import 'components/banner';
+  @import 'components/collapsible';
+  @import 'components/panel-header';
   // Forms
-  @import 'forms/form-validation';
   @import 'forms/form-sections';
   @import 'forms/form-child';
-  @import 'forms/table-form';
   @import 'forms/block-form';
   @import 'forms/flex-form';
+  @import 'forms/table-form';
+  @import 'forms/form-validation';
   // Utility
   @import 'typography/utility';
   @import 'utility/align';
+  @import 'utility/border';
   @import 'utility/flex';
   @import 'utility/layout';
   @import 'utility/position';

@@ -57,8 +57,28 @@
   min-height: 100vh;
 }
 
+.full-content {
+  width: 100%;
+  height: 100%;
+}
+
 .hidden {
   display: none;
 
   visibility: hidden;
+}
+
+.splitted-layout {
+  @extend .flex;
+  @extend .flex-auto;
+
+  .column {
+    max-width: 50%;
+
+    @extend .flex-auto;
+  }
+
+  .column + .column {
+    border-left: 1px solid $medium-grey;
+  }
 }

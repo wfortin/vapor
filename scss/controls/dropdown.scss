@@ -3,6 +3,12 @@
 
   display: inline-block;
 
+  .dropdown-prepend {
+    padding-right: 5px;
+
+    color: $medium-grey;
+  }
+
   .dropdown-toggle {
     display: inline-block;
     overflow: hidden;
@@ -60,8 +66,7 @@
         &:hover, &:focus {
           color: $dark-blue;
 
-          background: none;
-          background-color: $light-grey;
+          background: $light-grey;
         }
 
         &.state-selected {
@@ -73,6 +78,12 @@
 
           cursor: default;
         }
+      }
+
+      &.active {
+        color: $dark-blue;
+
+        background-color: $medium-grey;
       }
 
       &.divider {

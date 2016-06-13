@@ -1,7 +1,6 @@
 .input-field {
   position: relative;
 
-  max-width: $input-field-max-width;
   margin-top: $input-field-margin-top;
 
   input {
@@ -31,10 +30,7 @@
       @include placeholder();
 
       & + label {
-        top: -1 * $input-field-margin-top;
-
-        color: $medium-blue;
-        font-size: $form-control-label-font-size;
+        @extend .active;
       }
     }
 
@@ -63,6 +59,17 @@
     transition: 0.2s all ease;
 
     pointer-events: none;
+
+    &.active {
+      top: -1 * $input-field-margin-top;
+
+      color: $medium-blue;
+      font-size: $form-control-label-font-size;
+    }
+  }
+
+  &.mod-fixed-width {
+    max-width: $input-field-max-width;
   }
 
   // Validation feedback
@@ -117,6 +124,67 @@
     &:valid, &:focus {
       & + label:after {
         top: 55px;
+      }
+    }
+  }
+
+  // Action icons
+  .input-wrapper {
+    position: relative;
+  }
+
+  .input-actions {
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+
+    button {
+      width: auto;
+      padding: 0;
+
+      background: none;
+      border: none;
+      outline: none;
+    }
+
+    i {
+      display: block;
+      width: 18px;
+      height: 18px;
+
+      border: 2px solid $medium-blue;
+      border-radius: 18px;
+
+      &.add-action, &.delete-action {
+        &:before {
+          position: relative;
+          top: 6px;
+          left: 2px;
+
+          display: block;
+          width: 10px;
+          height: 2px;
+
+          content: '';
+
+          background-color: $medium-blue;
+        }
+      }
+
+      &.add-action {
+        &:after {
+          position: absolute;
+          top: 4px;
+          left: 8px;
+
+          display: block;
+          width: 2px;
+          height: 10px;
+
+          content: '';
+
+          background-color: $medium-blue;
+        }
       }
     }
   }

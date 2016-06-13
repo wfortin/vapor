@@ -53,8 +53,9 @@ table {
           display: inline-flex;
 
           .tables-sort {
-            width: 15px;
+            width: 7px;
             height: 15px;
+            margin-left: 5px;
 
             vertical-align: middle;
 
@@ -116,6 +117,10 @@ table {
         }
       }
     }
+  }
+
+  thead.mod-no-border-top tr th {
+    border-top: none;
   }
 
   tbody.table-loading {

@@ -6,6 +6,8 @@
   display: flex;
   min-height: $table-actions-container-height;
 
+  background-color: $white;
+
   .coveo-table-actions {
     align-items: center;
 
@@ -20,7 +22,15 @@
       display: flex;
     }
 
+    .admin-select {
+      &.dropdown {
+        vertical-align: super;
+      }
+    }
+
     .action {
+      line-height: 0; // Fix to make sure the action respect its children height.
+
       border: 1px solid transparent;
       border-radius: 2px;
 
@@ -48,8 +58,20 @@
       }
 
       .action-label {
+        margin-top: 1px; // Hack to fix label vertical alignment...
+        margin-left: 10px;
+
         color: $medium-blue;
+        font-size: 13px;
         font-weight: bold;
+        line-height: 11px;
+        text-transform: uppercase;
+      }
+
+      .action-icon, .action-icon svg {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
       }
 
       &.prompt-action {
@@ -61,10 +83,6 @@
 
   .coveo-table-actions + .coveo-table-actions {
     border-left: $table-border;
-  }
-
-  &.mod-border-top {
-    border-top: $table-border;
   }
 
   &.mod-align-header .coveo-table-actions:last-child {
