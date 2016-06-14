@@ -16,11 +16,18 @@
     text-overflow: ellipsis;
     text-transform: none;
     white-space: nowrap;
+
     .dropdown-toggle-arrow {
       float: right;
-      margin-top: -5px;
+      margin-top: 1px;
       margin-left: 10px;
     }
+  }
+
+  .dropdown-toggle .value-icon, .dropdown-menu li .value-icon {
+    margin-right: 3px;
+
+    vertical-align: middle;
   }
 
   .dropdown-menu {
@@ -53,7 +60,7 @@
     li {
       > a, > span {
         display: block;
-        padding: 8px 20px;
+        padding: $button-padding-y $button-padding-x;
         overflow: hidden;
 
         color: $dark-grey;
