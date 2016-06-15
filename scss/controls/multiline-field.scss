@@ -1,17 +1,8 @@
 .multiline-field {
   ul {
     li {
-      label {
-        visibility: hidden;
-        &:after {
-          visibility: visible;
-        }
-      }
-
       &:first-child label {
         display: flex;
-
-        visibility: visible;
       }
 
       input {
@@ -20,13 +11,25 @@
     }
   }
 
-  // Action icons
   .input-wrapper {
     position: relative;
 
     padding-bottom: 8px;
+
+    label {
+      visibility: hidden;
+      &:after {
+        visibility: visible;
+      }
+    }
+
+    &:nth-child(1) label {
+      visibility: visible;
+    }
   }
 
+
+  // Action icons
   .input-actions {
     position: absolute;
     top: 8px;

@@ -1,10 +1,11 @@
 ---
 type: formControls
 title: Multiline input
-usage: This is the
+usage: This is a serie of inputs to add multiple entries for the same field type.
 stylesheet: '/scss/controls/multiline-field.scss'
 ---
 <div class="coveo-form">
+    <ul></ul>
     <div class="input-field multiline-field form-group">
         <div class="input-wrapper">
             <input type="text" class="js-new-value-input" placeholder="" required>
@@ -81,33 +82,38 @@ stylesheet: '/scss/controls/multiline-field.scss'
     </div>
 
     <div class="input-field multiline-field form-group">
-        <ul>
-            <li class="input-wrapper validate">
-                <input type="text" class="invalid" value="Multiline error 1" required>
-                <label  data-valid-message="You dit it right!" data-invalid-message="How is this possible?!?">Multiline one value entered</label>
+        <div class="multiline-field-fields">
+            <ul>
+                <li class="input-wrapper validate">
+                    <input type="text" class="invalid" value="Multiline error 1" required>
+                    <label data-valid-message="You dit it right!" data-invalid-message="How is this possible?!?">Multiline one value
+                        entered</label>
+                    <div class="input-actions">
+                        <button class="js-delete-value-button" type="button">
+                            <i class="delete-action" title="Delete this entry"></i>
+                        </button>
+                    </div>
+                </li>
+                <li class="input-wrapper validate">
+                    <input type="text" class="invalid" value="Multiline error 2" required>
+                    <label data-valid-message="You dit it right!" data-invalid-message="How is this possible?!?">Multiline one value
+                        entered</label>
+                    <div class="input-actions">
+                        <button class="js-delete-value-button" type="button">
+                            <i class="delete-action" title="Delete this entry"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <div class="input-wrapper validate">
+                <input type="text" placeholder="" required>
+                <label data-valid-message="You dit it right!" data-invalid-message="How is this possible?!?">Multiline one value
+                    entered</label>
                 <div class="input-actions">
-                    <button class="js-delete-value-button" type="button">
-                        <i class="delete-action" title="Delete this entry"></i>
+                    <button class="js-add-value-button">
+                        <i class="add-action" title="Add a new entry"></i>
                     </button>
                 </div>
-            </li>
-            <li class="input-wrapper validate">
-                <input type="text" class="invalid" value="Multiline error 1" required>
-                <label  data-valid-message="You dit it right!" data-invalid-message="How is this possible?!?"></label>
-                <div class="input-actions">
-                    <button class="js-delete-value-button" type="button">
-                        <i class="delete-action" title="Delete this entry"></i>
-                    </button>
-                </div>
-            </li>
-        </ul>
-        <div class="input-wrapper validate">
-            <input type="text" placeholder="" required >
-            <label data-valid-message="You dit it right!" data-invalid-message="How is this possible?!?"></label>
-            <div class="input-actions">
-                <button class="js-add-value-button">
-                    <i class="add-action" title="Add a new entry"></i>
-                </button>
             </div>
         </div>
     </div>
