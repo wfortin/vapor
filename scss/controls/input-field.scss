@@ -97,7 +97,7 @@
   }
 
   // Validation feedback
-  &.validate input, &.validate textarea {
+  &.validate input, &.validate textarea, .validate input {
     transition: 0.2s margin-bottom ease, 0.2s color ease;
 
     &.valid, &.invalid {
@@ -117,13 +117,13 @@
 
     &.invalid {
       border-bottom-color: $red;
+    }
 
-      & + label:after {
-        color: $red;
-        content: attr(data-invalid-message);
+    &.invalid + label:after {
+      color: $red;
+      content: attr(data-invalid-message);
 
-        opacity: 1;
-      }
+      opacity: 1;
     }
 
     & + label {
@@ -136,12 +136,9 @@
 
         display: block;
 
-        content: '';
         font-size: 12px;
 
         transition: 0.2s all ease;
-
-        opacity: 0;
       }
     }
 

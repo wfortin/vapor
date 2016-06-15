@@ -1,30 +1,36 @@
 .multiline-field {
-  li {
-    margin-bottom: 30px;
+  ul {
+    li {
+      label {
+        visibility: hidden;
+        &:after {
+          visibility: visible;
+        }
+      }
 
-    label {
-      display: none;
-    }
+      &:first-child label {
+        display: flex;
 
-    &:first-child label {
-      display: flex;
+        visibility: visible;
+      }
+
+      input {
+        margin-bottom: 10px;
+      }
     }
   }
-
-  input {
-    padding-right: 20px;
-  }
-
 
   // Action icons
   .input-wrapper {
     position: relative;
+
+    padding-bottom: 8px;
   }
 
   .input-actions {
     position: absolute;
+    top: 8px;
     right: 0;
-    bottom: 6px;
 
     button {
       width: auto;
@@ -60,6 +66,12 @@
       }
 
       &.add-action {
+        border-color: $orange;
+
+        &:before {
+          background-color: $orange;
+        }
+
         &:after {
           position: absolute;
           top: 4px;
@@ -71,7 +83,7 @@
 
           content: '';
 
-          background-color: $medium-blue;
+          background-color: $orange;
         }
       }
     }
