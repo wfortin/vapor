@@ -1,7 +1,7 @@
 .input-field {
   position: relative;
 
-  margin-top: $input-field-margin-top;
+  margin-top: $input-margin-top;
 
   // General Styles
 
@@ -61,7 +61,7 @@
     pointer-events: none;
 
     &.active {
-      top: -1 * $input-field-margin-top;
+      top: -1 * $input-margin-top;
 
       color: $medium-blue;
       font-size: $form-control-label-font-size;
@@ -69,10 +69,10 @@
   }
 
   input {
-    padding: $input-field-vertical-padding 0;
+    padding: $input-vertical-padding 0;
 
     color: transparent; // Make the input text color transparent when input is invalid (closed).
-    font-size: $input-field-font-size;
+    font-size: $input-font-size;
 
     background-color: transparent;
     box-shadow: none; // Remove firefox invalid input box shadow.
@@ -83,7 +83,7 @@
   }
 
   textarea {
-    min-height: $input-field-height;
+    min-height: $input-height;
     padding: 10px 0 24px 0;
     overflow-y: hidden;
 
@@ -93,7 +93,7 @@
   }
 
   &.mod-fixed-width {
-    max-width: $input-field-max-width;
+    max-width: $input-max-width;
   }
 
   // Validation feedback
