@@ -21,6 +21,10 @@
       &:after {
         visibility: visible;
       }
+
+      &.first-label {
+        visibility: visible;
+      }
     }
 
     &:nth-child(1) label {
