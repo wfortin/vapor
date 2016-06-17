@@ -90,6 +90,8 @@
     transition: height ease 0.2s;
 
     resize: none;
+
+    @include placeholder(transparent);
   }
 
   &.mod-fixed-width {
