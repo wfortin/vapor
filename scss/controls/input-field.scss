@@ -91,6 +91,7 @@
 
     resize: none;
 
+    -ms-overflow-y: hidden !important; // ie
     @include placeholder(transparent);
   }
 

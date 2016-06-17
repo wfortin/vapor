@@ -7,6 +7,11 @@
 
       input {
         margin-bottom: 10px;
+
+        &::-ms-clear {
+          // ie: remove the X on right
+          display: none;
+        }
       }
     }
 
@@ -39,12 +44,27 @@
   // Action icons
   .input-actions {
     position: absolute;
-    top: 8px;
-    right: 0;
+    top: 4px;
+    right: -2px;
+
+    .js-add-value-button, .js-delete-value-button {
+      position: relative;
+
+      padding: 4px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:focus {
+        i {
+          box-shadow: 0 0 6px 1px $medium-blue;
+        }
+      }
+    }
 
     button {
       width: auto;
-      padding: 0;
 
       background: none;
       border: none;
@@ -52,6 +72,8 @@
     }
 
     i {
+      position: inherit;
+
       display: block;
       width: 18px;
       height: 18px;
@@ -84,8 +106,8 @@
 
         &:after {
           position: absolute;
-          top: 4px;
-          left: 8px;
+          top: 2px;
+          left: 6px;
 
           display: block;
           width: 2px;
