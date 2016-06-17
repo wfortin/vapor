@@ -9,6 +9,10 @@
         margin-bottom: 10px;
       }
     }
+
+    &:not(:empty) + .input-wrapper input {
+      @include placeholder();
+    }
   }
 
   .input-wrapper {
@@ -31,7 +35,6 @@
       visibility: visible;
     }
   }
-
 
   // Action icons
   .input-actions {
