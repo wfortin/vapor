@@ -22,5 +22,7 @@ stylesheet: '/scss/controls/chosen.scss'
     <option value="Argentina">Argentina</option>
 </select>
 <script>
-    $('.js-chosen-single-select').chosen();
+    $('.js-chosen-single-select').chosen({
+        allow_single_deselect: true
+    });
 </script>

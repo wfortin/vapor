@@ -40,7 +40,7 @@
     float: left;
     max-height: 400px;
     min-width: 100%;
-    padding: 8px 0;
+    padding: $dropdown-choices-top-bottom-margin 0;
     margin: 0;
     overflow-y: auto;
 
@@ -106,5 +106,6 @@
 
   &.open > .dropdown-menu {
     display: block;
+    margin-bottom: $form-bottom-padding;
   }
 }
