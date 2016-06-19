@@ -1,25 +1,4 @@
 .multiline-field {
-  ul {
-    li {
-      &:first-child label {
-        display: flex;
-      }
-
-      input {
-        margin-bottom: 10px;
-
-        &::-ms-clear {
-          // ie: remove the X on right
-          display: none;
-        }
-      }
-    }
-
-    &:not(:empty) + .input-wrapper input {
-      @include placeholder();
-    }
-  }
-
   .input-wrapper {
     position: relative;
 
@@ -38,6 +17,33 @@
 
     &:nth-child(1) label {
       visibility: visible;
+    }
+  }
+
+  ul {
+    li {
+      &:first-child label {
+        display: flex;
+      }
+
+      input {
+        margin-bottom: 10px;
+
+        &::-ms-clear {
+          // ie: remove the X on right
+          display: none;
+        }
+      }
+    }
+
+    &:not(:empty) + .input-wrapper {
+      input {
+        @include placeholder();
+      }
+
+      label.first-label {
+        visibility: hidden;
+      }
     }
   }
 
