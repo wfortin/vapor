@@ -23,8 +23,7 @@ gulp.task('sass', 'Compile sass files to dist folder', ['sprites'], function(don
     return gulp.src('./scss/guide.scss')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', function(err) {
-            process.stderr.write(new gutil.PluginError('sass', err.messageFormatted).toString() + '\n');
-            done(1);
+            sassError(err, done);
         }))
         .pipe(autoprefixer(autoprefixerOptions))
         .pipe(rename('CoveoStyleGuide.css'))
