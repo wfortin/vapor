@@ -22,8 +22,8 @@
 
     & + span {
       position: absolute;
-      top: 8px;
-      right: 20px;
+      top: 12px;
+      right: 23px;
 
       &.hide, &.hidden {
         display: none;
@@ -31,14 +31,6 @@
         & + .filter-icon {
           display: block;
         }
-      }
-
-      &:after {
-        padding-left: 12px;
-
-        content: '\00a0';
-
-        @extend .coveo-sprites-misc-closepopup;
       }
     }
   }
