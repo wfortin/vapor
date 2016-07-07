@@ -269,13 +269,8 @@ table {
       padding-left: 10px;
     }
 
-    &:hover {
+    &:hover td {
       background-color: $light-grey;
-
-      td {
-        // ie fix
-        background-color: $light-grey;
-      }
     }
 
     &.empty td {
@@ -295,13 +290,8 @@ table {
     }
 
     &.selected {
-      &:not(:hover) {
+      &:not(:hover) td {
         background-color: $white;
-
-        td {
-          // ie fix
-          background-color: $white;
-        }
       }
 
       td:first-child {
