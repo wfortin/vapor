@@ -22,8 +22,14 @@
 
     & + span {
       position: absolute;
-      top: 12px;
+      top: calc(50% - #{$clear-icon-height} / 2);
       right: 23px;
+
+      line-height: 0;
+
+      svg {
+        height: $clear-icon-height;
+      }
 
       &.hide, &.hidden {
         display: none;
