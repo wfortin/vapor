@@ -40,7 +40,7 @@
           position: absolute;
           top: 0;
 
-          padding: (($table-header-inner-height - $table-header-line-height) / 2) 0;
+          padding: $table-header-top-bottom-padding 0;
 
           font-size: 12px;
           line-height: $table-header-line-height;

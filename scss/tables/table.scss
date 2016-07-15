@@ -38,7 +38,7 @@ table {
   }
 
   th {
-    padding: (($table-header-inner-height - $table-header-line-height) / 2) $table-cell-left-right-padding;
+    padding: $table-header-top-bottom-padding $table-cell-left-right-padding;
 
     white-space: nowrap;
 
@@ -127,14 +127,6 @@ table {
       text-align: center;
     }
 
-    &.admin-focus td {
-      background-color: #f5f9fd;
-
-      &.admin-focus-cell {
-        background-color: #ebf3fb;
-      }
-    }
-
     &.selected {
       &:not(:hover) td {
         background-color: $white;
@@ -147,7 +139,7 @@ table {
   }
 
   td {
-    padding: (($table-row-inner-height - $table-row-line-height) / 2) $table-cell-left-right-padding;
+    padding: $table-row-top-bottom-padding $table-cell-left-right-padding;
     margin-left: 15px;
 
     text-align: left;
@@ -169,7 +161,7 @@ table {
       opacity: 0.3;
 
       &.enabled:active:hover {
-        border-radius: 4px;
+        border-radius: $border-radius;
       }
 
       &.disabled {
