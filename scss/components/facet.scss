@@ -1,0 +1,170 @@
+.facet-column {
+  display: block;
+  width: 30%;
+  max-width: 360px;
+  padding: 24px 32px 24px 40px;
+  margin-right: 0;
+
+  border-right: 1px solid $medium-grey;
+}
+
+.facet {
+  padding-bottom: 15px;
+  margin: 10px 0;
+
+  background: $white;
+  border: 1px solid $medium-grey;
+  border-radius: 4px;
+}
+
+.facet-header {
+  position: relative;
+
+  padding: 10px 20px;
+  overflow: hidden;
+  clear: both;
+
+  background: $pure-white;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.facet-header-eraser {
+  position: absolute;
+  top: 0;
+  right: 25px;
+
+  height: 100%;
+
+  cursor: pointer;
+
+  .icon {
+    position: relative;
+    top: 50%;
+
+    display: block;
+
+    transform: translateY(-50%);
+
+    &:hover {
+      fill: $dark-grey;
+    }
+  }
+}
+
+.facet-header-title {
+  float: left;
+
+  font-family: $base-font-family;
+  font-size: 18px;
+}
+
+.facet-values {
+  padding-top: 5px;
+  margin: 0;
+
+  list-style: none;
+}
+
+.facet-value {
+  position: relative;
+
+  padding: 0 20px;
+  margin: 0;
+
+  line-height: 22px;
+}
+
+.facet-value > * {
+  vertical-align: middle;
+}
+
+.facet-value-label {
+  display: block;
+  padding: 5px 0;
+  overflow: hidden;
+
+  font-family: Helvetica neue, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  white-space: nowrap;
+
+  cursor: pointer;
+}
+
+.facet-value-label-wrapper {
+  overflow: hidden;
+}
+
+.facet-checkbox-input {
+  display: none;
+}
+
+.facet-value-checkbox {
+  position: relative;
+  top: 2px;
+
+  display: inline-block;
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+
+  text-align: center;
+  vertical-align: middle;
+
+  background: white;
+  border: 1px solid $medium-grey;
+  border-radius: 4px;
+}
+
+.facet-value-checkbox > span {
+  display: none;
+  width: 12px;
+  height: 12px;
+  margin: 0 auto;
+}
+
+.facet-checkbox-input:checked {
+  + .facet-value-checkbox > span {
+    display: block;
+  }
+
+  + .facet-value-checkbox + .facet-value-count, + .facet-value-checkbox + .facet-value-count + .facet-value-caption {
+    font-weight: bold;
+  }
+}
+
+.facet-value-count {
+  display: inline-block;
+  float: right;
+  margin: 0 5px;
+
+  vertical-align: middle;
+
+  transition: opacity 1s;
+}
+
+.facet-value-caption {
+  display: block;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.facet-value-exclude {
+  position: absolute;
+  top: 9px;
+  right: 5px;
+
+  width: 13px;
+  height: 13px;
+
+  background: white;
+  border: 1px solid $medium-grey;
+  border-radius: 4px;
+
+  cursor: pointer;
+  visibility: hidden;
+}
