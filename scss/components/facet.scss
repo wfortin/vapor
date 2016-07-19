@@ -14,19 +14,19 @@
 
   background: $white;
   border: 1px solid $medium-grey;
-  border-radius: 4px;
+  border-radius: $border-radius;
 }
 
 .facet-header {
   position: relative;
 
-  padding: 10px 20px;
+  padding: 20px;
   overflow: hidden;
   clear: both;
 
   background: $pure-white;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
+  border-top-right-radius: $border-radius;
+  border-top-left-radius: $border-radius;
 }
 
 .facet-header-eraser {
@@ -43,6 +43,8 @@
     top: 50%;
 
     display: block;
+    width: 10px;
+    height: 10px;
 
     transform: translateY(-50%);
 
@@ -56,7 +58,7 @@
   float: left;
 
   font-family: $base-font-family;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .facet-values {
@@ -114,14 +116,25 @@
 
   background: white;
   border: 1px solid $medium-grey;
-  border-radius: 4px;
+  border-radius: $border-radius;
 }
 
 .facet-value-checkbox > span {
+  box-sizing: border-box;
   display: none;
-  width: 12px;
-  height: 12px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
+
+  svg {
+    width: 12px;
+    height: 12px;
+    margin: 2px;
+  }
+}
+
+.facet-value-checkbox:hover > span {
+  display: block;
 }
 
 .facet-checkbox-input:checked {
@@ -163,7 +176,7 @@
 
   background: white;
   border: 1px solid $medium-grey;
-  border-radius: 4px;
+  border-radius: $border-radius;
 
   cursor: pointer;
   visibility: hidden;
