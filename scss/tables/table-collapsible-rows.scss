@@ -43,10 +43,10 @@ table {
             display: none;
           }
 
-          h4 {
-            padding-top: 10px;
+          .section-title {
+            padding-top: $collapsible-title-padding;
 
-            font-size: 12px;
+            font-size: $collapsible-content-font-size;
             font-weight: bold;
             text-transform: uppercase;
             color: $medium-blue;
@@ -70,7 +70,7 @@ table {
             padding: 5px;
             overflow: hidden;
 
-            font-size: 12px;
+            font-size: $collapsible-content-font-size;
             text-overflow: ellipsis;
           }
 
