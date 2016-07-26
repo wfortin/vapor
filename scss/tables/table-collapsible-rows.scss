@@ -42,6 +42,15 @@ table {
           .container {
             display: none;
           }
+
+          h4 {
+            padding-top: 10px;
+
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $medium-blue;
+          }
         }
 
         &.in td {
