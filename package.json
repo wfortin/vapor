@@ -1,6 +1,6 @@
 {
   "name": "coveo-styleguide",
-  "version": "1.4.10",
+  "version": "1.4.13",
   "description": "Yet another CSS framework - but it's awesome & built by Coveo.",
   "keywords": [
     "coveo",
@@ -33,10 +33,10 @@
   "dependencies": {
     "chosen-npm": "1.4.2",
     "coveo-slider": "0.9.8",
-    "materialize-css": "0.97.6"
+    "materialize-css": "0.97.7"
   },
   "devDependencies": {
-    "autosize": "3.0.15",
+    "autosize": "3.0.17",
     "csscomb": "3.1.8",
     "del": "2.2.1",
     "gulp": "3.9.1",

@@ -24,13 +24,15 @@ table {
       }
 
       &.heading-row {
-        &.opened td {
-          background-color: $light-grey;
+        &.opened:not(:hover) td {
+          background-color: $white;
         }
       }
 
       &.collapsible-row {
         height: 0;
+
+        line-height: 12px;
 
         td {
           padding: 0;
@@ -40,6 +42,15 @@ table {
           .container {
             display: none;
           }
+
+          .section-title {
+            padding-top: $collapsible-title-padding;
+
+            color: $medium-blue;
+            font-size: $collapsible-content-font-size;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
         }
 
         &.in td {
@@ -47,7 +58,7 @@ table {
         }
 
         td {
-          background-color: $light-grey;
+          background-color: $white;
         }
 
         .box {
@@ -59,12 +70,12 @@ table {
             padding: 5px;
             overflow: hidden;
 
-            font-size: 12px;
+            font-size: $collapsible-content-font-size;
             text-overflow: ellipsis;
           }
 
           .label {
-            font-weight: bold;
+            color: $light-blue;
           }
         }
 
