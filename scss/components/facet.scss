@@ -58,7 +58,7 @@
   float: left;
 
   font-family: $base-font-family;
-  font-size: 16px;
+  font-size: $title-font-size;
 }
 
 .facet-values {
@@ -87,7 +87,7 @@
   overflow: hidden;
 
   font-family: Helvetica neue, Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: $default-font-size;
   white-space: nowrap;
 
   cursor: pointer;
