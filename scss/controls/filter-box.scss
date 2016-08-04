@@ -5,14 +5,14 @@
     width: 260px;
 
     .filter-icon {
-      right: 0;
+      right: 10px;
     }
 
     input.filter-box {
-      width: 275px;
+      width: 260px;
 
       & + span {
-        right: 0;
+        right: 10px;
       }
     }
   }
