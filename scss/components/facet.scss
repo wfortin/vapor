@@ -244,4 +244,6 @@
   background-color: $pure-white;
   border: 1px solid $medium-grey;
   border-radius: $border-radius;
+
+  @include slim-scroll($light-grey, $medium-grey);
 }
