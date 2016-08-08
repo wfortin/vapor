@@ -148,13 +148,13 @@
   }
 
   &:before {
-    width: 2px;
-    height: 70%;
+    width: $facet-checkbox-line-width;
+    height: $facet-checkbox-mark-size;
   }
 
   &:after {
-    width: 70%;
-    height: 2px;
+    width: $facet-checkbox-mark-size;
+    height: $facet-checkbox-line-width;
   }
 }
 
@@ -170,8 +170,8 @@
   margin: 0 auto;
 
   svg {
-    width: 12px;
-    height: 12px;
+    width: $facet-checkbox-mark-size;
+    height: $facet-checkbox-mark-size;
     margin: 2px;
   }
 }
