@@ -6,16 +6,6 @@
 
   .file-path-wrapper {
     flex-grow: 1;
-
-    input {
-      border-bottom-color: $medium-grey;
-
-      @include placeholder();
-
-      &.has-file {
-        border-bottom: 1px solid $medium-blue;
-      }
-    }
   }
 
   .btn {
