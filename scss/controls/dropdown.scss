@@ -42,7 +42,6 @@
 }
 
 &.open > .dropdown-toggle {
-
   &.mod-primary .dropdown-toggle-arrow {
     @include arrow-up-icon($pure-white);
   }
