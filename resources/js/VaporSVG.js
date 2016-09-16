@@ -49,6 +49,6 @@ function formatSvgName(svgName) {
 }
 
 var VaporSVG = {};
-VaporSVG.svgWrapper = svgWrapper;
+VaporSVG.SVG = svgWrapper;
 VaporSVG.svgFromName = svgFromName;
 VaporSVG.svg = svgEnum;
