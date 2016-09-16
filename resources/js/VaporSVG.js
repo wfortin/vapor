@@ -8,26 +8,26 @@ function svgWrapper(svgString, svgClass, spanClass, title, attr) {
 
     if (s.contains(svgString, '#coveo-icon-')) {
         var svgNameFormatted = formatSvgName(svgString.replace('#coveo-icon-', ''));
-        if (!_.isUndefined(svg[svgNameFormatted])) {
-            return svg[svgNameFormatted].render(svgClass, spanClass, title, attr);
+        if (!_.isUndefined(svgEnum[svgNameFormatted])) {
+            return svgEnum[svgNameFormatted].render(svgClass, spanClass, title, attr);
         }
     }
 
     var titleToDisplay = title ? 'title="' + title + '"' : '';
     var spanClassAttribute = spanClass ? 'class="' + spanClass + '"' : '';
     return '<span ' + spanClassAttribute + ' ' + titleToDisplay + '>' + svg(svgString, svgClass, attr) + '</span>';
-};
+}
 
 function svgFromName(svgName, svgClass, spanClass, title) {
     svgClass = svgClass || '';
     spanClass = spanClass || '';
     title = title || '';
 
-    if (!_.isUndefined(JsAdmin.svg[svgName])) {
-        return svg[svgName].render(svgClass, spanClass, title);
+    if (!_.isUndefined(svgEnum[svgName])) {
+        return svgEnum[svgName].render(svgClass, spanClass, title);
     }
     return '';
-};
+}
 
 function svg(svgString, svgClass, attr) {
     svgClass = svgClass || '';
