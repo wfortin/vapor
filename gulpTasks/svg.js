@@ -28,7 +28,7 @@ function Dictionary(from) {
     };
 }
 
-gulp.task('svg:concat', 'Concat all svg files into one in a json format and export it to dist/svg', ['svg:concat'], function () {
+gulp.task('svg:concat', 'Concat all svg files into one in a json format and export it to dist/svg', function () {
     return gulp.src('./resources/icons/svg/*.svg')
         .pipe(svgmin({
             plugins: [{
@@ -60,7 +60,7 @@ gulp.task('svg:concat', 'Concat all svg files into one in a json format and expo
         .pipe(gulp.dest('docs/_data/'))
 });
 
-gulp.task('svg:enum', 'Enumerate the svgs in a variable', function() {
+gulp.task('svg:enum', 'Enumerate the svgs in a variable',['svg:concat'], function() {
     var dict = new Dictionary('dist/svg/CoveoStyleGuideSvg.json');
 
     if (!fs.existsSync('tmp')) {
