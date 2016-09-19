@@ -54,6 +54,17 @@
     VaporSVG.svgFromName = svgFromName;
     VaporSVG.svg = svgEnum;
 
+    var root = this;
+
+    if (typeof exports !== 'undefined') {
+        if (typeof module !== 'undefined' && module.exports) {
+            exports = module.exports = VaporSVG;
+        }
+        exports.VaporSVG = VaporSVG;
+    } else {
+        root.VaporSVG = VaporSVG;
+    }
+
     if (typeof define === 'function' && define.amd) {
         define('coveo-styleguide', [], function() {
             return VaporSVG;
