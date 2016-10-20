@@ -48,8 +48,8 @@ table.big-table {
         div.second-row {
           margin-top: 2px;
 
-          font-size: 12px;
-          line-height: 17px;
+          font-size: $big-table-second-row-font-size;
+          line-height: $big-table-second-row-line-height;
         }
       }
 
