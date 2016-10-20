@@ -47,25 +47,33 @@ stylesheet: '/scss/controls/input-field.scss'
         <label data-valid-message="You dit it right!" data-invalid-message="Value must be a valid email address.">Validated email</label>
     </div>
 
-    <div id="textarea1" class="input-field form-group">
+    <div id="textarea1" class="input-field form-group js-autosized">
         <textarea required></textarea>
         <label for="textarea1">
             Textarea empty
         </label>
     </div>
 
-    <div id="textarea2" class="input-field form-group">
+    <div id="textarea2" class="input-field form-group mod-resizeable">
         <textarea placeholder="Placeholder text" required></textarea>
         <label for="textarea2">
-            Textarea with placeholder
+            Resizable textarea
         </label>
     </div>
 
-    <div id="textarea3" class="input-field form-group">
+    <div id="textarea3" class="input-field form-group js-autosized">
         <textarea required>Lorem ipsum dolor sit amet, interdum est eu. A tellus condimentum hendrerit enim, ligula fusce vitae, leo et fusce mauris lorem suscipit scelerisque. Vel arcu, non vestibulum suspendisse non lectus magnis suspendisse, aliquam magna commodo. Nascetur eleifend at faucibus faucibus, nulla fringilla, mauris ultrices posuere in, ut dolor cras rhoncus.</textarea>
         <label for="textarea3">
-            Textarea
+            Autosized textarea using the autosize library
         </label>
+    </div>
+
+    <div id="textarea4" class="input-field form-group validate mod-resizeable">
+        <textarea class="invalid" placeholder="Placeholder text" required>Lorem ipsum dolor sit amet, interdum est eu.</textarea>
+        <label for="textarea4">
+            Invalid textarea
+        </label>
+        <span class="generic-form-error">Error message goes here!</span>
     </div>
 </div>
 
@@ -81,5 +89,5 @@ stylesheet: '/scss/controls/input-field.scss'
         }
     });
 
-    autosize($('textarea'));
+    autosize($('.js-autosized textarea'));
 </script>
