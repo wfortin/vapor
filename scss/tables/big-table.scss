@@ -1,0 +1,77 @@
+.admin table.big-table {
+  tbody {
+    tr {
+      height: $big-table-height;
+
+      cursor: default;
+
+      td {
+        padding: $table-cell-left-right-padding;
+
+        vertical-align: top;
+      }
+
+      td.main {
+        white-space: nowrap;
+
+        .icon {
+          width: $big-table-height;
+          height: $big-table-height;
+          margin-right: 20px;
+
+          vertical-align: -3px;
+        }
+
+        div.details {
+          display: inline-block;
+
+          div.second-row {
+            .icon {
+              width: 15px;
+              height: 15px;
+              margin-right: 0;
+            }
+
+            .label {
+              color: $dark-grey;
+            }
+          }
+        }
+      }
+
+      td.col, td.main {
+        position: relative;
+
+        .first-row {
+          font-size: 15px;
+          line-height: 20px;
+        }
+
+        div.second-row {
+          margin-top: 2px;
+
+          font-size: 12px;
+          line-height: 17px;
+        }
+      }
+
+      div.wrapper {
+        min-height: $big-table-height;
+      }
+
+      &.disabled td .wrapper {
+        opacity: 0.5;
+      }
+    }
+
+    tr.error-blankslate-row {
+      &:hover {
+        background-color: $pure-white;
+      }
+
+      td.error-blankslate-section {
+        padding: $big-table-blankslate-section-padding;
+      }
+    }
+  }
+}
