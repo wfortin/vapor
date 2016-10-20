@@ -1,23 +1,21 @@
 table.big-table {
   tbody {
     tr {
-      height: $big-table-height;
+      height: $big-table-row-height;
 
       cursor: default;
 
       td {
         padding: $table-cell-left-right-padding;
-
-        vertical-align: top;
       }
 
       td.main {
         white-space: nowrap;
 
         .icon {
-          width: $big-table-height;
-          height: $big-table-height;
-          margin-right: 20px;
+          width: $big-table-row-height;
+          height: $big-table-row-height;
+          margin-right: $big-table-icon-margin;
 
           vertical-align: -3px;
         }
@@ -27,8 +25,8 @@ table.big-table {
 
           div.second-row {
             .icon {
-              width: 15px;
-              height: 15px;
+              width: $big-table-icon-size;
+              height: $big-table-icon-size;
               margin-right: 0;
             }
 
@@ -43,8 +41,8 @@ table.big-table {
         position: relative;
 
         .first-row {
-          font-size: 15px;
-          line-height: 20px;
+          font-size: $big-table-first-row-font-size;
+          line-height: $big-table-first-row-line-height;
         }
 
         div.second-row {
@@ -56,21 +54,11 @@ table.big-table {
       }
 
       div.wrapper {
-        min-height: $big-table-height;
+        min-height: $big-table-row-height;
       }
 
       &.disabled td .wrapper {
         opacity: 0.5;
-      }
-    }
-
-    tr.error-blankslate-row {
-      &:hover {
-        background-color: $pure-white;
-      }
-
-      td.error-blankslate-section {
-        padding: $big-table-blankslate-section-padding;
       }
     }
   }
