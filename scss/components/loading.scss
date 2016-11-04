@@ -25,11 +25,11 @@
   }
 
   .bounce1 {
-    animation-delay: calc(#{$bounce-delay} * -2)s;
+    animation-delay: -0.32s;
   }
 
   .bounce2 {
-    animation-delay: calc(#{$bounce-delay}* -1)s;
+    animation-delay: -0.16s;
   }
 }
 
