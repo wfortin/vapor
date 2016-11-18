@@ -21,7 +21,7 @@
 
     cursor: pointer;
 
-    &:focus, &:hover {
+    &:focus {
       background-color: $light-grey;
     }
 
@@ -36,9 +36,5 @@
     padding: $form-top-padding $header-padding;
 
     border-bottom: $collapsible-border-width solid $medium-grey;
-  }
-
-  li:last-child .collapsible-body {
-    border-bottom: none;
   }
 }
